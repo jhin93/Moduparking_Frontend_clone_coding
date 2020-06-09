@@ -11,7 +11,25 @@
       </div>
     </div>
     <!--Body    -->
-    <div class="body"></div>
+    <div class="body">
+      <div class="sector_1">
+        <div class="sector_1_text">
+          <div class ="sector_1_main">
+            <a class="b1">
+              모두가 사용하는<br>
+              쉽고 편리한 주차 플랫폼
+            </a>
+          </div>
+          <div class="sector_1_sub">
+            <a class="t__body">
+              주차와 관련한 니즈를 가진 모두를 연결하여<br>
+              더 편리하고 합리적인 주차문화를 만들어가는<br>
+              온라인 주차문화 플랫폼입니다.
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--footer    -->
     <div></div>
     <!--side menu    -->
@@ -34,7 +52,7 @@ export default {
 <style scoped>
 .header {
   width: 1440px;
-  height: 162px;
+  height: 160px;
   display: flex;
   align-items: center;
   background-color: aliceblue;
@@ -48,5 +66,32 @@ export default {
 .body {
   width: 1440px;
   height: 4800px;
+  background-color: beige;
+}
+.sector_1{
+  width: 1440px;
+  height: 700px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sector_1_text{
+  width: 1170px;
+  height: 440px;
+  background-color: lightgreen;
+}
+.sector_1_main{
+  width: 1170px;
+  height: 210px;
+  background-color: aqua;
+}
+.sector_1_sub{
+  width: 1170px;
+  height: 195px;
+  background-color: bisque;
+}
+.v-btn{
+  background-color: blue;
 }
 </style>
