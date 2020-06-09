@@ -1,17 +1,14 @@
 <template>
- <navigator />
+ <Home />
 </template>
 
 <script>
-import navigator from './components/the_navigation.vue'
+import Home from './views/Home.vue'
 
 export default {
   name: 'App',
-
-  components: { navigator },
-
-  data: () => ({
-    //
-  })
+  components: { 
+    Home 
+  }
 }
 </script>
