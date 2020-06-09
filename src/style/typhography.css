@@ -33,3 +33,14 @@
     line-height: 1.7 !important;
     font-weight: bold !important;
 }
+
+.dis_flex_margin_bo_3rem{
+  display: flex;
+  margin-bottom: 3rem;
+}
+.t__body img{
+  width:60%
+}
+.blank_4rem{
+  height:4rem
+}
