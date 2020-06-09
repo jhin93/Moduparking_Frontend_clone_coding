@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    <!--Header    -->
-    <div></div>
-    <!--Navigator    -->
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/terms">Terms</router-link>
+    <!--Header-->
+    <div class="header">
+      <!--Navigator    -->
+      <div class="logo">
+        <h1>모두의 주차장</h1>
+      </div>
+      <div class="nav">
+        <navigator />
+      </div>
     </div>
     <!--Body    -->
-    <div>
-      <img alt="Vue logo" src="../assets/logo.png">
-      <HelloWorld msg="Welcome to Your Vue.js App"/>
-    </div>
+    <div class="body"></div>
     <!--footer    -->
     <div></div>
     <!--side menu    -->
@@ -21,12 +21,32 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import navigator from '@/components/the_navigation.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    navigator
   }
 }
 </script>
+
+<style scoped>
+.header {
+  width: 1440px;
+  height: 162px;
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+}
+.logo {
+  background-color: antiquewhite;
+  width: 15%;
+  margin-left: 75px;
+  margin-right: 150px;
+}
+.body {
+  width: 1440px;
+  height: 4800px;
+}
+</style>
