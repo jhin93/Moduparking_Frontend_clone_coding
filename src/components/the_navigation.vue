@@ -1,0 +1,81 @@
+
+<template>
+  <div>
+    <div id="nav">
+      <span class="left">
+        <router-link to="/">
+          <img class="company_logo" src />
+        </router-link>
+      </span>
+      <span class="right">
+        <router-link to="/">서비스 소개</router-link>
+        <router-link to="/about">기업 소개</router-link>
+        <router-link to="/elementor-345" @mouseOver="set_flag" @mouseOut="down_flag">주차 공유 안내<v-icon>keyboard_arrow_down</v-icon><transition name="popup"><div class="down_menu" v-if="flag" >adfadf</div></transition></router-link>
+        <router-link to="/300f0-contact">제휴 ・ 협력 안내</router-link>
+        <router-link to="/elementor-624">보도 ・ 홍보자료</router-link>
+        <router-link to="/300f0-portfolio">Q & A</router-link>
+      </span>
+    </div>
+    <router-view />
+  </div>
+</template>
+<script>
+export default {
+  name: 'navigator',
+  data: function () {
+    return { flag: false }
+  },
+  methods: {
+    set_flag: function () {
+      this.flag = true
+    },
+    down_flag: function () {
+      this.flag = false
+    }
+  }
+}
+</script>
+<style scoped>
+#nav {
+  padding: 30px;
+  line-height: 1.7%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 18pt;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #3f3f3f;
+  text-decoration:none
+}
+#nav a.router-link-exact-active {
+  color: #000000;
+}
+#nav a:hover {
+  padding-bottom: 0.5rem;
+  color:#0099ff;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+#container{
+
+  display:table-cell
+}
+.down_menu{
+  position: inline;
+ background-color: #f9f9f9;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ padding: 12px 16px;
+ z-index: 1;
+}
+.popup-enter-active, .popup-leave-active{
+  display:inline-block;
+  position:relative;
+  transition-delay:0.2s;
+  transition-duration:0.1s;
+}
+.popup-enter, .popup-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+</style>
