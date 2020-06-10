@@ -68,6 +68,7 @@ const howto = {
   use7: '../assets/use7',
   use8: '../assets/use8'
 }
+// eslint-disable-next-line camelcase
 const check_trans = {
   check1: '../assets/check1',
   check2: '../assets/check2',
