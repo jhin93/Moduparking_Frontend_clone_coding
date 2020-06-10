@@ -10,29 +10,32 @@
     </div>
     <div class='t__body'>
         <div class='t__blue t__title'>유형 1. 거주자 우선(주거지) 주차면</div>
-        <div class='dis_flex_margin_bo_3rem'>
+        <div class='dis_flex_margin_bo_3rem inline'>
           <img class='img_half' src ='../assets/20160824_182532-1-1024x768.jpg'>
-          <h6> 공유 - 거주자우선주차면</h6>
+          <h6 class= 'align_center relative width_60'> 공유 - 거주자우선주차면</h6>
         </div>
         <div v-for='residential in residentials' v-bind:key='residential'>
           <div>{{residential}}</div>
         </div>
-      <div class='blank_4rem'></div>
     </div>
+     <v-btn rounded color="#0099ff" depressed dark><a class="text_deco t__white"  href='../elementor-345/#' >거주자우선(주거지)주차면 공유방법</a></v-btn>
+    <div class='blank_4rem'></div>
       <div class='t__body'>
         <div class='t__blue t__title'>유형 2. 사유지 주차공간(카페, 오피스텔 등)</div>
-        <div class='dis_flex_margin_bo_3rem'>
+        <div class='dis_flex_margin_bo_3rem inline'>
           <img class='img_half' src ='../assets/20170504_174732-1024x576.jpg'>
-          <h6> 공유 - 일반 주차 공간</h6>
+          <h6 class = 'align_center relative width_60'> 공유 - 일반 주차 공간</h6>
         </div>
         <div v-for='privated in privates' v-bind:key='privated'>
         <div>{{privated}}</div>
       </div>
+      <v-btn rounded color="#0099ff" depressed dark><a class="text_deco t__white"  href='../elementor-345/#' >일반주차창 공유 방법</a></v-btn>
     </div>
   </div>
 </template>
 
 <script>
+
 export default {
   name: 'serviceinfo',
   data: function () {
@@ -47,7 +50,9 @@ export default {
 
 <style scope>
 .container{
-  width:250mm;
+
+  padding:0%;
+  width:1140px
 }
 .header{
   font-size:15pt;
@@ -68,6 +73,7 @@ export default {
 .img_container{
   text-align:center;
   margin:2rem;
+
 }
 
 img{
@@ -75,6 +81,7 @@ img{
 }
 
 .line_crosser{
+
   padding-top:2rem;
   border-top:1px solid rgb(0,0,0,0.1)
 }
