@@ -38,9 +38,34 @@
   display: flex;
   margin-bottom: 3rem;
 }
+
 .t__body img{
   width:60%
 }
+
 .blank_4rem{
   height:4rem
+}
+
+.inline{
+  display: inline;
+}
+
+.align_center{
+  text-align:center;
+}
+
+.relative{
+  position: relative;
+}
+
+.width_60{
+  width:60%
+}
+
+.text_deco{
+  text-decoration: none;
+}
+.t__white{
+  color:white !important;
 }
