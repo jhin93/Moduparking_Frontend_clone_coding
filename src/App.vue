@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import navigator from '@/components/the_navigation.vue'
+import navigator from '@/components/the-navigation.vue'
 
 export default {
   name: 'App',

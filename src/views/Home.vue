@@ -12,15 +12,15 @@
     </div> -->
     <!--Body-->
     <div class="body">
-      <div class="sector_1">
-        <div class="sector_1_content">
-          <div class ="sector_1_main">
+      <div class="sector-1">
+        <div class="sector-1-content">
+          <div class ="sector-1-main">
             <a class="b1">
               모두가 사용하는<br>
               쉽고 편리한 주차 플랫폼
             </a>
           </div>
-          <div class="sector_1_sub">
+          <div class="sector-1-sub">
             <a class="t__title">
               주차와 관련한 니즈를 가진 모두를 연결하여<br>
               더 편리하고 합리적인 주차문화를 만들어가는<br>
@@ -31,7 +31,7 @@
         <button @click="ff">지금 시작하기</button>
         </div>
       </div>
-      <div class="link_to_store">
+      <div class="link-to-store">
         <div class="playstore">
           <!-- 버튼 라이브러리 적용 -->
           <button @click="ff">PLAY STORE</button>
@@ -41,16 +41,16 @@
           <button @click="ff">APP STORE</button>
         </div>
       </div>
-      <div class="sector_2">
-        <div class="sector_2_content">
-          <div class ="sector_2_main">
+      <div class="sector-2">
+        <div class="sector-2-content">
+          <div class ="sector-2-main">
             <a class="b1">
               공유가 쉽다!<br>
               사용이 편리하다!<br>
               주차가 즐겁다!<br>
             </a>
           </div>
-          <div class="sector_2_sub">
+          <div class="sector-2-sub">
             <a class="t__title">
               다양한 주차 서비스로 주차고민을 덜어보세요.<br>
               다양한 주차장 정보, 주차 공유, 스마트 주차 서비스까지<br>
@@ -59,16 +59,16 @@
           </div>
         </div>
       </div>
-      <div class="sector_3">
-        <div class="sector_3_picture">
-          <img class="sector_3_image1" src="http://54.180.151.177/wp-content/uploads/2020/05/구성-요소-1-–-2.png" alt="">
-          <img class="sector_3_image2" src="http://54.180.151.177/wp-content/uploads/2020/05/구성-요소-2-–-2.png" alt="">
+      <div class="sector-3">
+        <div class="sector-3-picture">
+          <img class="sector-3-image1" src="http://54.180.151.177/wp-content/uploads/2020/05/구성-요소-1-–-2.png" alt="">
+          <img class="sector-3-image2" src="http://54.180.151.177/wp-content/uploads/2020/05/구성-요소-2-–-2.png" alt="">
         </div>
       </div>
-      <div class="sector_4">
-        <div class="sector_4_content">
-          <div class="sector_4_text"></div>
-          <div class="sector_4_image"></div>
+      <div class="sector-4">
+        <div class="sector-4-content">
+          <div class="sector-4-text"></div>
+          <div class="sector-4-image"></div>
         </div>
       </div>
     </div>
@@ -81,7 +81,7 @@
 
 <script>
 // @ is an alias to /src
-// import navigator from '@/components/the_navigation.vue'
+// import navigator from '@/components/the-navigation.vue'
 
 export default {
   name: 'Home',
@@ -109,7 +109,7 @@ export default {
   width: 1440px;
   height: 4800px;
 }
-.sector_1{
+.sector-1{
   width: 1440px;
   height: 700px;
   background-color: #E7EBED;
@@ -117,19 +117,19 @@ export default {
   align-items: center;
   justify-content: center;
 }
-.sector_1_content{
+.sector-1-content{
   width: 1170px;
   height: 440px;
 }
-.sector_1_main{
+.sector-1-main{
   width: 1170px;
   height: 210px;
 }
-.sector_1_sub{
+.sector-1-sub{
   width: 1170px;
   height: 195px;
 }
-.link_to_store{
+.link-to-store{
   width: 1440px;
   height: 60px;
   margin-top: 42px;
@@ -154,32 +154,32 @@ export default {
   background-color: #0099ff;
   margin-left: 125px;
 }
-.sector_2{
+.sector-2{
   width: 1440px;
   height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.sector_2_content{
+.sector-2-content{
   width: 1335px;
   height: 600px;
 }
-.sector_2_main{
+.sector-2-main{
   width: 1335px;
   height: 300px;
   color: #0099ff;
 }
-.sector_2_sub{
+.sector-2-sub{
   width: 1335px;
   height: 215px;
   font-weight: bold;
 }
-.sector_3{
+.sector-3{
   width: 1440px;
   height: 390px;
 }
-.sector_3_picture{
+.sector-3-picture{
   width: 1310px;
   height: 390px;
   margin-left: 65px;
@@ -188,7 +188,7 @@ export default {
   align-items: center;
   justify-content: center;
 }
-.sector_3_image1{
+.sector-3-image1{
   width: 600px;
   height: 328px;
   margin-top: 20px;
@@ -196,7 +196,7 @@ export default {
   margin-left: 20px;
   margin-right: 20px;
 }
-.sector_3_image2{
+.sector-3-image2{
   width: 600px;
   height: 328px;
   margin-top: 20px;
@@ -204,7 +204,7 @@ export default {
   margin-left: 20px;
   margin-right: 20px;
 }
-.sector_4{
+.sector-4{
   width: 1440px;
   height: 835px;
   background-color: #0099ff;
@@ -212,7 +212,7 @@ export default {
   align-items: center;
   justify-content: center;
 }
-.sector_4_content{
+.sector-4-content{
   width: 1214px;
   height: 610px;
   background-color: aquamarine;
@@ -224,12 +224,12 @@ export default {
   align-items: center;
   justify-content: center;
 }
-.sector_4_text{
+.sector-4-text{
   width: 462px;
   height: 610px;
   background-color: beige;
 }
-.sector_4_image{
+.sector-4-image{
   width: 753px;
   height: 610px;
   background-color: red;
