@@ -2,16 +2,20 @@
   <div>
     <div id="nav">
       <span class="left">
-        <router-link to="/">
-          <img class="company_logo" src />
-        </router-link>
+        <a class="b1">모두의 주차장</a>
       </span>
       <span class="right">
-        <router-link to="/service_intro">서비스 소개</router-link>&nbsp;
-        <router-link to="/corp_intro">기업 소개</router-link>&nbsp;
-        <router-link to="/elementor-345">주차 공유 안내</router-link>&nbsp;
-        <router-link to="/affiliate_cooperation">제휴 ・ 협력 안내</router-link>&nbsp;
-        <router-link to="/elementor-624">보도 ・ 홍보자료</router-link>&nbsp;
+        <router-link to="/">서비스 소개</router-link>
+        <router-link to="/about">기업 소개</router-link>
+        <router-link to="/elementor-345" @mouseOver="set_flag" @mouseOut="down_flag">
+          주차 공유 안내
+          <v-icon>keyboard_arrow_down</v-icon>
+          <transition name="popup">
+            <div class="down_menu" v-if="flag">adfadf</div>
+          </transition>
+        </router-link>
+        <router-link to="/300f0-contact">제휴 ・ 협력 안내</router-link>
+        <router-link to="/elementor-624">보도 ・ 홍보자료</router-link>
         <router-link to="/300f0-portfolio">Q & A</router-link>
       </span>
     </div>
@@ -20,20 +24,77 @@
 </template>
 <script>
 export default {
-  // eslint-disable-next-line
-  name: 'navigator' // eslint-disable-next-line
+  name: 'navigator',
+  // eslint-disable-next-line space-before-function-paren
+  data: function() {
+    return { flag: false }
+  },
+  methods: {
+    // eslint-disable-next-line space-before-function-paren
+    set_flag: function() {
+      this.flag = true
+    },
+    // eslint-disable-next-line space-before-function-paren
+    down_flag: function() {
+      this.flag = false
+    }
+  }
 }
 </script>
 <style scoped>
 #nav {
-  width: 85%;
+  width: 1440px;
+  height: 160px;
   padding: 30px;
-  line-height: 1.7%;
+  line-height: 1.7;
   font-size: 18pt;
-  margin-left: 150px;
-  margin-right: 75px;
-  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
 }
-.right {
+
+.left{
+  width: 240px;
+  margin-left: 75px;
+  margin-right: 150px;
+}
+
+.right{
+  margin-left: 150px;
+  width: 840px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #3f3f3f;
+  text-decoration: none;
+}
+#nav a.router-link-exact-active {
+  color: #000000;
+}
+#nav a:hover {
+  padding-bottom: 0.5rem;
+  color: #0099ff;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+#container {
+  display: table-cell;
+}
+.down_menu {
+  position: inline;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.popup-enter-active,
+.popup-leave-active {
+  display: inline-block;
+  position: relative;
+  transition-delay: 0.2s;
+  transition-duration: 0.1s;
+}
+.popup-enter, .popup-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
