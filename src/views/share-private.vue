@@ -20,6 +20,7 @@
 </template>
 
 <script>
+// todo 반응형으로 뷰티파이 그리드 적용
 import images from '../assets/index.js'
 import * as icons from '@mdi/js'
 
