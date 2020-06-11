@@ -1,82 +1,86 @@
 <template>
-  <div class="home">
-    <!--Header-->
-    <!-- <div class="header"> -->
-      <!--Navigator    -->
-      <!-- <div class="logo">
-        <h1>모두의 주차장</h1>
-      </div>
-      <div class="nav">
-        <navigator />
-      </div>
-    </div> -->
-    <!--Body-->
-    <div class="body">
-      <div class="sector-1">
-        <div class="sector-1-content">
-          <div class ="sector-1-main">
-            <a class="b1">
-              모두가 사용하는<br>
-              쉽고 편리한 주차 플랫폼
-            </a>
+  <v-container>
+    <v-flex>
+      <div class="home">
+        <!--Header-->
+        <!-- <div class="header"> -->
+          <!--Navigator    -->
+          <!-- <div class="logo">
+            <h1>모두의 주차장</h1>
           </div>
-          <div class="sector-1-sub">
-            <a class="t__title">
-              주차와 관련한 니즈를 가진 모두를 연결하여<br>
-              더 편리하고 합리적인 주차문화를 만들어가는<br>
-              온라인 주차문화 플랫폼입니다.
-            </a>
+          <div class="nav">
+            <navigator />
           </div>
-        <!-- 버튼 라이브러리 적용 -->
-        <button @click="ff">지금 시작하기</button>
-        </div>
-      </div>
-      <div class="link-to-store">
-        <div class="playstore">
-          <!-- 버튼 라이브러리 적용 -->
-          <button @click="ff">PLAY STORE</button>
-        </div>
-        <div class="appstore">
-          <!-- 버튼 라이브러리 적용 -->
-          <button @click="ff">APP STORE</button>
-        </div>
-      </div>
-      <div class="sector-2">
-        <div class="sector-2-content">
-          <div class ="sector-2-main">
-            <a class="b1">
-              공유가 쉽다!<br>
-              사용이 편리하다!<br>
-              주차가 즐겁다!<br>
-            </a>
+        </div> -->
+        <!--Body-->
+        <div class="body">
+          <div class="sector-1">
+            <div class="sector-1-content">
+              <div class ="sector-1-main">
+                <a class="b1">
+                  모두가 사용하는<br>
+                  쉽고 편리한 주차 플랫폼
+                </a>
+              </div>
+              <div class="sector-1-sub">
+                <a class="t__title">
+                  주차와 관련한 니즈를 가진 모두를 연결하여<br>
+                  더 편리하고 합리적인 주차문화를 만들어가는<br>
+                  온라인 주차문화 플랫폼입니다.
+                </a>
+              </div>
+            <!-- 버튼 라이브러리 적용 -->
+            <button @click="ff">지금 시작하기</button>
+            </div>
           </div>
-          <div class="sector-2-sub">
-            <a class="t__title">
-              다양한 주차 서비스로 주차고민을 덜어보세요.<br>
-              다양한 주차장 정보, 주차 공유, 스마트 주차 서비스까지<br>
-              모두의주차장에서 한번에 해결 할 수 있어요.
-            </a>
+          <div class="link-to-store">
+            <div class="playstore">
+              <!-- 버튼 라이브러리 적용 -->
+              <button @click="ff">PLAY STORE</button>
+            </div>
+            <div class="appstore">
+              <!-- 버튼 라이브러리 적용 -->
+              <button @click="ff">APP STORE</button>
+            </div>
+          </div>
+          <div class="sector-2">
+            <div class="sector-2-content">
+              <div class ="sector-2-main">
+                <a class="b1">
+                  공유가 쉽다!<br>
+                  사용이 편리하다!<br>
+                  주차가 즐겁다!<br>
+                </a>
+              </div>
+              <div class="sector-2-sub">
+                <a class="t__title">
+                  다양한 주차 서비스로 주차고민을 덜어보세요.<br>
+                  다양한 주차장 정보, 주차 공유, 스마트 주차 서비스까지<br>
+                  모두의주차장에서 한번에 해결 할 수 있어요.
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="sector-3">
+            <div class="sector-3-picture">
+              <img class="sector-3-image1" src="http://54.180.151.177/wp-content/uploads/2020/05/구성-요소-1-–-2.png" alt="">
+              <img class="sector-3-image2" src="http://54.180.151.177/wp-content/uploads/2020/05/구성-요소-2-–-2.png" alt="">
+            </div>
+          </div>
+          <div class="sector-4">
+            <div class="sector-4-content">
+              <div class="sector-4-text"></div>
+              <div class="sector-4-image"></div>
+            </div>
           </div>
         </div>
+        <!--footer    -->
+        <div></div>
+        <!--side menu    -->
+        <div></div>
       </div>
-      <div class="sector-3">
-        <div class="sector-3-picture">
-          <img class="sector-3-image1" src="http://54.180.151.177/wp-content/uploads/2020/05/구성-요소-1-–-2.png" alt="">
-          <img class="sector-3-image2" src="http://54.180.151.177/wp-content/uploads/2020/05/구성-요소-2-–-2.png" alt="">
-        </div>
-      </div>
-      <div class="sector-4">
-        <div class="sector-4-content">
-          <div class="sector-4-text"></div>
-          <div class="sector-4-image"></div>
-        </div>
-      </div>
-    </div>
-    <!--footer    -->
-    <div></div>
-    <!--side menu    -->
-    <div></div>
-  </div>
+    </v-flex>
+  </v-container>
 </template>
 
 <script>
