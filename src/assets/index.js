@@ -1,82 +1,90 @@
+// eslint-disable-next-line camelcase
 const main = {
-  search: '../assets/main-search-info',
-  bottom: '../assets/main-bottom',
-  share: '../assets/main-share',
-  top: '../assets/mainiphon-mockup',
-  use1: '../assets/main-easy-use1',
-  use2: '../assets/main-easy-use2',
-  mobile: '../assets/main-mobile-pay'
+  search: require('../assets/main-search-info.png'),
+  bottom: require('../assets/main-bottom.png'),
+  share: require('../assets/main-share.png'),
+  top: require('../assets/mainiphon-mockup.png'),
+  use1: require('../assets/main-easy-use1.png'),
+  use2: require('../assets/main-easy-use2.png'),
+  mobile: require('../assets/main-mobile-pay.png')
 }
+// eslint-disable-next-line camelcase
 const navi = {
-  company_logo: '../assets/companylogo',
-  ward_logo: '../assets/logos',
-  pabicon: '../assets/pabicon'
+  company_logo: require('../assets/companylogo.png'),
+  ward_logo: require('../assets/logos.png'),
+  pabicon: require('../assets/pabicon.png')
 }
+// eslint-disable-next-line camelcase
 const priv = {
-  private1: '../assets/private1',
-  private2: '../assets/private2',
-  private3: '../assets/private3',
-  private4: '../assets/private4',
-  private5: '../assets/private5',
-  private6: '../assets/private6',
-  private7: '../assets/private7',
-  private8: '../assets/private8',
-  private9: '../assets/private9',
-  private10: '../assets/private10',
-  private11: '../assets/private11'
+  private1: require('../assets/private1.png'),
+  private2: require('../assets/private2.png'),
+  private3: require('../assets/private3.png'),
+  private4: require('../assets/private4.png'),
+  private5: require('../assets/private5.png'),
+  private6: require('../assets/private6.png'),
+  private7: require('../assets/private7.png'),
+  private8: require('../assets/private8.png'),
+  private9: require('../assets/private9.png'),
+  private10: require('../assets/private10.png'),
+  private11: require('../assets/private11.png')
 }
+// eslint-disable-next-line camelcase
 const residential = {
-  residential1: '../assets/residential1',
-  residential2: '../assets/residential2',
-  residential3: '../assets/residential3',
-  residential4: '../assets/residential4',
-  residential5: '../assets/residential5',
-  residential6: '../assets/residential6',
-  residential7: '../assets/residential7',
-  residential8: '../assets/residential8',
-  residential9: '../assets/residential9',
-  residential10: '../assets/residential10',
-  residential11: '../assets/residential11',
-  residential12: '../assets/residential12'
+  residential1: require('../assets/residential1.png'),
+  residential2: require('../assets/residential2.png'),
+  residential3: require('../assets/residential3.png'),
+  residential4: require('../assets/residential4.png'),
+  residential5: require('../assets/residential5.png'),
+  residential6: require('../assets/residential6.png'),
+  residential7: require('../assets/residential7.png'),
+  residential8: require('../assets/residential8.png'),
+  residential9: require('../assets/residential9.png'),
+  residential10: require('../assets/residential10.png'),
+  residential11: require('../assets/residential11.png'),
+  residential12: require('../assets/residential12.png')
 }
+// eslint-disable-next-line camelcase
 const intro = {
-  service: '../assets/intro-service',
-  private: '../assets/lot-private',
-  residential: '../assets/lot-share'
+  service: require('../assets/intro-service.png'),
+  private: require('../assets/lot-private.png'),
+  residential: require('../assets/lot-share.png')
 }
+// eslint-disable-next-line camelcase
 const manage = {
-  manage1: '../assets/manage1',
-  manage2: '../assets/manage2',
-  manage3: '../assets/manage3',
-  manage4: '../assets/manage4',
-  manage5: '../assets/manage5',
-  manage6: '../assets/manage6',
-  manage7: '../assets/manage7'
+  manage1: require('../assets/manage1.png'),
+  manage2: require('../assets/manage2.png'),
+  manage3: require('../assets/manage3.png'),
+  manage4: require('../assets/manage4.png'),
+  manage5: require('../assets/manage5.png'),
+  manage6: require('../assets/manage6.png'),
+  manage7: require('../assets/manage7.png')
 }
+// eslint-disable-next-line camelcase
 const tip = {
-  tip1: '../assets/TIP1',
-  tip2: '../assets/TIP2',
-  tip3: '../assets/TIP3'
+  tip1: require('../assets/TIP1.png'),
+  tip2: require('../assets/TIP2.png'),
+  tip3: require('../assets/TIP3.png')
 }
+// eslint-disable-next-line camelcase
 const howto = {
-  use1: '../assets/use1',
-  use2: '../assets/use2',
-  use3: '../assets/use3',
-  use4: '../assets/use4',
-  use5: '../assets/use5',
-  use6: '../assets/use6',
-  use7: '../assets/use7',
-  use8: '../assets/use8'
+  use1: require('../assets/use1.png'),
+  use2: require('../assets/use2.png'),
+  use3: require('../assets/use3.png'),
+  use4: require('../assets/use4.png'),
+  use5: require('../assets/use5.png'),
+  use6: require('../assets/use6.png'),
+  use7: require('../assets/use7.png'),
+  use8: require('../assets/use8.png')
 }
 // eslint-disable-next-line camelcase
 const check_trans = {
-  check1: '../assets/check1',
-  check2: '../assets/check2',
-  trans1: '../assets/trans1',
-  trans2: '../assets/trans2',
-  trans3: '../assets/trans3'
+  check1: require('../assets/check1.png'),
+  check2: require('../assets/check2.png'),
+  trans1: require('../assets/trans1.png'),
+  trans2: require('../assets/trans2.png'),
+  trans3: require('../assets/trans3.png')
 }
-export default {
+const images = {
   main: main,
   service: intro,
   private: priv,
@@ -87,3 +95,5 @@ export default {
   howto: howto,
   check_trans: check_trans
 }
+
+export default images
