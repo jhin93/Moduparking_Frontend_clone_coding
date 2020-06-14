@@ -10,6 +10,8 @@
             <!-- row 내부의 첫번째 col생성. 회사 로고를 담음. -->
             <v-col
               class="left"
+              col="4"
+              md="4"
               sm="4"
             >
               <div class="left">
@@ -21,6 +23,8 @@
             <!-- row 내부의 두번째 col생성. 네비게이션 바를 담음. -->
             <v-col
               class="right"
+              col="8"
+              md="8"
               sm="8"
             >
               <div class="right">
@@ -120,8 +124,8 @@ img {
   align-items: center;
   justify-items: center;
 }
-/* div{
+div{
   border: solid;
   border-color: red;
-} */
+}
 </style>

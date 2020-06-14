@@ -13,7 +13,7 @@
       </v-container>
     </div>
       <v-container>
-        <h1 class>
+        <h1>
           공유가 쉽다!<br>
           사용이 편리하다!<br>
           주차가 즐겁다!<br>
@@ -34,7 +34,7 @@
           </v-col>
         </v-row>
       </v-container>
-    <div>
+    <div class="mobile-set1">
       <v-row>
         <v-col
           sm="5"
@@ -53,7 +53,53 @@
           sm="7"
         >
           <div>
-            <img src="../assets/main-mobile-pay.png" class="mobile-set1">
+            <img src="../assets/main-mobile-pay.png" class="mobile-set1-img">
+          </div>
+        </v-col>
+      </v-row>
+    </div>
+    <div class="mobile-set2">
+      <v-row>
+        <v-col
+          sm="5"
+        >
+          <div>
+            <h1>
+              02<br>
+              주차장 정보 검색<br>
+              목적지를 검색하고 주변 주자창들의<br>
+              위치, 요금, 시간 정보를 편리하게 확인하세요.<br>
+            </h1>
+          </div>
+        </v-col>
+        <v-col
+          sm="7"
+        >
+          <div>
+            <img src="../assets/main-search-info.png" class="mobile-set2-img">
+          </div>
+        </v-col>
+      </v-row>
+    </div>
+        <div class="mobile-set3">
+      <v-row>
+        <v-col
+          sm="5"
+        >
+          <div>
+            <h1>
+              03<br>
+              주차 공간 공유<br>
+              집 앞, 가게 앞 빈 공간을 자유롭게 공유하세요.<br>
+              공간을 활용해 부가수익을 얻을 수 있습니다.<br>
+            </h1>
+          </div>
+        </v-col>
+        <v-col
+          sm="7"
+        >
+          <div>
+            <img src="../assets/main-share.png" class="mobile-set3-img">
           </div>
         </v-col>
       </v-row>
@@ -77,7 +123,8 @@ export default {
 }
 
 .container1-bg{
-  background-image: url("../assets/mainiphon-mockup.png")
+  background-image: url("../assets/mainiphon-mockup.png");
+  width: 100%
 }
 .circle12{
   width: 100%;
@@ -85,11 +132,20 @@ export default {
 .circle34{
   width: 100%;
 }
-.mobile-set1{
+.mobile-set1-img{
   width: 100%;
 }
-/* div{
+.mobile-set2{
+  background-color: #0099ff
+}
+.mobile-set2-img{
+  width: 100%;
+}
+.mobile-set3-img{
+  width: 100%;
+}
+div{
   border: solid;
   border-color: red;
-} */
+}
 </style>
