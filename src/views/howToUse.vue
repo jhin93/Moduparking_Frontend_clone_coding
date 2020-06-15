@@ -1,31 +1,31 @@
 <template>
-  <div class='container'>
-    <div class='t__blue t__title t__bold dis_flex_margin_bo_3rem t__bottom_line'>공유주차장 이용하기</div>
-    <v-container class = 'detail-container'>
-    <v-row class='animation t__overflow' xs12 sm6>
-      <v-flex xs12 sm6 md6 lg6 xl6>
-      <div class="fit">
-        <v-carousel class='carousel t__overflow' cycle height='100%' interval='3000'  hide-delimiter-background :delimiter-icon='svgPath.mdiCheckboxBlankCircle' :next-icon='svgPath.mdiChevronRight' :prev-icon='svgPath.mdiChevronLeft'>
-          <v-carousel-item :eager="cycle" v-for='(item,i) in items' :key='i' :src='item.src'></v-carousel-item>
+  <v-container>
+    <div class='t__blue t__title t__bold t__bottom_line'>공유주차장 이용하기</div>
+    <v-row>
+      <v-col xs12 sm6 md6 lg6 xl6>
+        <v-carousel height="100%" cycle interval="3000"
+                    :delimiter-icon="svgPath.mdiCheckboxBlankCircle"
+                    :next-icon="svgPath.mdiChevronRight"
+                    :prev-icon="svgPath.mdiChevronLeft">
+          <v-carousel-item v-for='(item,i) in items' :key='i' :src='item.src'></v-carousel-item>
         </v-carousel>
-        </div>
-      </v-flex>
-      <v-flex class='top_3rem ' xs12 sm6 md6 lg6>
-        <div class = 't__title t__blue t__bold bottom_2.5rem' v-on:click='test'> STEP 1. 공유주차장 찾아서 결제하기</div>
+      </v-col>
+      <v-col xs12 sm6 md6 lg6 xl6>
+        <div class='t__title t__blue t__bold bottom_2.5rem' v-on:click='test'> STEP 1. 공유주차장 찾아서 결제하기</div>
         <div v-for='n in 2' v-bind:key='n'>
           <div class='t__body t__bold'>{{descs[n]}}</div>
         </div>
         <div class="red">{{descs[2]}}
         </div>
-      </v-flex>
-      </v-row>
-    </v-container>
-    </div>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
 import images from '../assets/index.js'
 import * as icons from '@mdi/js'
+
 export default {
   name: 'how-to-use',
   data: function () {
@@ -61,83 +61,11 @@ export default {
         {
           src: images.howto.use8
         }
-      ],
-      cycle: true,
-      index: 0,
-      interval: 3000
-    }
-  },
-  methods: {
-    test: function () {
-      console.log(images)
+      ]
     }
   }
 }
 </script>
 
-<style scope>
-.container{
-  max-width:1140px !important;
-  overflow:visible;
-}
-.carousel{
-  max-width:560px !important;
-  height:50%;
-  overflow:visible !important;
-}
-.fit{
-    max-width:90% !important;
-
-}
-.detail-container{
-  display:flex;
-}
-.animation{
-  width:50%;
-  display:flex
-}
-.v-btn {
-  color: #0099ff !important;
-  width: 10px;
-  margin: 0%;
-}
-.v-size--small{
-  transform:scale(0.75);
-}
-.v-btn--icon.v-size--small{
-  width: 10px !important;
-  height:10px !important;
-  margin:7px !important;
-}
-.v-btn:not(.v-btn--text):not(.v-btn--outlined):hover:before{
-  opacity:0 !important;
-}
-.v-btn:not(.v-btn--text):not(.v-btn--outlined).v-btn--active:before{
-  opacity:1 !important;
-}
-.v-carousel__controls__item .v-icon{
-  opacity: 0.2 !important;
-}
-.theme--light.v-btn.v-btn--icon{
-  color: #0099ff !important;
-  opacity:0.2 !important;
-}
-.v-btn:not(.v-btn--text):not(.v-btn--outlined).v-btn--active {
-    width: 10px !important;
-    height: 10px !important;
-    opacity:1 !important
-}
-.v-window__prev{
-  background:rgb(0,0,0,0) !important;
-  left: -5%;
-  z-index:1;
-  transform:scale(1.5);
-}
-.v-window__next{
-  background:rgb(0,0,0,0) !important;
-  left: 92%;
-  z-index: 1;
-  height:50pt;
-  transform:scale(1.5);
-}
+<style scoped>
 </style>

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import HowToUse from '../views/howToUse.vue'
 // 5번줄 import->require로 수정해서 에러 해결
 const Terms = () => require(/* webpackChunkName: "terms" */ '../views/terms.vue')
 
@@ -16,6 +17,11 @@ const routes = [
     path: '/terms',
     name: 'terms',
     component: Terms
+  },
+  {
+    path: '/HowToUse',
+    name: 'howToUse',
+    component: HowToUse
   }
 ]
 

@@ -85,7 +85,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
 .container{
   max-width:1140px !important;
   overflow:visible;
