@@ -152,6 +152,7 @@ export default {
 
 .container1-bg{
   background-image: url("../assets/mainiphon-mockup.png");
+  background-size: 100%;
   width: 100%
 }
 .circle12{
