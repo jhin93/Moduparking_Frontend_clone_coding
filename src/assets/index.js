@@ -84,7 +84,14 @@ const check_trans = {
   trans2: require('../assets/trans2.png'),
   trans3: require('../assets/trans3.png')
 }
+
+const articles = {
+  article1: require('../assets/article1.jpg'),
+  article2: require('../assets/article2.jpg')
+}
+
 const images = {
+  articles: articles,
   main: main,
   service: intro,
   private: priv,
@@ -94,6 +101,7 @@ const images = {
   tip: tip,
   howto: howto,
   check_trans: check_trans
+
 }
 
 export default images
