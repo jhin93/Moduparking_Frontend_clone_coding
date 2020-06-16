@@ -112,26 +112,28 @@
         </v-col>
       </v-row>
     </div>
+    <v-container>
+       <div class="container-last">
+         <v-col>
+           <h1 class="container-last-comment">
+             지금 모두의 주차장을 시작해보세요!
+           </h1>
+         </v-col>
+         <v-col class="container-last-button">
+           <button>시작하기</button>
+         </v-col>
+       </div>
+    </v-container>
+    <div>
+      <v-col
+        lg="12"
+        md="12"
+        sm="12"
+      >
+        <img src="../assets/main-bottom.png" class="main-bottom-img">
+      </v-col>
+    </div>
     <!--    Footer 는 별도 Component 로 분리 (모든 페이지에 푸터가 들어가요 ~ 두분의 마크업 코딩컨밴션이 달라서 맞춰주실 필요가 있어보입니다.-->
-    <!--    <div class="container-last">-->
-    <!--      <v-col>-->
-    <!--        <h1 class="container-last-comment">-->
-    <!--          지금 모두의 주차장을 시작해보세요!-->
-    <!--        </h1>-->
-    <!--      </v-col>-->
-    <!--      <v-col class="container-last-button">-->
-    <!--        <button>시작하기</button>-->
-    <!--      </v-col>-->
-    <!--    </div>-->
-    <!--    <div>-->
-    <!--      <v-col-->
-    <!--        lg="12"-->
-    <!--        md="12"-->
-    <!--        sm="12"-->
-    <!--      >-->
-    <!--        <img src="../assets/main-bottom.png" class="main-bottom-img">-->
-    <!--      </v-col>-->
-    <!--    </div>-->
     <!--    <div class="footer">-->
     <!--        <a>-->
     <!--          상호명 : 주식회사 모두컴퍼니 | 사업자등록번호 : 220-88-52570 | 통신판매업 신고번호 : 제2017-서울중구-0923호<br>-->
@@ -206,7 +208,11 @@ export default {
   }
   .footer{
     background-color: #E2E2E2;
-  }.container-last-comment{
+  }
+  .container-last{
+    margin: 50px;
+  }
+  .container-last-comment{
      display: flex;
      justify-content: center;
    }

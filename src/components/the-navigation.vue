@@ -83,4 +83,8 @@ export default {
 }
 </script>
 <style scoped>
+  div {
+    border: solid;
+    border-color: red;
+  }
 </style>

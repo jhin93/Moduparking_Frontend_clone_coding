@@ -53,7 +53,7 @@ export default {
 <style scoped>
 .container{
   max-width:1140px;
-  padding: 0% !import;
+  padding: 0% !important;
 }
 .images{
   max-width:50%
