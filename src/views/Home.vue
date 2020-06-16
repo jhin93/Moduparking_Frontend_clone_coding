@@ -2,17 +2,25 @@
   <div>
     <div class="container1-bg">
       <v-container class="container1">
-        <h1 class="c1-h1">
+        <v-col
+          class="c1-h1"
+          md="12"
+          sm="12"
+        >
+          <h1>
           모두가 사용하는<br>
           쉽고 편리한 주차 플랫폼<br>
-          주차와 관련한 니즈를 가진 모두를 연결하여<br>
-          더 편리하고 합리적인 주차문화를 만들어가는<br>
-          온라인 주차문화 플랫폼 입니다.
-        </h1>
-        <button>지금 시작하기</button>
+          </h1>
+          <p>
+            주차와 관련한 니즈를 가진 모두를 연결하여<br>
+            더 편리하고 합리적인 주차문화를 만들어가는<br>
+            온라인 주차문화 플랫폼 입니다.
+          </p><br>
+          <button>지금 시작하기</button>
+        </v-col>
       </v-container>
     </div>
-      <v-container>
+      <v-container class="container2">
         <h1>
           공유가 쉽다!<br>
           사용이 편리하다!<br>
@@ -138,10 +146,6 @@
 <script>
 
 export default {
-  name: '',
-  components: {
-    //
-  }
 }
 </script>
 
@@ -152,8 +156,10 @@ export default {
 
 .container1-bg{
   background-image: url("../assets/mainiphon-mockup.png");
-  background-size: 100%;
-  width: 100%
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: 50%;
 }
 .circle12{
   width: 100%;
