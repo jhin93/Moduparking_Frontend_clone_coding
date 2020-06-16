@@ -38,7 +38,6 @@
   display: flex;
   margin-bottom: 3rem;
 }
-
 .t__body img{
   width:60%
 }
@@ -72,4 +71,10 @@
 
 .red{
   color:red;
+}
+.no-transition{
+  transition: none !important;
+}
+.bottom_1rem{
+  margin-bottom: 1rem;
 }
