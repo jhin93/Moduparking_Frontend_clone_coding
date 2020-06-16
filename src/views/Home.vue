@@ -2,14 +2,22 @@
   <div>
     <div class="container1-bg">
       <v-container class="container1">
-        <h1 class="c1-h1">
+        <v-col
+          class="c1-h1"
+          md="12"
+          sm="12"
+        >
+          <h1>
           모두가 사용하는<br>
           쉽고 편리한 주차 플랫폼<br>
-          주차와 관련한 니즈를 가진 모두를 연결하여<br>
-          더 편리하고 합리적인 주차문화를 만들어가는<br>
-          온라인 주차문화 플랫폼 입니다.
-        </h1>
-        <button>지금 시작하기</button>
+          </h1>
+          <p>
+            주차와 관련한 니즈를 가진 모두를 연결하여<br>
+            더 편리하고 합리적인 주차문화를 만들어가는<br>
+            온라인 주차문화 플랫폼 입니다.
+          </p><br>
+          <button>지금 시작하기</button>
+        </v-col>
       </v-container>
     </div>
     <v-container>
@@ -183,5 +191,33 @@ export default {
   div {
     border: solid;
     border-color: red;
+  }
+
+  .container-last-comment{
+    display: flex;
+    justify-content: center;
+  }
+  .container-last-button{
+    display: flex;
+    justify-content: center;
+  }
+  .main-bottom-img{
+    width: 100%;
+  }
+  .footer{
+    background-color: #E2E2E2;
+  }.container-last-comment{
+     display: flex;
+     justify-content: center;
+   }
+  .container-last-button{
+    display: flex;
+    justify-content: center;
+  }
+  .main-bottom-img{
+    width: 100%;
+  }
+  .footer{
+    background-color: #E2E2E2;
   }
 </style>

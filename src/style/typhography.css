@@ -38,7 +38,6 @@
   display: flex;
   margin-bottom: 3rem;
 }
-
 .t__body img{
   width:60%
 }
@@ -72,4 +71,25 @@
 
 .red{
   color:red;
+}
+
+.t__black{
+  color: black !important;
+}
+.container{
+  max-width:1140px !important;
+}
+.date{
+  color:rgba(0,0,0,0.2)
+}
+.footer{
+  margin-bottom: 2rem;
+  padding-top:2rem;
+  border-bottom:1px solid rgba(0,0,0,0.1);
+}
+.no-transition{
+  transition: none !important;
+}
+.bottom_1rem{
+  margin-bottom: 1rem;
 }
