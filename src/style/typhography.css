@@ -69,8 +69,8 @@
   color:white !important;
 }
 
-.red{
-  color:red;
+.font-red{
+ color: red;
 }
 
 .t__black{
@@ -92,4 +92,8 @@
 }
 .bottom_1rem{
   margin-bottom: 1rem;
+}
+.container{
+  max-width:1140px !important;
+  padding:0 !important
 }

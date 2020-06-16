@@ -3,11 +3,11 @@
     <div class='t__blue t__title t__bold t__bottom_line'>공유주차장 이용하기</div>
     <v-row>
       <v-col xs12 sm6 md6 lg6 xl6>
-        <v-carousel height="100%" cycle interval="3000"
+        <v-carousel eager height="100%" cycle interval="3000"
                     :delimiter-icon="svgPath.mdiCheckboxBlankCircle"
                     :next-icon="svgPath.mdiChevronRight"
                     :prev-icon="svgPath.mdiChevronLeft">
-          <v-carousel-item v-for='(item,i) in items' :key='i' :src='item.src'></v-carousel-item>
+          <v-carousel-item eager v-for='(item,i) in items' :key='i' :src='item.src'></v-carousel-item>
         </v-carousel>
       </v-col>
       <v-col xs12 sm6 md6 lg6 xl6>
@@ -15,7 +15,7 @@
         <div v-for='n in 2' v-bind:key='n'>
           <div class='t__body t__bold'>{{descs[n]}}</div>
         </div>
-        <div class="red">{{descs[2]}}
+        <div class="font-red">{{descs[2]}}
         </div>
       </v-col>
     </v-row>
@@ -27,7 +27,7 @@ import images from '../assets/index.js'
 import * as icons from '@mdi/js'
 
 export default {
-  name: 'how-to-use',
+  name: 'how_to_use',
   data: function () {
     return {
       svgPath: icons,
