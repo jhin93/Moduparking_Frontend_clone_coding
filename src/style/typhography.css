@@ -73,3 +73,16 @@
 .red{
   color:red;
 }
+.t__black{
+  color: black !important;
+}
+.container{
+  max-width:1140px !important;
+}
+.date{
+  color:rgba(0,0,0,0.2)
+}
+.footer{
+  margin-bottom: 2rem;
+  padding-top:2rem;
+  border-bottom:1px solid rgba(0,0,0,0.1);
