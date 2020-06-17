@@ -1,5 +1,6 @@
 <template>
-  <v-container>
+<!-- 원래 3번째 줄의 div가 <v-container> 였는데 여백이 해결되지 않아 div로 대체해 해결했다. 일단 반응형도 문제없다. 추후에 문제가 생길 수 있으니 유념.-->
+  <div>
     <v-toolbar flat class="hidden-sm-and-down">
       <v-toolbar-title>
         <router-link to="/">
@@ -48,7 +49,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-  </v-container>
+  </div>
 </template>
 <script>
 import * as icons from '@mdi/js'
@@ -86,5 +87,6 @@ export default {
   div {
     border: solid;
     border-color: red;
+    width: 100%
   }
 </style>
