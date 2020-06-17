@@ -3,7 +3,7 @@
     <div class="t__blue t__title t__bold dis_flex_margin_bo_3rem t__bottom_line">공유시간 등록과 관리</div>
     <v-container class = "detail-container">
     <v-row class="animation t__overflow">
-      <v-flex xs12 sm6 md6 lg6 xl6>
+      <v-flex xs12 sm12 md6 lg6 xl6>
       <div class="fit">
          <v-carousel class="carousel" cycle hide-delimiter-background height
           :delimiter-icon="svgPath.mdiCheckboxBlankCircle"
@@ -15,10 +15,10 @@
         </v-carousel>
         </div>
       </v-flex>
-      <v-flex class="top_3rem " xs12 sm6 md6 lg6>
+      <v-flex class="top_3rem " xs12 sm12 md6 lg6>
         <div class = "t__title t__blue t__bold bottom_2.5rem" > STEP 1. 공유 시간 설정하기</div>
       </v-flex>
-      <v-flex xs12 sm6 md6 lg6 xl6>
+      <v-flex xs12 sm12 md6 lg6 xl6>
       <div class="fit">
          <v-carousel class="carousel" cycle hide-delimiter-background height
           :delimiter-icon="svgPath.mdiCheckboxBlankCircle"
@@ -30,7 +30,7 @@
         </v-carousel>
         </div>
       </v-flex>
-      <v-flex class="top_3rem " xs12 sm6 md6 lg6>
+      <v-flex class="top_3rem " xs12 sm12 md6 lg6>
         <div class = "t__title t__blue t__bold bottom_2.5rem" > STEP 2. 공유 시간 설정 TIP!</div>
       </v-flex>
       </v-row>

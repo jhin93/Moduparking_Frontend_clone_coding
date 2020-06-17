@@ -2,8 +2,13 @@
   <div>
     <div class="container1-bg">
       <v-container class="container1">
+        <!-- md 범위 : 960px ~ 1920px -->
+        <!-- sm 범위 : 768px ~ 960px -->
+        <!-- 아래 칼럼개수를 조정해서 각 범위 확인 가능 -->
+        <!-- xs의 범위( ? ~ 768px)은 어째서인지 설정이 되지 않는다. 768px 이하로 내려가는 순간 cols = 12로 되버림. -->
         <v-col
           class="c1-h1"
+          cols="12"
           md="12"
           sm="12"
           xl="12"
@@ -22,22 +27,28 @@
       </v-container>
     </div>
     <v-container>
-      <h1>
-        공유가 쉽다!<br>
-        사용이 편리하다!<br>
-        주차가 즐겁다!<br>
-      </h1>
+      <v-col
+        cols="12"
+        md="12"
+        sm="12"
+      >
+        <h1>
+          공유가 쉽다!<br>
+          사용이 편리하다!<br>
+          주차가 즐겁다!<br>
+        </h1>
       <p>다양한 주차 서비스로 주차고민을 덜어보세요.</p>
       <p>다양한 주차장 정보, 주차 공유, 스마트 주차 서비스까지</p>
       <p>모두의주차장에서 한번에 해결 할 수 있어요.</p>
+      </v-col>
       <v-row>
         <v-col
-          cols="12" md="6" xl="6"
+          cols="12" sm="6"
         >
           <img src="../assets/main-easy-use1.png" class="circle12">
         </v-col>
         <v-col
-          cols="12" md="6" xl="6"
+          cols="12" sm="6"
         >
           <img src="../assets/main-easy-use2.png" class="circle34">
         </v-col>
@@ -46,6 +57,8 @@
     <div class="mobile-set1">
       <v-row>
         <v-col
+          cols="12"
+          md="5"
           sm="5"
         >
           <div>
@@ -59,6 +72,8 @@
           </div>
         </v-col>
         <v-col
+          cols="12"
+          md="7"
           sm="7"
         >
           <div>
@@ -70,6 +85,8 @@
     <div class="mobile-set2">
       <v-row>
         <v-col
+          cols="12"
+          md="5"
           sm="5"
         >
           <div>
@@ -82,6 +99,8 @@
           </div>
         </v-col>
         <v-col
+          cols="12"
+          md="7"
           sm="7"
         >
           <div>
@@ -93,6 +112,8 @@
     <div class="mobile-set3">
       <v-row>
         <v-col
+          cols="12"
+          md="5"
           sm="5"
         >
           <div>
@@ -105,6 +126,8 @@
           </div>
         </v-col>
         <v-col
+          cols="12"
+          md="7"
           sm="7"
         >
           <div>
@@ -113,26 +136,37 @@
         </v-col>
       </v-row>
     </div>
+    <v-container>
+       <div class="container-last">
+         <v-col
+          cols="12"
+          md="12"
+          sm="12"
+         >
+           <h1 class="container-last-comment">
+             지금 모두의 주차장을 시작해보세요!
+           </h1>
+         </v-col>
+         <v-col
+          class="container-last-button"
+          cols="12"
+          md="12"
+          sm="12"
+          >
+           <button>시작하기</button>
+         </v-col>
+       </div>
+    </v-container>
+    <div>
+      <v-col
+        cols="12"
+        md="12"
+        sm="12"
+      >
+        <img src="../assets/main-bottom.png" class="main-bottom-img">
+      </v-col>
+    </div>
     <!--    Footer 는 별도 Component 로 분리 (모든 페이지에 푸터가 들어가요 ~ 두분의 마크업 코딩컨밴션이 달라서 맞춰주실 필요가 있어보입니다.-->
-    <!--    <div class="container-last">-->
-    <!--      <v-col>-->
-    <!--        <h1 class="container-last-comment">-->
-    <!--          지금 모두의 주차장을 시작해보세요!-->
-    <!--        </h1>-->
-    <!--      </v-col>-->
-    <!--      <v-col class="container-last-button">-->
-    <!--        <button>시작하기</button>-->
-    <!--      </v-col>-->
-    <!--    </div>-->
-    <!--    <div>-->
-    <!--      <v-col-->
-    <!--        lg="12"-->
-    <!--        md="12"-->
-    <!--        sm="12"-->
-    <!--      >-->
-    <!--        <img src="../assets/main-bottom.png" class="main-bottom-img">-->
-    <!--      </v-col>-->
-    <!--    </div>-->
     <!--    <div class="footer">-->
     <!--        <a>-->
     <!--          상호명 : 주식회사 모두컴퍼니 | 사업자등록번호 : 220-88-52570 | 통신판매업 신고번호 : 제2017-서울중구-0923호<br>-->
@@ -207,7 +241,11 @@ export default {
   }
   .footer{
     background-color: #E2E2E2;
-  }.container-last-comment{
+  }
+  .container-last{
+    margin: 50px;
+  }
+  .container-last-comment{
      display: flex;
      justify-content: center;
    }
