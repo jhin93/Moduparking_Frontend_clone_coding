@@ -2,8 +2,13 @@
   <div>
     <div class="container1-bg">
       <v-container class="container1">
+        <!-- md 범위 : 960px ~ 1920px -->
+        <!-- sm 범위 : 768px ~ 960px -->
+        <!-- 아래 칼럼개수를 조정해서 각 범위 확인 가능 -->
+        <!-- xs의 범위( ? ~ 768px)은 어째서인지 설정이 되지 않는다. 768px 이하로 내려가는 순간 cols = 12로 되버림. -->
         <v-col
           class="c1-h1"
+          cols="12"
           md="12"
           sm="12"
         >
@@ -21,22 +26,28 @@
       </v-container>
     </div>
     <v-container>
-      <h1>
-        공유가 쉽다!<br>
-        사용이 편리하다!<br>
-        주차가 즐겁다!<br>
-      </h1>
+      <v-col
+        cols="12"
+        md="12"
+        sm="12"
+      >
+        <h1>
+          공유가 쉽다!<br>
+          사용이 편리하다!<br>
+          주차가 즐겁다!<br>
+        </h1>
       <p>다양한 주차 서비스로 주차고민을 덜어보세요.</p>
       <p>다양한 주차장 정보, 주차 공유, 스마트 주차 서비스까지</p>
       <p>모두의주차장에서 한번에 해결 할 수 있어요.</p>
+      </v-col>
       <v-row>
         <v-col
-          cols="12" md="6"
+          cols="12" sm="6"
         >
           <img src="../assets/main-easy-use1.png" class="circle12">
         </v-col>
         <v-col
-          cols="12" md="6"
+          cols="12" sm="6"
         >
           <img src="../assets/main-easy-use2.png" class="circle34">
         </v-col>
@@ -45,6 +56,8 @@
     <div class="mobile-set1">
       <v-row>
         <v-col
+          cols="12"
+          md="5"
           sm="5"
         >
           <div>
@@ -58,6 +71,8 @@
           </div>
         </v-col>
         <v-col
+          cols="12"
+          md="7"
           sm="7"
         >
           <div>
@@ -69,6 +84,8 @@
     <div class="mobile-set2">
       <v-row>
         <v-col
+          cols="12"
+          md="5"
           sm="5"
         >
           <div>
@@ -81,6 +98,8 @@
           </div>
         </v-col>
         <v-col
+          cols="12"
+          md="7"
           sm="7"
         >
           <div>
@@ -92,6 +111,8 @@
     <div class="mobile-set3">
       <v-row>
         <v-col
+          cols="12"
+          md="5"
           sm="5"
         >
           <div>
@@ -104,6 +125,8 @@
           </div>
         </v-col>
         <v-col
+          cols="12"
+          md="7"
           sm="7"
         >
           <div>
@@ -114,19 +137,28 @@
     </div>
     <v-container>
        <div class="container-last">
-         <v-col>
+         <v-col
+          cols="12"
+          md="12"
+          sm="12"
+         >
            <h1 class="container-last-comment">
              지금 모두의 주차장을 시작해보세요!
            </h1>
          </v-col>
-         <v-col class="container-last-button">
+         <v-col
+          class="container-last-button"
+          cols="12"
+          md="12"
+          sm="12"
+          >
            <button>시작하기</button>
          </v-col>
        </div>
     </v-container>
     <div>
       <v-col
-        lg="12"
+        cols="12"
         md="12"
         sm="12"
       >

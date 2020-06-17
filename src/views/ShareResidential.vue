@@ -15,6 +15,7 @@
         <div class = 't__title t__blue t__bold bottom_2.5rem' v-on:click='test'> STEP 1. 거주자우선주차면 공유 등록</div>
         <div v-for='n in 3' v-bind:key='n'>
           <div class='t__body t__bold'>{{descs[n]}}</div>
+        </div>
       </v-flex>
       </v-row>
     </v-container>
