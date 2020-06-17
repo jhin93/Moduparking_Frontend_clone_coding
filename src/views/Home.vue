@@ -6,6 +6,7 @@
           class="c1-h1"
           md="12"
           sm="12"
+          xl="12"
         >
           <h1>
           모두가 사용하는<br>
@@ -31,12 +32,12 @@
       <p>모두의주차장에서 한번에 해결 할 수 있어요.</p>
       <v-row>
         <v-col
-          cols="12" md="6"
+          cols="12" md="6" xl="6"
         >
           <img src="../assets/main-easy-use1.png" class="circle12">
         </v-col>
         <v-col
-          cols="12" md="6"
+          cols="12" md="6" xl="6"
         >
           <img src="../assets/main-easy-use2.png" class="circle34">
         </v-col>

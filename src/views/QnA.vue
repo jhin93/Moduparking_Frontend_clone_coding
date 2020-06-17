@@ -1,59 +1,60 @@
 <template>
   <div class="container">
-    <div class="t__blue t__title">자주 하는 질문</div>
+    <div class="t__blue t__title padding-4%">자주 하는 질문</div>
     <div class="footer"></div>
-    <div>
-      <div class="t__body">자세한 문의를 원하시면 고객센터로 연락바랍니다.</div>
-      <div class="t__body">모두의주차장고객센터 : 1899-8242, 운영시간(10:00~19:00)</div>
-      <div class="t__body">카카오톡 플러스친구 '모두의주차장'검색, 운영시간(09:00~18:00)</div>
+    <div class="padding-2.5%">
+      <div class="t__body t__bold">자세한 문의를 원하시면 고객센터로 연락바랍니다.</div>
+      <div class="t__body t__bold">모두의주차장고객센터 : 1899-8242, 운영시간(10:00~19:00)</div>
+      <div class="t__body t__bold">카카오톡 플러스친구 '모두의주차장'검색, 운영시간(09:00~18:00)</div>
       <div class="blank"></div>
     </div>
-    <div class="height110">
+    <div>
       <v-tabs class="d-none d-md-block d-print-block" grow v-model="tab">
-        <v-tab :ripple="false" exact-active-class="no-transition" v-for="(rule,i) in rules"
+        <v-tab :ripple="false"  v-for="(rule,i) in rules"
         :key="i"
-        >{{rule.tab}}</v-tab>
+        >{{rule.tab}}
+        </v-tab>
       </v-tabs>
-       <v-tabs-items class="d-none d-md-block d-print-block" v-model="tab">
-        <v-tab-item class="selector"
+       <v-tabs-items class="d-none d-md-block d-print-block"  v-model="tab">
+        <v-tab-item class="selector-tabs"
           v-for="rule in rules"
           :key="rule.tab"
           :transition="false"
           :reverse-transition="false"
         >
-          <div   v-for="(subject,i) in rule.subjects" :key="i">
+          <div v-for="(subject,i) in rule.subjects" :key="i">
             <div  class="t__top-menu bottom_1rem">{{subject.title}}</div>
             <div class="bottom_1rem">
-            <div v-for="(str) in subject.desc" :key="str">{{str}}</div>
+              <div class= "t__body" v-for="(str) in subject.desc" :key="str">{{str}}</div>
             </div>
-            <div v-for="(str) in subject.remarks" :key="str">{{str}}</div>
+            <div class= "t__body" v-for="(str) in subject.remarks" :key="str">{{str}}</div>
             <div v-for="(str) in subject.appendances" :key="str">{{str}}</div>
           </div>
         </v-tab-item>
       </v-tabs-items>
-      <v-expansion-panels flat class="d-flex d-md-none no-transition">
+    </div>
+    <v-expansion-panels flat class="d-flex d-md-none no-transition">
         <v-expansion-panel
-              v-for="(rule,i) in rules"
-              :key="i"
-            >
+          v-for="(rule,i) in rules"
+          :key="i"
+        >
           <v-expansion-panel-header class="v-tab--active t__body" :expand-icon="null">{{rule.tab}}</v-expansion-panel-header>
-          <v-expansion-panel-content class="v-tab--active">
-          <div v-for="(subject,i) in rule.subjects" :key="i">
-            <div class="t__top-menu bottom_1rem">{{subject.title}}</div>
-            <div class="bottom_1rem">
-            <div class="t__body" v-for="(str) in subject.desc" :key="str">{{str}}</div>
+            <v-expansion-panel-content class="selector-panels no-animation">
+            <div v-for="(subject,i) in rule.subjects" :key="i">
+              <div class="t__top-menu bottom_1rem">{{subject.title}}</div>
+              <div class="bottom_1rem">
+                <div class="t__body" v-for="(str) in subject.desc" :key="str">{{str}}</div>
+              </div>
+              <div class="bottom_1rem">
+                <div class="t__body" v-for="(str) in subject.remarks" :key="str">{{str}}</div>
+              </div>
+              <div class="bottom_1rem">
+                <div class="t__body" v-for="(str) in subject.appendances" :key="str">{{str}}</div>
+              </div>
             </div>
-            <div class="bottom_1rem">
-            <div class="t__body" v-for="(str) in subject.remarks" :key="str">{{str}}</div>
-            </div>
-            <div class="bottom_1rem">
-            <div class="t__body" v-for="(str) in subject.appendances" :key="str">{{str}}</div>
-            </div>
-          </div>
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
-    </div>
   </div>
 </template>
 
@@ -89,9 +90,7 @@ export default {
           {
             title: '◆ 포인트(충전금)환불',
             desc: ['채팅창에 [휴대폰번호/환불금액]을 남겨주세요.'],
-            remarks: [
-              '※ 버튼이 없는 경우 채팅창에 [휴대폰번호/주차장번호/결제일자]를 남겨주세요.'
-            ]
+            remarks: []
           }
         ]
       },
@@ -213,18 +212,17 @@ export default {
 }
 </script>
 <style scoped>
-.height110{
-  height:110%
+.container{
+  max-width:1140px;
 }
 .v-tab.v-tab {
   border-bottom: 1px solid rgba(0,153,255,0.2) !important;
 }
-.v-tabs-slider-wrapper {
-  transition: none !important;
-  color: rgba(255,255,255)
-}
 .v-tab--active {
   border: 1px solid rgba(0,153,255,0.2) !important
+}
+.v-expansion-panel{
+  margin:0px !important;
 }
 .tab--active::before {
   opacity: 0 !important
@@ -232,25 +230,40 @@ export default {
 .theme--light.v-tabs .v-tab:hover::before{
   opacity: 0 !important
 }
-.v-expansion-panel{
-  margin:0px !important;
+.expand-transition-enter-active .expand-transition-leave-active{
+  transition-duration: 0s !important;
 }
-
+.v-expansion-panel{
+  transition:none !important
+}
+.v-expansion-panel-content__wrap {
+  padding-top:10px !important;
+}
 .blank{
   margin:2rem;
 }
 .headers{
   display: flex;
 }
-.expand-transition-enter-active .expand-transition-leave-active{
-  transition-duration: 0s !important;
-}
-.v-expansion-panel-content__wrap {
-  padding-top:10px !important;
-}
-.selector{
+.selector-tabs{
   border-right : 1px solid rgba(0,153,255,0.2);
   border-left : 1px solid rgba(0,153,255,0.2);
-  border-bottom : 1px solid rgba(0,153,255,0.2)
+  border-bottom : 1px solid rgba(0,153,255,0.2);
+  padding:1%;
+  padding-top:2%;
+  padding-bottom:2%;
+}
+.selector-panels{
+  border-right : 1px solid rgba(0,153,255,0.2);
+  border-left : 1px solid rgba(0,153,255,0.2);
+  border-bottom : 1px solid rgba(0,153,255,0.2);
+  padding-top:2%;
+  padding-bottom:2%;
+}
+.padding-2\.5\%{
+  padding:2.5%
+}
+.padding-4\%{
+  padding:3%;
 }
 </style>
