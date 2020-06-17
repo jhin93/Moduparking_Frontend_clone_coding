@@ -1,5 +1,5 @@
 <template>
-<v-container class="container">
+  <v-container class="container">
     <div class="t__title t__blue t__bold">거주자 우선(주거지) 공간 공유하기</div>
     <div class="footer"></div>
     <v-container class = "detail-container">
@@ -15,7 +15,7 @@
             </v-carousel>
         </v-flex>
         <v-flex  xs12 sm12 md6 >
-          <div class = "t__title t__blue t__bold bottom_2.5rem" > STEP 1. 공유주차장 찾아서 결제하기</div>
+          <div class = "t__title t__blue t__bold bottom_1rem" > STEP 1. 공유주차장 찾아서 결제하기</div>
           <div v-for="iterator in 3" v-bind:key="iterator">
             <div class="t__body t__bold">{{descs[iterator]}}</div>
           </div>
