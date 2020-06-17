@@ -1,18 +1,19 @@
 <template>
   <div class="container">
     <div class= "t__title t__blue t__bold" >홍보자료</div>
-    <v-container>
-      <v-row >
-        <v-col v-for="(item,i) in items" :key="i" class="news-container" cols='12' xs='12' sm='6' md='6' lg='6' xl='6'>
-        <div class='article'>
-          <v-card :ripple="false" tile raised  :to='item.to'>
-            <v-img eager class='imges' max-height="220px" :src='item.src'></v-img>
-          </v-card>
-          <router-link class="t__title t__bold text_deco t__black" :to='item.to'>{{item.title}}</router-link>
-          <div class="date">{{item.createdAt}}</div>
-          <div class="desc">{{item.desc}}</div>
-          <router-link class="text_deco t__bold t__black" :to='item.to'>더 알아보기</router-link>
-        </div>
+    <div class="footer"></div>
+    <v-container >
+      <v-row align="start" justify="space-between">
+        <v-col v-for="(item,i) in items" :key="i"  cols="12" xs="12" sm="6" md="6" lg="6" xl="6">
+          <div class="news-container" >
+            <v-card :ripple="false" tile raised  :to="item.to">
+              <v-img eager class="imges" max-height="220px" :src="item.src"></v-img>
+            </v-card>
+            <router-link class="t__title t__bold text_deco t__black" :to="item.to">{{item.title}}</router-link>
+            <div class="date">{{item.createdAt}}</div>
+            <div class="desc">{{item.desc}}</div>
+            <router-link class="text_deco t__bold t__black" :to="item.to">더 알아보기</router-link>
+          </div>
         </v-col>
       </v-row>
     </v-container>
@@ -28,6 +29,7 @@ export default {
   name: 'news',
   data: function () {
     return {
+      justify: 'space-between',
       images: images,
       items: [
         {
@@ -53,8 +55,8 @@ export default {
 <style scoped>
 .container{
   max-width:1140px;
-  padding: 0% !import;
 }
+
 .images{
   max-width:50%
 }
@@ -65,9 +67,6 @@ export default {
 }
 .desc{
   margin-bottom:1rem;
-}
-.article{
-  max-width:95%
 }
 
 </style>

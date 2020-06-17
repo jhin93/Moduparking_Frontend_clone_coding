@@ -1,18 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import HowToUse from '../views/howToUse.vue'
-import news from '../views/news.vue'
-import article20200113 from '../views/20200113-article'
-import article20200604 from '../views/20200604-article'
+import HowToUse from '../views/HowToUse.vue'
+import news from '../views/News.vue'
+import article20200113 from '../views/20200113Article'
+import article20200604 from '../views/20200604Article'
 import QnA from '../views/QnA'
-import serviceInfo from '../views/service-info'
-import checkAndTrance from '../views/share-check'
-import manageShare from '../views/share-manage'
-import sharePrivate from '../views/share-private'
-import shareResidential from '../views/share-residential'
+import serviceInfo from '../views/ServiceInfo'
+import checkAndTrance from '../views/ShareCheck'
+import manageShare from '../views/ShareManage'
+import sharePrivate from '../views/SharePrivate'
+import shareResidential from '../views/ShareResidential'
 // 5번줄 import->require로 수정해서 에러 해결
-const Terms = () => require(/* webpackChunkName: "terms" */ '../views/terms.vue')
+const Terms = () => require(/* webpackChunkName: "terms" */ '../views/Terms.vue')
 
 Vue.use(VueRouter)
 

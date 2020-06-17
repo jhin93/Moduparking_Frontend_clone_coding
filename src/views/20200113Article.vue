@@ -5,7 +5,7 @@
       <div class="header">A Simple Guide to Design Thinking</div>
       <h5 class="date">by user / January 13, 2020</h5>
     </div>
-    <img src='../assets/article2.jpg'>
+    <img src="../assets/article2.jpg">
     <div>
       <div class="title1">Introduction</div>
       <p>Readymade godard brooklyn, kogi shoreditch hashtag hella shaman kitsch man bun pinterest flexitarian.
@@ -43,37 +43,39 @@
         <p>Your email address will not be published. Required fields are marked *</p>
       </div>
       <h2 class="">Comment</h2>
-      <v-text-field v-model='comments' outlined height='200' ></v-text-field>
+      <v-text-field v-model="comments" outlined height="200" ></v-text-field>
         <v-container>
           <v-row>
-          <v-col cols='12' xs='12' sm='4'>
+          <v-col cols="12" xs="12" sm="4">
             <h4>Name *</h4>
             <v-text-field
                 v-model="firstname"
                 :rules="nameRules"
                 :counter="10"
                 outlined
-                required ></v-text-field>
+                required >
+            </v-text-field>
           </v-col>
-          <v-col cols='12' xs='12' sm='4'>
+          <v-col cols="12" xs="12" sm="4">
             <h4>Email *</h4>
             <v-text-field
               v-model="email"
               :rules="emailRules"
               required
               outlined
-            ></v-text-field>
+            >
+            </v-text-field>
           </v-col>
-          <v-col cols='12' xs='12' sm='4'>
+          <v-col cols="12" xs="12" sm="4">
             <h4>Website</h4>
-            <v-text-field outlined v-model='website'></v-text-field>
+            <v-text-field outlined v-model="website"></v-text-field>
           </v-col>
         </v-row>
       </v-container>
-      <v-checkbox v-model="remember" :off-icon='offIcon' :on-icon='onIcon' label='
-Save my name, email, and website in this browser for the next time I comment.'></v-checkbox>
-      <v-btn class="d-none d-md-block d-print-block right" @click='submit' dark :ripple="false" >submit</v-btn>
-      <v-btn class="d-flex d-md-none " @click='submit' dark :ripple="false" >submit</v-btn>
+      <v-checkbox v-model="remember" :off-icon="offIcon" :on-icon="onIcon" label="
+Save my name, email, and website in this browser for the next time I comment."></v-checkbox>
+      <v-btn class="d-none d-md-block d-print-block right" @click="submit" dark :ripple="false" >submit</v-btn>
+      <v-btn class="d-flex d-md-none " @click="submit" dark :ripple="false" >submit</v-btn>
     </v-form>
   </div>
 </div>
@@ -114,6 +116,9 @@ export default {
 </script>
 
 <style scoped>
+.container{
+  max-width:1140px;
+}
 .right{
   float: right !important;
 }

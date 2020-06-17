@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container align="start" >
     <v-toolbar flat class="hidden-sm-and-down">
       <v-toolbar-title>
         <router-link to="/">
@@ -74,7 +74,7 @@ export default {
         link: '/elementor-624',
         title: '보도 ・ 홍보자료'
       }, {
-        link: '300f0-portfolio',
+        link: '/300f0-portfolio',
         title: 'Q & A'
       }],
       dialog: false

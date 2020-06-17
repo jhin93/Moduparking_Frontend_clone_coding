@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-layout row>
+    <v-layout row align-content-start>
       <navigator/>
       <router-view/>
     </v-layout>
@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import navigator from '@/components/the-navigation.vue'
+import navigator from '@/components/TheNavigation.vue'
 
 export default {
   name: 'App',
