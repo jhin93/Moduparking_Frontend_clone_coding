@@ -38,20 +38,60 @@
       absolute
       right
       temporary>
-      <v-list dense>
+      <v-menu
+      transition="slide-y-transition"
+      bottom
+      >
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          class="purple"
+          color="primary"
+          dark
+          v-bind="attrs"
+          v-on="on"
+        >
+          Slide Y Transition
+        </v-btn>
+      </template>
+      <v-list>
         <v-list-item
-          v-for="(menu, i) in menus"
+          v-for="(item, i) in menus"
           :key="i"
-          link>
-          <v-list-item-content>
-            <v-list-item-title>{{ menu.title }}</v-list-item-title>
-          </v-list-item-content>
+        >
+          <v-list-item-title>{{ item.title }}</v-list-item-title>
         </v-list-item>
       </v-list>
+    </v-menu>
     </v-navigation-drawer>
   </div>
 </template>
 <script>
+/*
+* <v-menu
+*   transition="slide-y-transition"
+*      bottom
+*      >
+*      <template v-slot:activator="{ on, attrs }">
+*        <v-btn
+*          class="purple"
+*          color="primary"
+*          dark
+*          v-bind="attrs"
+*          v-on="on"
+*        >
+*          Slide Y Transition
+*        </v-btn>
+*      </template>
+*      <v-list>
+*        <v-list-item
+*          v-for="(item, i) in items"
+*          :key="i"
+*        >
+*          <v-list-item-title>{{ item.title }}</v-list-item-title>
+*        </v-list-item>
+*      </v-list>
+*    </v-menu>
+*/
 import * as icons from '@mdi/js'
 export default {
   name: 'navigator',
@@ -61,22 +101,41 @@ export default {
       icons: icons,
       menus: [{
         link: '/service-intro',
-        title: '서비스 소개'
+        title: '서비스 소개',
+        items: [],
+        to: []
       }, {
         link: '/corp-intro',
-        title: '기업 소개'
+        title: '기업 소개',
+        items: [],
+        to: []
       }, {
         link: '/elementor-345',
-        title: '주차 공유 안내'
+        title: '주차 공유 안내',
+        items: [
+          '공유주차장 이용하기',
+          '사유지 주차공간 이용하기',
+          '거주자우선(주거지)공간 이용하기',
+          '공유시간 등록과 관리',
+          '공유적립금 확인하기',
+          '공유 정산 안내'
+        ],
+        to: []
       }, {
         link: '/affiliate-cooperation',
-        title: '제휴 ・ 협력 안내'
+        title: '제휴 ・ 협력 안내',
+        items: [],
+        to: []
       }, {
         link: '/elementor-624',
-        title: '보도 ・ 홍보자료'
+        title: '보도 ・ 홍보자료',
+        items: [],
+        to: []
       }, {
         link: '/300f0-portfolio',
-        title: 'Q & A'
+        title: 'Q & A',
+        items: [],
+        to: []
       }],
       dialog: false
     }
