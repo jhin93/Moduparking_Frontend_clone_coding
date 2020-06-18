@@ -9,7 +9,7 @@
       <div class="blank"></div>
     </div>
     <div>
-      <v-tabs class="d-none d-md-block d-print-block" grow v-model="tab">
+      <v-tabs class="d-none d-md-block d-print-block" grow v-model="tab" color="#0099ff">
         <v-tab :ripple="false"  v-for="(rule,i) in rules"
         :key="i"
         >{{rule.tab}}
