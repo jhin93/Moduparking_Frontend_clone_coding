@@ -1,11 +1,12 @@
 <template>
-  <div class="container">
-    <div class="t__blue t__title t__bold dis_flex_margin_bo_3rem t__bottom_line">공유시간 등록과 관리</div>
+  <v-container class="container">
+    <div class="t__blue t__title t__bold margin_1rem">공유시간 등록과 관리</div>
+    <div class="footer margin_1rem"></div>
     <v-container class = "detail-container">
     <v-row class="animation t__overflow">
-      <v-flex xs12 sm6 md6 lg6 xl6>
+      <v-flex xs12 sm12 md6 lg6 xl6>
       <div class="fit">
-         <v-carousel class="carousel" cycle hide-delimiter-background height
+         <v-carousel class="carousel" interval="3000" cycle hide-delimiter-background height
           :delimiter-icon="svgPath.mdiCheckboxBlankCircle"
           :next-icon="svgPath.mdiChevronRight"
           :prev-icon="svgPath.mdiChevronLeft">
@@ -15,12 +16,12 @@
         </v-carousel>
         </div>
       </v-flex>
-      <v-flex class="top_3rem " xs12 sm6 md6 lg6>
-        <div class = "t__title t__blue t__bold bottom_2.5rem" > STEP 1. 공유 시간 설정하기</div>
+      <v-flex class="top_3rem " xs12 sm12 md6 lg6>
+        <div class = "t__title t__blue t__bold margin_1rem" > STEP 1. 공유 시간 설정하기</div>
       </v-flex>
-      <v-flex xs12 sm6 md6 lg6 xl6>
+      <v-flex xs12 sm12 md6 lg6 xl6>
       <div class="fit">
-         <v-carousel class="carousel" cycle hide-delimiter-background height
+         <v-carousel class="carousel" interval="3000" cycle hide-delimiter-background height
           :delimiter-icon="svgPath.mdiCheckboxBlankCircle"
           :next-icon="svgPath.mdiChevronRight"
           :prev-icon="svgPath.mdiChevronLeft">
@@ -30,12 +31,12 @@
         </v-carousel>
         </div>
       </v-flex>
-      <v-flex class="top_3rem " xs12 sm6 md6 lg6>
-        <div class = "t__title t__blue t__bold bottom_2.5rem" > STEP 2. 공유 시간 설정 TIP!</div>
+      <v-flex class="top_3rem " xs12 sm12 md6 lg6>
+        <div class = "t__title t__blue t__bold margin_1rem" > STEP 2. 공유 시간 설정 TIP!</div>
       </v-flex>
       </v-row>
     </v-container>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -66,6 +67,9 @@ export default {
         },
         {
           src: images.manage.manage6
+        },
+        {
+          src: images.manage.manage7
         }
       ],
       items2: [
@@ -101,6 +105,9 @@ export default {
 .animation{
   width:50%;
   display:flex
+}
+.container{
+  max-width:1140px;
 }
 
 </style>

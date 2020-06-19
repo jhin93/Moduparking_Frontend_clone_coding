@@ -1,8 +1,8 @@
 <template>
   <v-container class="container">
-    <div>
+    <div class=" margin_1rem">
       <div class = "t__blue t__title"> 모두의 주차 공유 서비스 안내</div>
-      <div class="footer"></div>
+      <div class="footer margin_1rem" ></div>
       <div class = "t__body">개인 소유의 주차 기능 공간을 주차장 소유자와 운전자가 공유할 수 있도록 연결해 주는 서비스 입니다.</div>
       <div class="img_container">
         <v-img :src="image.service.service"></v-img>
@@ -19,12 +19,12 @@
         </v-col>
       </v-row>
     </div>
-    <div class="t__body">
+    <div class="t__body  margin_1rem">
       <div class="t__blue t__title">유형 1. 거주자 우선(주거지) 주차면</div>
       <div class="dis_flex_margin_bo_3rem inline">
         <v-container>
           <v-row>
-            <v-col cols="12" xs="12" md="6">
+            <v-col cols="12" xs="12" md="8">
               <v-img class="img_half" :src="image.service.private"></v-img>
               <h6 class= "align_center relative "> 공유 - 거주자우선주차면</h6>
             </v-col>
@@ -35,14 +35,14 @@
         <div>{{residential}}</div>
       </div>
     </div>
-     <v-btn rounded :ripple="false" color="#0099ff" depressed dark to="">거주자우선(주거지)주차면 공유방법</v-btn>
+     <v-btn class=" margin_1rem" rounded :ripple="false" color="#0099ff" depressed dark to="">거주자우선(주거지)주차면 공유방법</v-btn>
     <div class="blank_4rem"></div>
-    <div class="t__body">
+    <div class="t__body  margin_1rem">
       <div class="t__blue t__title">유형 2. 사유지 주차공간(카페, 오피스텔 등)</div>
       <div class="dis_flex_margin_bo_3rem inline">
         <v-container>
           <v-row>
-            <v-col cols="12" xs="12" md="6">
+            <v-col cols="12" xs="12" md="8">
               <v-img class="img_half" :src ="image.service.residential"></v-img>
               <h6 class = "align_center relative "> 공유 - 일반 주차 공간</h6>
             </v-col>

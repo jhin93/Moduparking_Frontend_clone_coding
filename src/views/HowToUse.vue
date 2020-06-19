@@ -1,5 +1,5 @@
 <template>
-<v-container class="container">
+  <v-container class="container">
     <div class="t__title t__blue t__bold">거주자 우선(주거지) 공간 공유하기</div>
     <div class="footer"></div>
     <v-container class = "detail-container">
@@ -14,12 +14,12 @@
               </v-carousel-item>
             </v-carousel>
         </v-flex>
-        <v-flex  xs12 sm12 md6 >
-          <div class = "t__title t__blue t__bold bottom_2.5rem" > STEP 1. 공유주차장 찾아서 결제하기</div>
-          <div v-for="iterator in 3" v-bind:key="iterator">
-            <div class="t__body t__bold">{{descs[iterator]}}</div>
+        <v-flex  xs12 sm12 md6 class="desc-box">
+          <div class = "t__title t__blue t__bold bottom_1rem" > STEP 1. 공유주차장 찾아서 결제하기</div>
+          <div v-for="iterator in 2" v-bind:key="iterator">
+            <div class="t__body t__bold">{{descs[iterator-1]}}</div>
           </div>
-          <div class="font-red t__body">{{descs[2]}}</div>
+          <div class="font-red t__body t__bold">{{descs[2]}}</div>
         </v-flex>
       </v-row>
     </v-container>
@@ -78,5 +78,9 @@ export default {
 .img-view{
   height:100%;
   text-align:center;
+}
+.desc-box{
+  padding-left: 2rem;
+  padding-right:2rem;
 }
 </style>

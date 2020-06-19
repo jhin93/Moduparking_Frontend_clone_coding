@@ -1,5 +1,10 @@
 <template>
+<<<<<<< HEAD
     <v-container align="start" >
+=======
+<!-- 원래 3번째 줄의 div가 <v-container> 였는데 여백이 해결되지 않아 div로 대체해 해결했다. 일단 반응형도 문제없다. 추후에 문제가 생길 수 있으니 유념.-->
+  <div>
+>>>>>>> 4b46621a999af789f671ed5ad1edd8cef7dc2f56
     <v-toolbar flat class="hidden-sm-and-down">
       <v-toolbar-title>
         <router-link to="/">
@@ -55,9 +60,24 @@
       absolute
       right
       temporary>
-      <v-list dense>
+      <v-menu
+      transition="slide-y-transition"
+      bottom
+      >
+      <template v-slot:activator="{ on, attrs }">
+        <v-btn
+          class="purple"
+          color="primary"
+          dark
+          v-bind="attrs"
+          v-on="on"
+        >
+          Slide Y Transition
+        </v-btn>
+      </template>
+      <v-list>
         <v-list-item
-          v-for="(menu, i) in menus"
+          v-for="(item, i) in menus"
           :key="i"
           link>
           <v-list-item-content>
@@ -77,8 +97,9 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
+    </v-menu>
     </v-navigation-drawer>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -109,10 +130,14 @@ export default {
       icons: icons,
       menus: [{
         link: '/service-intro',
-        title: '서비스 소개'
+        title: '서비스 소개',
+        items: [],
+        to: []
       }, {
         link: '/corp-intro',
-        title: '기업 소개'
+        title: '기업 소개',
+        items: [],
+        to: []
       }, {
         link: '/elementor-345',
         title: '주차 공유 안내',
@@ -144,13 +169,19 @@ export default {
         ]
       }, {
         link: '/affiliate-cooperation',
-        title: '제휴 ・ 협력 안내'
+        title: '제휴 ・ 협력 안내',
+        items: [],
+        to: []
       }, {
         link: '/elementor-624',
-        title: '보도 ・ 홍보자료'
+        title: '보도 ・ 홍보자료',
+        items: [],
+        to: []
       }, {
         link: '/300f0-portfolio',
-        title: 'Q & A'
+        title: 'Q & A',
+        items: [],
+        to: []
       }],
       dialog: false
     }
@@ -172,4 +203,9 @@ export default {
 .padding_bottom_1rem{
   padding-bottom: 1rem;
 }
+  div {
+    border: solid;
+    border-color: red;
+    width: 100%
+  }
 </style>
