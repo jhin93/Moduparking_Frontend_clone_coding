@@ -1,9 +1,9 @@
 <template>
-    <v-container align="start" >
+  <v-container class="container-navbar">
     <v-toolbar flat class="hidden-sm-and-down">
       <v-toolbar-title>
         <router-link to="/">
-          <img src="../assets/companylogo.png" alt="" height="100">
+          <img src="../assets/companylogo.png" alt="" height="100" class="logo">
         </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -94,7 +94,7 @@
       </v-list>
     </v-menu>
     </v-navigation-drawer>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -199,8 +199,12 @@ export default {
   padding-bottom: 1rem;
 }
   div {
+  .container-navbar{
+    max-width: 100vw;
+  }
+
+  /* div {
     border: solid;
     border-color: red;
-    width: 100%
-  }
+  } */
 </style>
