@@ -4,6 +4,16 @@ import router from './router'
 import './style/typhography.css'
 import vuetify from './plugins/vuetify.js'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
+import ScrollAnimationPics from './directives/ScrollAnimationPics'
+import ScrollAnimationText1 from './directives/ScrollAnimationText1'
+import ScrollAnimationText2 from './directives/ScrollAnimationText2'
+import ScrollAnimationButton from './directives/ScrollAnimationButton'
+
+Vue.directive('ScrollAnimationPics', ScrollAnimationPics)
+Vue.directive('ScrollAnimationText1', ScrollAnimationText1)
+Vue.directive('ScrollAnimationText2', ScrollAnimationText2)
+Vue.directive('ScrollAnimationButton', ScrollAnimationButton)
+
 Vue.config.productionTip = false
 
 new Vue({

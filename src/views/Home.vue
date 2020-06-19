@@ -6,24 +6,37 @@
         <!-- sm 범위 : 768px ~ 960px -->
         <!-- 아래 칼럼개수를 조정해서 각 범위 확인 가능 -->
         <!-- xs의 범위( ? ~ 768px)은 어째서인지 설정이 되지 않는다. 768px 이하로 내려가는 순간 cols = 12로 되버림. -->
-        <v-col
-          class="c1-h1"
-          cols="12"
-          md="12"
-          sm="12"
-          xl="12"
-        >
-          <h1>
-          모두가 사용하는<br>
-          쉽고 편리한 주차 플랫폼<br>
-          </h1>
-          <p>
-            주차와 관련한 니즈를 가진 모두를 연결하여<br>
-            더 편리하고 합리적인 주차문화를 만들어가는<br>
-            온라인 주차문화 플랫폼 입니다.
-          </p><br>
-          <v-btn class="button" depressed x-large color="#0099ff">지금 시작하기</v-btn>
-        </v-col>
+        <v-row class="container1-row">
+          <v-col
+            cols="12"
+            md="12"
+            sm="12"
+            xl="12"
+          >
+              <h1 v-ScrollAnimationText1>
+                모두가 사용하는<br>
+                쉽고 편리한 주차 플랫폼<br>
+              </h1>
+          </v-col>
+          <v-col
+            cols="12"
+            md="12"
+            sm="12"
+            xl="12">
+            <p v-ScrollAnimationText2>
+              주차와 관련한 니즈를 가진 모두를 연결하여<br>
+              더 편리하고 합리적인 주차문화를 만들어가는<br>
+              온라인 주차문화 플랫폼 입니다.
+            </p>
+          </v-col>
+          <v-col
+            cols="12"
+            md="12"
+            sm="12"
+            xl="12">
+            <v-btn v-ScrollAnimationButton class="button" depressed x-large color="#0099ff">지금 시작하기</v-btn>
+          </v-col>
+        </v-row>
       </v-container>
     </div>
     <v-container class="store-buttones-container">
@@ -53,14 +66,15 @@
           md="12"
           sm="12"
         >
-          <h1>
+          <h1 v-ScrollAnimationText2>
             공유가 쉽다!<br>
             사용이 편리하다!<br>
             주차가 즐겁다!<br>
           </h1>
-        <p>다양한 주차 서비스로 주차고민을 덜어보세요.</p>
-        <p>다양한 주차장 정보, 주차 공유, 스마트 주차 서비스까지</p>
-        <p>모두의주차장에서 한번에 해결 할 수 있어요.</p>
+        <p v-ScrollAnimationText2>
+        다양한 주차 서비스로 주차고민을 덜어보세요.<br>
+        다양한 주차장 정보, 주차 공유, 스마트 주차 서비스까지<br>
+        모두의주차장에서 한번에 해결 할 수 있어요.</p>
         </v-col>
       </v-row>
       <v-row class="circles">
@@ -101,7 +115,7 @@
               sm="7"
             >
               <div>
-                <img src="../assets/main-mobile-pay.png" class="mobile-set1-img">
+                <img v-ScrollAnimationPics src="../assets/main-mobile-pay.png" class="mobile-set1-img">
               </div>
             </v-col>
           </v-row>
@@ -128,7 +142,7 @@
               sm="7"
             >
               <div>
-                <img src="../assets/main-search-info.png" class="mobile-set2-img">
+                <img v-ScrollAnimationPics src="../assets/main-search-info.png" class="mobile-set2-img">
               </div>
             </v-col>
           </v-row>
@@ -155,7 +169,7 @@
               sm="7"
             >
               <div>
-                <img src="../assets/main-share.png" class="mobile-set3-img">
+                <img v-ScrollAnimationPics src="../assets/main-share.png" class="mobile-set3-img">
               </div>
             </v-col>
           </v-row>
@@ -169,7 +183,7 @@
           md="12"
           sm="12"
          >
-           <h1 class="container-last-comment">
+           <h1 class="container-last-comment" v-ScrollAnimationButton>
              지금 모두의 주차장을 시작해보세요!
            </h1>
          </v-col>
@@ -180,7 +194,7 @@
           sm="12"
           >
           <!-- v-btn:hover -->
-           <v-btn class="button" depressed x-large color="#0099ff"> 지금 시작하기</v-btn>
+           <v-btn v-ScrollAnimationButton class="button" depressed x-large color="#0099ff"> 지금 시작하기</v-btn>
          </v-col>
        </div>
     </v-container>
@@ -206,14 +220,18 @@ export default {
 </script>
 
 <style scoped>
-  .c1-h1 {
-    margin: 200px 0;
-  }
 
   .container1{
     /* 컨테이너 크기를 100vw로 맞춰서 여백을 없앴다. */
     /* https://www.it-swarm.dev/ko/vuetify.js/vuetify%EC%97%90%EC%84%9C-%EC%97%AC%EB%B0%B1-%EB%B0%8F-%ED%8C%A8%EB%94%A9-%EC%A0%9C%EA%B1%B0/838734615/ */
     max-width: 100vw;
+    display: flex;
+    justify-content: center
+  }
+
+  .container1-row {
+    margin: 200px 0;
+    max-width: 80vw;
   }
 
   .container1-bg {
@@ -225,6 +243,7 @@ export default {
 
   .store-buttones-container{
     max-width: 90vw;
+    justify-content: space-around;
   }
 
   .container2{
@@ -320,4 +339,48 @@ export default {
   }
   .v-btn:hover { background-color: none; }
 
+  .before-enter-text1 {
+    opacity: 0;
+    transition: all 1s ease-out;
+    transition-delay: 0.5s
+  }
+
+  .enter-text1 {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .before-enter-text2 {
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all 1s ease-out;
+  }
+
+  .enter-text2 {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .before-enter-button {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+  }
+
+  .enter-button {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .before-enter-pics {
+    opacity: 0;
+    transform: translateX(300px);
+    transition: all 0.75s ease-out;
+    transition-delay: 0.25s
+  }
+
+  .enter-pics {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 </style>

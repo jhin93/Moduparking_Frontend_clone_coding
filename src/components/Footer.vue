@@ -27,11 +27,10 @@ export default {
 </script>
 
 <style scoped>
-div{
+/* div{
   border: solid;
   border-color: red;
-  width: 100%;
-}
+} */
 .container-footer{
   max-width: 100vw;
 }

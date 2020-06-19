@@ -83,12 +83,12 @@ export default {
 }
 </script>
 <style scoped>
-.container-navbar{
-  max-width: 100vw;
-}
-  div {
+  .container-navbar{
+    max-width: 100vw;
+  }
+
+  /* div {
     border: solid;
     border-color: red;
-    width: 100%
-  }
+  } */
 </style>
