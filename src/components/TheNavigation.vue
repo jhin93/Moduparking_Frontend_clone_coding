@@ -1,10 +1,5 @@
 <template>
-<<<<<<< HEAD
     <v-container align="start" >
-=======
-<!-- 원래 3번째 줄의 div가 <v-container> 였는데 여백이 해결되지 않아 div로 대체해 해결했다. 일단 반응형도 문제없다. 추후에 문제가 생길 수 있으니 유념.-->
-  <div>
->>>>>>> 4b46621a999af789f671ed5ad1edd8cef7dc2f56
     <v-toolbar flat class="hidden-sm-and-down">
       <v-toolbar-title>
         <router-link to="/">
