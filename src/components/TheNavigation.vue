@@ -1,9 +1,9 @@
 <template>
-  <v-container class="container-navbar" align="start">
-    <v-toolbar flat class="hidden-sm-and-down">
-      <v-toolbar-title>
+  <v-container>
+    <v-toolbar flat  class="hidden-sm-and-down" >
+      <v-toolbar-title class="pr-0">
         <router-link to="/">
-          <img src="../assets/companylogo.png" alt="" class="logo">
+          <v-img :src="images.navigation.company_logo"  min-width="200px" width="25%" class=" px-2"></v-img>
         </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -16,24 +16,27 @@
           :title="menu.title"
           :text="true"
           retail-focus-on-click="true"
+          class="px-2"
         >
-          <v-menu v-if="menu.items" open-on-hover  offset-y max-width="100%" left>
+          <v-menu v-if="menu.items" open-on-hover  offset-y width="100%" left class="px-0">
             <template v-slot:activator="{ on, attrs }">
               <v-btn color="rgba(0,0,0,0)" v-on="on" v-bind="attrs"
-              slot="activator" light depressed>
-                <span>{{ menu.title }}</span>
+              slot="activator" light depressed class="px-0">
+                <span class="px-0">{{ menu.title }}</span>
                 <v-icon >{{icons.mdiChevronDown}}</v-icon>
               </v-btn>
             </template>
             <v-list>
               <v-list-item v-for="(item, index) in menu.items" :key="index" >
                 <v-list-item-title>
-                  <router-link class="t__black text_deco" :to="item.to"><div class="align_center">{{item.title}}</div></router-link>
+                  <router-link class="t__black text_deco" :to="item.to">
+                    <div class="align_center">{{item.title}}</div>
+                  </router-link>
                 </v-list-item-title>
               </v-list-item>
             </v-list>
           </v-menu>
-          <span v-else >{{menu.title}}</span>
+          <span v-else class="px-0">{{menu.title}}</span>
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
@@ -84,12 +87,14 @@
 <script>
 
 import * as icons from '@mdi/js'
+import images from '../assets'
 export default {
   name: 'navigator',
   data: function () {
     return {
       drawer: null,
       icons: icons,
+      images: images,
       menus: [{
         link: '/service-intro',
         title: '서비스 소개'
@@ -141,6 +146,12 @@ export default {
 }
 </script>
 <style scoped>
+.no_padding{
+  padding:0;
+}
+.v-btn:not(.v-btn--round).v-size--default{
+  padding: 20px;
+}
 .test1{
   padding-top: 2%;
   padding-bottom: 2%;
@@ -165,20 +176,4 @@ export default {
 .v-expansion-panel-header:focus::before .v-expansion-panel-header--active:focus::before{
   opacity: none;
 }
-.v-expansion-panel-content{
-  padding-top:16px;
-}
-.logo{
-  display: flex;
-  width: 100%;
-  height: 100;
-}
-.container-navbar{
-  align-items: center;
-}
-
-  /* div {
-    border: solid;
-    border-color: red;
-  } */
 </style>
