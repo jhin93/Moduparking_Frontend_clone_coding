@@ -1,9 +1,9 @@
 <template>
-<v-container align="start" >
+  <v-container class="container-navbar" align="start">
     <v-toolbar flat class="hidden-sm-and-down">
       <v-toolbar-title>
         <router-link to="/">
-          <img src="../assets/companylogo.png" alt="" height="100">
+          <img src="../assets/companylogo.png" alt="" height="100" class="logo">
         </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -168,4 +168,14 @@ export default {
 .v-expansion-panel-content{
   padding-top:16px;
 }
+  div {
+  .container-navbar{
+    max-width: 100vw;
+  }
+
+  /* div {
+    border: solid;
+    border-color: red;
+  } */
+  }
 </style>
