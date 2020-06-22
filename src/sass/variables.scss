@@ -1,9 +1,10 @@
 $grid-breakpoints: (
 //   xs: 600px,
-// xs의 범위( ? ~ 768px)은 어째서인지 설정이 되지 않는다. 768px 이하로 내려가는 순간 cols = 12로 되버림.
+// xs의 범위( ? ~ 768px)은 어째서인지 설정이 되지 않는다. 768px 이하로 내려가는 순간 해당 그리드가 전체 영역으로 늘어남(cols = 12로 되버림)
 //   xs: 0px,
-  sm: 768px,
-  md: 960px,
-  lg: 1920px
+  sm: 769px,
+  md: 961px,
+  lg: 2500px,
+  xl: 4200px
 );
 // https://stackoverflow.com/questions/57333274/how-to-change-breakpoints-in-the-scss-in-vuetify-v2 맨 아래 답변을 참고했다.

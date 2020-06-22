@@ -1,9 +1,9 @@
 <template>
-  <v-container class="container-navbar">
+  <v-container class="container-navbar" align="start">
     <v-toolbar flat class="hidden-sm-and-down">
       <v-toolbar-title>
         <router-link to="/">
-          <img src="../assets/companylogo.png" alt="" height="100" class="logo">
+          <img src="../assets/companylogo.png" alt="" class="logo">
         </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -55,67 +55,34 @@
       absolute
       right
       temporary>
-      <v-menu
-      transition="slide-y-transition"
-      bottom
-      >
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn
-          class="purple"
-          color="primary"
-          dark
-          v-bind="attrs"
-          v-on="on"
-        >
-          Slide Y Transition
-        </v-btn>
-      </template>
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in menus"
-          :key="i"
-          link>
-          <v-list-item-content>
-            <v-list-item-title class="test1" v-if="!menu.items">
-              <router-link class="t__black text_deco" :to="menu.link">{{ menu.title }}</router-link>
-            </v-list-item-title>
-             <v-expansion-panels v-else flat>
-                <v-expansion-panel>
-                  <v-expansion-panel-header class="" :expand-icon="icons.mdiChevronDown">{{menu.title}}</v-expansion-panel-header>
-                    <v-expansion-panel-content class="">
-                      <router-link  v-for="(subject,i) in menu.items" :key="i" :to="subject.to" class="t__black text_deco">
-                        <div class="bottom_1rem">{{subject.title}}</div>
-                      </router-link>
-                  </v-expansion-panel-content>
-                </v-expansion-panel>
-              </v-expansion-panels>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-menu>
-    </v-navigation-drawer>
-  </v-container>
-</template>
-
-<script>
-/**
- * <v-navigation-drawer
-      v-model="drawer"
-      absolute
-      right
-      temporary>
       <v-list dense>
         <v-list-item
           v-for="(menu, i) in menus"
           :key="i"
           link>
           <v-list-item-content>
-            <v-list-item-title>{{ menu.title }}</v-list-item-title>
+            <v-list-item-title class="test1" v-if="!menu.items">
+              <router-link class="t__black text_deco" :to="menu.link">{{ menu.title }}</router-link>
+            </v-list-item-title>
+            <v-expansion-panels focusable v-else flat>
+              <v-expansion-panel>
+                <v-expansion-panel-header class="" :expand-icon="icons.mdiChevronDown">{{menu.title}}</v-expansion-panel-header>
+                  <v-expansion-panel-content class="">
+                    <router-link  v-for="(subject,i) in menu.items" :key="i" :to="subject.to" class="t__black text_deco">
+                      <div class="bottom_1rem">{{subject.title}}</div>
+                    </router-link>
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+              </v-expansion-panels>
           </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
- */
+  </v-container>
+</template>
+
+<script>
+
 import * as icons from '@mdi/js'
 export default {
   name: 'navigator',
@@ -181,6 +148,13 @@ export default {
 .v-expansion-panel-header{
   padding: 0% !important;
   font-size: 13.5px !important;
+  min-height: 40px;
+}
+.v-expansion-panel--active > .v-expansion-panel-header{
+  min-height: 40px !important;
+}
+.v-expansion-panel-header--active::before{
+  opacity: 0.04 !important;
 }
 .v-list-item__content{
   padding: 0% !important;
@@ -188,9 +162,20 @@ export default {
 .padding_bottom_1rem{
   padding-bottom: 1rem;
 }
-/* .container-navbar{
-  max-width: 100vw;
-} */
+.v-expansion-panel-header:focus::before .v-expansion-panel-header--active:focus::before{
+  opacity: none;
+}
+.v-expansion-panel-content{
+  padding-top:16px;
+}
+.logo{
+  display: flex;
+  width: 100%;
+  height: 100;
+}
+.container-navbar{
+  align-items: center;
+}
 
   /* div {
     border: solid;

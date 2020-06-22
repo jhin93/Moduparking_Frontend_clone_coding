@@ -11,7 +11,9 @@ import checkAndTrance from '../views/ShareCheck'
 import manageShare from '../views/ShareManage'
 import sharePrivate from '../views/SharePrivate'
 import shareResidential from '../views/ShareResidential'
-// 5번줄 import->require로 수정해서 에러 해결
+import ServiceIntro from '../views/Home'
+import CorpIntro from '../views/CorpIntro'
+// 아랫줄 import->require로 수정해서 에러 해결
 const Terms = () => require(/* webpackChunkName: "terms" */ '../views/Terms.vue')
 
 Vue.use(VueRouter)
@@ -76,6 +78,16 @@ const routes = [
     path: '/300f0-portfolio',
     name: 'QnA',
     component: QnA
+  },
+  {
+    path: '/service-intro',
+    name: 'ServiceIntro',
+    component: ServiceIntro
+  },
+  {
+    path: '/corp-intro',
+    name: 'CorpIntro',
+    component: CorpIntro
   }
 ]
 

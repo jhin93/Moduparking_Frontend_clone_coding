@@ -14,9 +14,6 @@
       </v-col>
       </v-footer>
     </v-row>
-    <v-row class="footer-button">
-      <button>이용약관</button>
-    </v-row>
   </v-container>
 </template>
 

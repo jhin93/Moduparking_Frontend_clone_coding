@@ -47,7 +47,7 @@
           md="2"
           sm="2"
         >
-          <v-btn class="button" depressed large color="#0099ff">PLAY STORE</v-btn>
+          <v-btn class="play-button" depressed large color="#0099ff">PLAY STORE</v-btn>
         </v-col>
         <v-col
           class="store-button-app"
@@ -55,7 +55,7 @@
           md="2"
           sm="2"
         >
-          <v-btn class="button" depressed large color="#0099ff">APP STORE</v-btn>
+          <v-btn class="app-button" depressed large color="#0099ff">APP STORE</v-btn>
         </v-col>
       </v-row>
     </v-container>
@@ -194,7 +194,9 @@
           sm="12"
           >
           <!-- v-btn:hover -->
-           <v-btn v-ScrollAnimationButton class="button" depressed x-large color="#0099ff"> 지금 시작하기</v-btn>
+          <div class="back">
+              <div class="last-button t__bold">시작하기</div>
+          </div>
          </v-col>
        </div>
     </v-container>
@@ -284,10 +286,10 @@ export default {
     width: 100%;
   }
 
-  div {
+  /* div {
     border: solid;
     border-color: red;
-  }
+  } */
 
   .container-last-comment{
     display: flex;
@@ -333,9 +335,41 @@ export default {
     color: white;
   }
 
-  .last-button{
+.store-button-play{
+  margin: 0rem 1rem 0rem 0rem
+}
+
+.app-button-play{
+  margin: 0rem 1rem
+}
+
+.play-button{
+  border-radius: 3px 3px 3px 3px;
+  padding: 1rem 40px !important;
+  color: white;
+}
+
+.app-button{
+  border-radius: 3px 3px 3px 3px;
+  padding: 10px 40px !important;
+  color: white;
+}
+
+.last-button {
     color: white;
-  }
+    background-color: #0099ff;
+    padding: 20px 50px;
+    transition: all 0.1s ease;
+    border-radius: 0px 0px 8px 0px;
+    width: 100%;
+}
+
+.last-button:hover {
+    color: black;
+    background-color: white;
+    transition: all 0.2s ease 0.2s;
+}
+
   .v-btn:hover { background-color: none; }
 
   .before-enter-text1 {
