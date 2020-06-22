@@ -125,14 +125,10 @@ export default {
       icons: icons,
       menus: [{
         link: '/service-intro',
-        title: '서비스 소개',
-        items: [],
-        to: []
+        title: '서비스 소개'
       }, {
         link: '/corp-intro',
-        title: '기업 소개',
-        items: [],
-        to: []
+        title: '기업 소개'
       }, {
         link: '/elementor-345',
         title: '주차 공유 안내',
@@ -164,19 +160,13 @@ export default {
         ]
       }, {
         link: '/affiliate-cooperation',
-        title: '제휴 ・ 협력 안내',
-        items: [],
-        to: []
+        title: '제휴 ・ 협력 안내'
       }, {
         link: '/elementor-624',
-        title: '보도 ・ 홍보자료',
-        items: [],
-        to: []
+        title: '보도 ・ 홍보자료'
       }, {
         link: '/300f0-portfolio',
-        title: 'Q & A',
-        items: [],
-        to: []
+        title: 'Q & A'
       }],
       dialog: false
     }
@@ -198,10 +188,9 @@ export default {
 .padding_bottom_1rem{
   padding-bottom: 1rem;
 }
-  div {
-  .container-navbar{
-    max-width: 100vw;
-  }
+/* .container-navbar{
+  max-width: 100vw;
+} */
 
   /* div {
     border: solid;
