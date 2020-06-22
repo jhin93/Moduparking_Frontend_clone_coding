@@ -92,8 +92,8 @@
     </v-container>
     <v-container class="container3">
       <v-row>
-        <div class="mobile-set1">
-          <v-row>
+        <div class="mobile-set3">
+          <v-row class="mobile-set3-row">
             <v-col
               cols="12"
               md="5"
@@ -115,13 +115,17 @@
               sm="7"
             >
               <div>
-                <img v-ScrollAnimationPics src="../assets/main-mobile-pay.png" class="mobile-set1-img">
+                <img v-ScrollAnimationPics src="../assets/main-mobile-pay.png" class="mobile-set3-img">
               </div>
             </v-col>
           </v-row>
         </div>
-        <div class="mobile-set2">
-          <v-row>
+      </v-row>
+    </v-container>
+    <v-container class="container4">
+      <v-row class="container4-row">
+        <div class="mobile-set4">
+          <v-row mobile-set4-row>
             <v-col
               cols="12"
               md="5"
@@ -142,13 +146,17 @@
               sm="7"
             >
               <div>
-                <img v-ScrollAnimationPics src="../assets/main-search-info.png" class="mobile-set2-img">
+                <img v-ScrollAnimationPics src="../assets/main-search-info.png" class="mobile-set4-img">
               </div>
             </v-col>
           </v-row>
         </div>
-        <div class="mobile-set3">
-          <v-row>
+      </v-row>
+    </v-container>
+    <v-container class="container5">
+      <v-row>
+        <div class="mobile-set5">
+          <v-row mobile-set5-row>
             <v-col
               cols="12"
               md="5"
@@ -169,7 +177,7 @@
               sm="7"
             >
               <div>
-                <img v-ScrollAnimationPics src="../assets/main-share.png" class="mobile-set3-img">
+                <img v-ScrollAnimationPics src="../assets/main-share.png" class="mobile-set5-img">
               </div>
             </v-col>
           </v-row>
@@ -250,7 +258,7 @@ export default {
   .container2{
     /* 컨테이너 크기를 100vw로 맞춰서 여백을 없앴다. */
     /* https://www.it-swarm.dev/ko/vuetify.js/vuetify%EC%97%90%EC%84%9C-%EC%97%AC%EB%B0%B1-%EB%B0%8F-%ED%8C%A8%EB%94%A9-%EC%A0%9C%EA%B1%B0/838734615/ */
-    max-width: 100vw;
+    max-width: 90vw;
   }
 
   .circles{
@@ -267,22 +275,36 @@ export default {
   }
 
   .container3{
-    max-width: 100vw;
-  }
-
-  .mobile-set1-img {
-    width: 100%;
-  }
-
-  .mobile-set2 {
-    background-color: #0099ff
-  }
-
-  .mobile-set2-img {
-    width: 100%;
+    max-width: 80vw;
   }
 
   .mobile-set3-img {
+    width: 100%;
+  }
+
+  .container4{
+    max-width: 100vw;
+    background-color: #0099ff;
+  }
+
+  .container4-row{
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobile-set4 {
+    max-width: 80vw;
+  }
+
+  .mobile-set4-img {
+    width: 100%;
+  }
+
+  .container5{
+    max-width: 80vw;
+  }
+
+  .mobile-set5-img {
     width: 100%;
   }
 
