@@ -220,7 +220,6 @@ export default {
 </script>
 
 <style scoped>
-
   .container1{
     /* 컨테이너 크기를 100vw로 맞춰서 여백을 없앴다. */
     /* https://www.it-swarm.dev/ko/vuetify.js/vuetify%EC%97%90%EC%84%9C-%EC%97%AC%EB%B0%B1-%EB%B0%8F-%ED%8C%A8%EB%94%A9-%EC%A0%9C%EA%B1%B0/838734615/ */
