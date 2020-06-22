@@ -67,16 +67,16 @@
             <v-list-item-title class="test1" v-if="!menu.items">
               <router-link class="t__black text_deco" :to="menu.link">{{ menu.title }}</router-link>
             </v-list-item-title>
-            <v-expansion-panels v-else>
+            <v-expansion-panels focusable v-else flat>
               <v-expansion-panel>
                 <v-expansion-panel-header class="" :expand-icon="icons.mdiChevronDown">{{menu.title}}</v-expansion-panel-header>
-                <v-expansion-panel-content class="">
-                  <router-link  v-for="(subject,i) in menu.items" :key="i" :to="subject.to" class="t__black text_deco">
-                    <div class="bottom_1rem">{{subject.title}}</div>
-                  </router-link>
-                </v-expansion-panel-content>
-              </v-expansion-panel>
-            </v-expansion-panels>
+                  <v-expansion-panel-content class="">
+                    <router-link  v-for="(subject,i) in menu.items" :key="i" :to="subject.to" class="t__black text_deco">
+                      <div class="bottom_1rem">{{subject.title}}</div>
+                    </router-link>
+                  </v-expansion-panel-content>
+                </v-expansion-panel>
+              </v-expansion-panels>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -176,5 +176,4 @@ export default {
 .v-expansion-panel-header:focus::before .v-expansion-panel-header--active:focus::before{
   opacity: none;
 }
-
 </style>
