@@ -1,11 +1,11 @@
 <template>
   <v-app>
-    <v-layout row align-content-start justify-center>
+    <v-content align-content-start justify-space-between>
       <navigator/>
       <router-view/>
       <!-- 왜 푸터는 대문자로 해야만 작동하는지 아직 의문 -->
       <Footer/>
-    </v-layout>
+    </v-content>
   </v-app>
 </template>
 

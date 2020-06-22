@@ -1,7 +1,7 @@
 <template>
   <v-container class="container">
-    <div class="t__blue t__title t__bold margin_1rem">공유시간 등록과 관리</div>
-    <div class="footer margin_1rem"></div>
+    <div class="t__blue t__title t__bold px-1">공유시간 등록과 관리</div>
+    <div class="footer px-1"></div>
     <v-container class = "detail-container">
     <v-row class="animation t__overflow">
       <v-flex xs12 sm12 md6 lg6 xl6>
@@ -17,7 +17,7 @@
         </div>
       </v-flex>
       <v-flex class="top_3rem " xs12 sm12 md6 lg6>
-        <div class = "t__title t__blue t__bold margin_1rem" > STEP 1. 공유 시간 설정하기</div>
+        <div class = "t__title t__blue t__bold px-1" > STEP 1. 공유 시간 설정하기</div>
       </v-flex>
       <v-flex xs12 sm12 md6 lg6 xl6>
       <div class="fit">
@@ -32,7 +32,7 @@
         </div>
       </v-flex>
       <v-flex class="top_3rem " xs12 sm12 md6 lg6>
-        <div class = "t__title t__blue t__bold margin_1rem" > STEP 2. 공유 시간 설정 TIP!</div>
+        <div class = "t__title t__blue t__bold px-1" > STEP 2. 공유 시간 설정 TIP!</div>
       </v-flex>
       </v-row>
     </v-container>

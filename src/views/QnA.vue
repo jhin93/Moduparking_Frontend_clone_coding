@@ -1,33 +1,33 @@
 <template>
   <div class="container">
-    <div class="t__blue t__title padding-4%">자주 하는 질문</div>
-    <div class="footer"></div>
-    <div class="padding-2.5%">
+    <div class="t__blue t__title t__bold px-1 pb-8">자주 하는 질문</div>
+    <div class="px-7 footer"></div>
+    <div class="px-1">
       <div class="t__body t__bold">자세한 문의를 원하시면 고객센터로 연락바랍니다.</div>
       <div class="t__body t__bold">모두의주차장고객센터 : 1899-8242, 운영시간(10:00~19:00)</div>
       <div class="t__body t__bold">카카오톡 플러스친구 '모두의주차장'검색, 운영시간(09:00~18:00)</div>
       <div class="blank"></div>
     </div>
     <div>
-      <v-tabs class="d-none d-md-block d-print-block" grow v-model="tab" color="#0099ff">
+      <v-tabs class="d-none d-md-block d-print-block px-1" grow v-model="tab" color="#0099ff">
         <v-tab :ripple="false"  v-for="(rule,i) in rules"
-        :key="i"
+          :key="i"
         >{{rule.tab}}
         </v-tab>
       </v-tabs>
-       <v-tabs-items class="d-none d-md-block d-print-block"  v-model="tab">
-        <v-tab-item class="selector-tabs"
+       <v-tabs-items class="d-none d-md-block d-print-block px-1"  v-model="tab">
+        <v-tab-item class="selector-tabs "
           v-for="rule in rules"
           :key="rule.tab"
           :transition="false"
           :reverse-transition="false"
         >
           <div v-for="(subject,i) in rule.subjects" :key="i">
-            <div  class="t__top-menu bottom_1rem">{{subject.title}}</div>
+            <div  class="t__top-menu bottom_1rem px-1">{{subject.title}}</div>
             <div class="bottom_1rem">
-              <div class= "t__body" v-for="(str) in subject.desc" :key="str">{{str}}</div>
+              <div class= "t__body px-1" v-for="(str) in subject.desc" :key="str">{{str}}</div>
             </div>
-            <div class= "t__body" v-for="(str) in subject.remarks" :key="str">{{str}}</div>
+            <div class= "t__body px-1" v-for="(str) in subject.remarks" :key="str">{{str}}</div>
             <div v-for="(str) in subject.appendances" :key="str">{{str}}</div>
           </div>
         </v-tab-item>
@@ -41,15 +41,15 @@
           <v-expansion-panel-header class="v-tab--active t__body" :expand-icon="null">{{rule.tab}}</v-expansion-panel-header>
             <v-expansion-panel-content class="selector-panels no-animation">
             <div v-for="(subject,i) in rule.subjects" :key="i">
-              <div class="t__top-menu bottom_1rem">{{subject.title}}</div>
+              <div class="t__top-menu px-1">{{subject.title}}</div>
               <div class="bottom_1rem">
-                <div class="t__body" v-for="(str) in subject.desc" :key="str">{{str}}</div>
+                <div class="t__body px-1" v-for="(str) in subject.desc" :key="str">{{str}}</div>
               </div>
               <div class="bottom_1rem">
-                <div class="t__body" v-for="(str) in subject.remarks" :key="str">{{str}}</div>
+                <div class="t__body px-1" v-for="(str) in subject.remarks" :key="str">{{str}}</div>
               </div>
               <div class="bottom_1rem">
-                <div class="t__body" v-for="(str) in subject.appendances" :key="str">{{str}}</div>
+                <div class="t__body px-1" v-for="(str) in subject.appendances" :key="str">{{str}}</div>
               </div>
             </div>
           </v-expansion-panel-content>
@@ -266,4 +266,9 @@ export default {
 .padding-4\%{
   padding:3%;
 }
+.footer{
+  border: 1px solid rgba(0,153,255,0.1);
+  padding-top:0px !important
+}
+
 </style>
