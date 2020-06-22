@@ -1,8 +1,8 @@
 <template>
   <v-container class="container">
-    <div class="t__blue t__title t__bold margin_1rem">공유적립금 확인하기</div>
-    <div class="footer margin_1rem"></div>
-    <div class="t__body t__bold margin_1rem">배정받은 거주자우선(주거지) 주차면을 사용하지 않는 시간동안 유료로 이웃 운전자에게 공유할 수 있습니다.</div>
+    <div class="t__blue t__title t__bold px-1">공유적립금 확인하기</div>
+    <div class="footer px-1"></div>
+    <div class="t__body t__bold px-1">배정받은 거주자우선(주거지) 주차면을 사용하지 않는 시간동안 유료로 이웃 운전자에게 공유할 수 있습니다.</div>
     <v-container class = "detail-container">
       <v-row class="animation">
         <v-flex xs12 sm6 md6 lg6 xl6>
@@ -19,8 +19,8 @@
           </div>
         </v-flex>
         <v-flex class="top_3rem " xs12 sm6 md6 lg6>
-          <div class = "t__title t__blue t__bold margin_1rem" > STEP.1 적립금 확인하기</div>
-          <div class="margin_1rem" v-for="desc in desc1" v-bind:key="desc">
+          <div class = "t__title t__blue t__bold px-1" > STEP.1 적립금 확인하기</div>
+          <div class="px-1" v-for="desc in desc1" v-bind:key="desc">
             <li class="t__body">{{desc}}</li>
           </div>
         </v-flex>
@@ -38,8 +38,8 @@
           </div>
         </v-flex>
         <v-flex class="top_3rem " xs12 sm6 md6 lg6>
-          <div class = "t__title t__blue t__bold margin_1rem" > STEP.2 앱 포인트로 전환하기</div>
-          <div class="margin_1rem" v-for="desc in desc2" v-bind:key="desc">
+          <div class = "t__title t__blue t__bold px-1" > STEP.2 앱 포인트로 전환하기</div>
+          <div class="px-1" v-for="desc in desc2" v-bind:key="desc">
             <li class="t__body">{{desc}}</li>
           </div>
         </v-flex>

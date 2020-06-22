@@ -1,8 +1,8 @@
 <template>
   <v-container class="container">
-    <div class=" margin_1rem">
-      <div class = "t__blue t__title"> 모두의 주차 공유 서비스 안내</div>
-      <div class="footer margin_1rem" ></div>
+    <div class="">
+      <div class = "t__blue t__title t__bold px-1"> 모두의 주차 공유 서비스 안내</div>
+      <div class="footer" ></div>
       <div class = "t__body">개인 소유의 주차 기능 공간을 주차장 소유자와 운전자가 공유할 수 있도록 연결해 주는 서비스 입니다.</div>
       <div class="img_container">
         <v-img :src="image.service.service"></v-img>

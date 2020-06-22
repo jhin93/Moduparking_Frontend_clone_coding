@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <div class= "t__title t__blue t__bold" >홍보자료</div>
-    <div class="footer"></div>
+    <div class= "t__title t__blue t__bold px-1" >홍보자료</div>
+    <div class=" footer"></div>
     <v-container >
       <v-row align="start" justify="space-between">
         <v-col v-for="(item,i) in items" :key="i"  cols="12" xs="12" sm="6" md="6" lg="6" xl="6">
@@ -67,6 +67,9 @@ export default {
 }
 .desc{
   margin-bottom:1rem;
+}
+.footer{
+  margin-bottom: 0.5rem !important;
 }
 
 </style>

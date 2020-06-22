@@ -1,8 +1,8 @@
 <template>
-  <v-container class="container">
-    <div class="t__title t__blue t__bold margin_1rem">거주자 우선(주거지) 공간 공유하기</div>
-    <div class="footer margin_1rem"></div>
-    <div class="t__body margin_1rem">배정받은 거주자우선(주거지) 주차면을 사용하지 않는 시간동안 유료로 이웃 운전자에게 공유할 수 있습니다.</div>
+  <v-container>
+    <div class="t__title t__blue t__bold px-1">거주자 우선(주거지) 공간 공유하기</div>
+    <div class="footer px-1"></div>
+    <div class="t__body px-1">배정받은 거주자우선(주거지) 주차면을 사용하지 않는 시간동안 유료로 이웃 운전자에게 공유할 수 있습니다.</div>
     <v-container class = "detail-container">
       <v-row justify="center" class="animation">
         <v-flex xs12 sm12 md6>
@@ -20,9 +20,9 @@
           </v-carousel>
         </v-flex>
         <v-flex xs12 sm12 md6 >
-          <div class = "t__title t__blue t__bold margin_1rem " > STEP 1. 거주자우선주차면 공유 등록</div>
+          <div class = "t__title t__blue t__bold px-1 " > STEP 1. 거주자우선주차면 공유 등록</div>
           <div v-for="n in 3" v-bind:key="n">
-            <div class="t__body margin_1rem">{{descs[n-1]}}</div>
+            <div class="t__body px-1">{{descs[n-1]}}</div>
           </div>
         </v-flex>
       </v-row>
@@ -98,7 +98,7 @@ export default {
 
 <style scoped>
 
-..theme--dark.v-btn:hover::before{
+.theme--dark.v-btn:hover::before{
   opacity:0;
 }
 .container{
