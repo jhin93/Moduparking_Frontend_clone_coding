@@ -1,9 +1,9 @@
 <template>
   <v-app class="">
     <v-content align-content-start justify-space-between>
-      <navigator/>
-      <router-view/>
       <!-- 왜 푸터는 대문자로 해야만 작동하는지 아직 의문 -->
+      <navigator/>
+      <router-view />
       <Footer/>
     </v-content>
   </v-app>

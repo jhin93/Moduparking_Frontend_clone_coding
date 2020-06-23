@@ -2,9 +2,11 @@
   <v-container>
     <div class="t__title t__blue t__bold px-1">거주자 우선(주거지) 공간 공유하기</div>
     <div class="footer px-1"></div>
-    <div class="t__body px-1">배정받은 거주자우선(주거지) 주차면을 사용하지 않는 시간동안 유료로 이웃 운전자에게 공유할 수 있습니다.</div>
     <v-container class = "detail-container">
       <v-row justify="center" class="animation">
+        <v-col class="t__body px-1" cols="12">
+          배정받은 거주자우선(주거지) 주차면을 사용하지 않는 시간동안 유료로 이웃 운전자에게 공유할 수 있습니다.
+        </v-col>
         <v-flex xs12 sm12 md6>
           <v-carousel  class="carousel" cycle interval="3000" height hide-delimiter-background
           :delimiter-icon="svgPath.mdiCheckboxBlankCircle"

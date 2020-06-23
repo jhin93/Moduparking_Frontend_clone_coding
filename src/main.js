@@ -1,11 +1,14 @@
-import 'core-js/stable'
-import 'regenerator-runtime/runtime'
+import 'babel-polyfill'
 import Vue from 'vue'
 import App from './App.vue'
+
 import router from './router'
+
 import './style/typhography.css'
 import vuetify from './plugins/vuetify.js'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
+
+import 'intersection-observer'
 import ScrollAnimationPics from './directives/ScrollAnimationPics'
 import ScrollAnimationText1 from './directives/ScrollAnimationText1'
 import ScrollAnimationText2 from './directives/ScrollAnimationText2'
