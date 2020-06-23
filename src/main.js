@@ -1,5 +1,6 @@
+import 'core-js/stable'
+import 'regenerator-runtime/runtime'
 import Vue from 'vue'
-import 'babel-polyfill'
 import App from './App.vue'
 import router from './router'
 import './style/typhography.css'
