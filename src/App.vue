@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="">
     <v-content align-content-start justify-space-between>
       <navigator/>
       <router-view/>
