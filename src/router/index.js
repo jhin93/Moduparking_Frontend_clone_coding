@@ -13,6 +13,7 @@ import sharePrivate from '../views/SharePrivate'
 import shareResidential from '../views/ShareResidential'
 import ServiceIntro from '../views/Home'
 import CorpIntro from '../views/CorpIntro'
+import AffiliateCooperation from '../views/AffiliateCooperation'
 // 아랫줄 import->require로 수정해서 에러 해결
 const Terms = () => require(/* webpackChunkName: "terms" */ '../views/Terms.vue')
 
@@ -88,6 +89,11 @@ const routes = [
     path: '/corp-intro',
     name: 'CorpIntro',
     component: CorpIntro
+  },
+  {
+    path: '/affiliate-cooperation',
+    name: 'AffiliateCooperation',
+    component: AffiliateCooperation
   }
 ]
 

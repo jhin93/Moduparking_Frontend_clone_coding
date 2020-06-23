@@ -88,7 +88,7 @@
         </v-row>
         <v-row class="footer"></v-row>
         <v-row>
-          <img src="../assets/logos.png" class="fe">
+          <img src="../assets/logos.png" class="cities">
         </v-row>
       </v-col>
 
@@ -125,7 +125,7 @@ export default {
 .circle34{
   width: 100%
 }
-.fe{
+.cities{
   width: 100%
 }
 </style>
