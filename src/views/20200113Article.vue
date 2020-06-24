@@ -2,13 +2,13 @@
 <div class="container">
   <div>
     <div>
-      <div class="header">A Simple Guide to Design Thinking</div>
-      <h5 class="date">by user / January 13, 2020</h5>
+      <div class="article__t2__1">A Simple Guide to Design Thinking</div>
+      <h5 class="article__t2__2">by user / January 13, 2020</h5>
     </div>
     <img src="../assets/article2.jpg">
     <div>
-      <div class="title1">Introduction</div>
-      <p>Readymade godard brooklyn, kogi shoreditch hashtag hella shaman kitsch man bun pinterest flexitarian.
+      <div class="article__t2__3">Introduction</div>
+      <p class="article__t2__4">Readymade godard brooklyn, kogi shoreditch hashtag hella shaman kitsch man bun pinterest flexitarian.
         Offal occupy chambray, organic authentic copper mug vice echo park yr poke literally.
         Ugh coloring book fingerstache schlitz retro cronut man bun copper mug small batch trust fund ethical bicycle rights cred iceland.
         Celiac schlitz la croix 3 wolf moon butcher. Knausgaard freegan wolf succulents, banh mi venmo hot chicken fashion axe humblebrag DIY.
@@ -18,8 +18,8 @@
         Iceland 8-bit XOXO disrupt activated charcoal kitsch scenester roof party meggings migas etsy ethical farm-to-table letterpress.
         Banjo wayfarers chartreuse taiyaki, stumptown prism 8-bit tote bag.
       </p>
-      <h2 class="title1">Story</h2>
-      <p>Listicle offal viral, flannel franzen roof party shoreditch meditation subway tile bicycle rights tbh fingerstache copper mug organic umami.
+      <h2 class="article__t2__3">Story</h2>
+      <p class="article__t2__4">Listicle offal viral, flannel franzen roof party shoreditch meditation subway tile bicycle rights tbh fingerstache copper mug organic umami.
         Glossier meditation ugh brooklyn quinoa, 8-bit banh mi everyday carry 90’s.
         Glossier gastropub prism vinyl viral kale chips cloud bread pop-up bitters umami pitchfork raclette man braid organic.
         Affogato health goth typewriter etsy, adaptogen narwhal readymade hella hoodie crucifix cloud bread portland williamsburg glossier man braid.
@@ -27,8 +27,8 @@
         Farm-to-table church-key truffaut hot chicken migas you probably haven’t heard of them.
         Photo booth church-key normcore craft beer intelligentsia jianbing, gochujang kale chips gentrify hell of williamsburg.
       </p>
-      <h2 class="title1">Conclusion</h2>
-      <p>Venmo fixie knausgaard readymade. 3 wolf moon blue bottle sartorial blog. Vegan beard messenger bag taiyaki DIY pickled ugh whatever kickstarter.
+      <h2 class="article__t2__3">Conclusion</h2>
+      <p class="article__t2__4">Venmo fixie knausgaard readymade. 3 wolf moon blue bottle sartorial blog. Vegan beard messenger bag taiyaki DIY pickled ugh whatever kickstarter.
         Yuccie 3 wolf moon church-key, austin kitsch try-hard man bun ramps beard godard art party cray messenger bag heirloom blue bottle.
         Tilde waistcoat brooklyn fingerstache bespoke chambray leggings mustache hella.
       </p>
@@ -40,7 +40,7 @@
     <v-form>
       <div>
         <h2>Leave a Reply</h2>
-        <p>Your email address will not be published. Required fields are marked *</p>
+        <p class="article__t2__4">Your email address will not be published. Required fields are marked *</p>
       </div>
       <h2 class="">Comment</h2>
       <v-text-field v-model="comments" outlined height="200" ></v-text-field>
@@ -72,7 +72,7 @@
           </v-col>
         </v-row>
       </v-container>
-      <v-checkbox v-model="remember" :off-icon="offIcon" :on-icon="onIcon" label="
+      <v-checkbox class="article__t2__4" v-model="remember" :off-icon="offIcon" :on-icon="onIcon" label="
 Save my name, email, and website in this browser for the next time I comment."></v-checkbox>
       <v-btn class="d-none d-md-block d-print-block right" @click="submit" dark :ripple="false" >submit</v-btn>
       <v-btn class="d-flex d-md-none " @click="submit" dark :ripple="false" >submit</v-btn>

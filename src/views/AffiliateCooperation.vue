@@ -13,10 +13,10 @@
         </v-row>
         <v-row class="footer"></v-row>
         <v-row>
-          <div class = "t__title t__bold"> 서울특별시 성수동 1가 왕십리로 115, 헤이그라운드 8층 모두컴퍼니 </div>
+          <div class = "AffiliateCooperation__t1"> 서울특별시 성수동 1가 왕십리로 115, 헤이그라운드 8층 모두컴퍼니 </div>
         </v-row>
         <v-row>
-          <div class = "t__title t__bold"> contact@moduparking.com </div>
+          <div class = "AffiliateCooperation__t1"> contact@moduparking.com </div>
         </v-row>
 
         <v-row>

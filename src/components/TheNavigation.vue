@@ -1,9 +1,9 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <v-toolbar flat  class="hidden-sm-and-down" >
       <v-toolbar-title class="pr-0">
         <router-link to="/">
-          <v-img :src="images.navigation.company_logo"  min-width="200px" width="25%" class=" px-2"></v-img>
+          <v-img :src="images.navigation.company_logo"  min-width="200px" width="38%" class=" px-2"></v-img>
         </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
@@ -22,7 +22,7 @@
             <template v-slot:activator="{ on, attrs }">
               <v-btn color="rgba(0,0,0,0)" v-on="on" v-bind="attrs"
               slot="activator" light depressed class="px-0">
-                <span class="px-0">{{ menu.title }}</span>
+                <span class="nav__menu px-0">{{ menu.title }}</span>
                 <v-icon >{{icons.mdiChevronDown}}</v-icon>
               </v-btn>
             </template>
@@ -36,7 +36,7 @@
               </v-list-item>
             </v-list>
           </v-menu>
-          <span v-else class="px-0">{{menu.title}}</span>
+          <span v-else class="nav__menu px-0">{{menu.title}}</span>
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>

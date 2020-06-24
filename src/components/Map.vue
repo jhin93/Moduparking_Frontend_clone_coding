@@ -15,7 +15,7 @@
           <h1>{{hello}}</h1>
         </div>
       </naver-info-window>
-      <naver-marker :lat="37.5476597" :lng="127.0436095" @click="onMarkerClicked" @load="onMarkerLoaded"/>
+      <naver-marker :lat="37.5478695" :lng="127.0440953" @click="onMarkerClicked" @load="onMarkerLoaded"/>
     </naver-maps>
   </div>
 </template>
@@ -35,7 +35,7 @@ export default {
       mapOptions: {
         lat: 37.5476597,
         lng: 127.0436095,
-        zoom: 16,
+        zoom: 17,
         zoomControl: true,
         zoomControlOptions: { position: 'TOP_RIGHT' },
         mapTypeControl: true

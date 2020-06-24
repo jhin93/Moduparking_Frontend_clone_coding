@@ -9,10 +9,10 @@
             <v-card :ripple="false" tile raised  :to="item.to">
               <v-img eager class="imges" max-height="220px" :src="item.src"></v-img>
             </v-card>
-            <router-link class="t__title t__bold text_deco t__black" :to="item.to">{{item.title}}</router-link>
-            <div class="date">{{item.createdAt}}</div>
-            <div class="desc">{{item.desc}}</div>
-            <router-link class="text_deco t__bold t__black" :to="item.to">더 알아보기</router-link>
+            <router-link class="News__t1 text_deco t__black" :to="item.to">{{item.title}}</router-link>
+            <div class="News__t2">{{item.createdAt}}</div>
+            <div class="News__t3">{{item.desc}}</div>
+            <router-link class="News__t4 text_deco t__black" :to="item.to">더 읽어보기</router-link>
           </div>
         </v-col>
       </v-row>
@@ -70,6 +70,9 @@ export default {
 }
 .footer{
   margin-bottom: 0.5rem !important;
+}
+.News__t3{
+  padding: 1rem 0rem;
 }
 
 </style>
