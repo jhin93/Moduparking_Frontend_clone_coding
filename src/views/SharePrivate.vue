@@ -10,9 +10,9 @@
         <v-col cols="12"  sm="12" md="6" >
         <div class="fit">
           <v-carousel class="carousel" cycle interval="3000" hide-delimiter-background height
-            :delimiter-icon="svgPath.mdiCheckboxBlankCircle"
-            :next-icon="svgPath.mdiChevronRight"
-            :prev-icon="svgPath.mdiChevronLeft">
+            :delimiter-icon="delimiterIcon"
+            :next-icon="nextIcon"
+            :prev-icon="prevIcon">
             <v-carousel-item class="img-view" eager v-for="(item,i) in items" :key="i">
               <img :src="item.src"/>
             </v-carousel-item>
@@ -43,13 +43,15 @@
 <script>
 // todo 반응형으로 뷰티파이 그리드 적용
 import images from '../assets/index.js'
-import * as icons from '@mdi/js'
+import { mdiCheckboxBlankCircle, mdiChevronRight, mdiChevronLeft } from '@mdi/js'
 
 export default {
   name: 'sharePrivate',
   data: function () {
     return {
-      svgPath: icons,
+      delimiterIcon: mdiCheckboxBlankCircle,
+      nextIcon: mdiChevronRight,
+      prevIcon: mdiChevronLeft,
       descs: ['일반주차장 공유의 경우 즉시 등록되지 않으며 승인 대기 상태가 됩니다!',
         '담당팀에서 순차적으로 주차 요금, 주차장 한경 등을 종합적으로 확인하여 공유 가능할 시에 별도로 연락을 드립니다.',
         '주차장 사진 및 필요 서류가 없는 경우 승인이 지연될 수 있습니다.'

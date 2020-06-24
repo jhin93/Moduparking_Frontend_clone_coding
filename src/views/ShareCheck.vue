@@ -4,15 +4,15 @@
     <div class="footer px-1"></div>
     <v-container class = "detail-container">
       <v-row class="animation">
-        <v-col class="t__body t__bold px-1">
+        <v-col class="t__body t__bold px-1" cols="12">
           배정받은 거주자우선(주거지) 주차면을 사용하지 않는 시간동안 유료로 이웃 운전자에게 공유할 수 있습니다.
         </v-col>
         <v-flex xs12 sm6 md6 lg6 xl6>
           <div class="fit">
             <v-carousel class="carousel" cycle interval="3000" hide-delimiter-background height
-              :delimiter-icon="svgPath.mdiCheckboxBlankCircle"
-              :next-icon="svgPath.mdiChevronRight"
-              :prev-icon="svgPath.mdiChevronLeft"
+              :delimiter-icon="delimiterIcon"
+              :next-icon="nextIcon"
+              :prev-icon="prevIcon"
             >
               <v-carousel-item class="img-view" eager v-for="(item,i) in items1" :key="i">
                 <img :src="item.src"/>
@@ -29,9 +29,9 @@
         <v-flex xs12 sm6 md6 lg6 xl6>
           <div class="fit">
             <v-carousel class="carousel" cycle interval="3000" hide-delimiter-background height
-              :delimiter-icon="svgPath.mdiCheckboxBlankCircle"
-              :next-icon="svgPath.mdiChevronRight"
-              :prev-icon="svgPath.mdiChevronLeft"
+              :delimiter-icon="delimiterIcon"
+              :next-icon="nextIcon"
+              :prev-icon="prevIcon"
             >
               <v-carousel-item class="img-view" eager v-for="(item,i) in items2" :key="i">
                 <img :src="item.src"/>
@@ -53,13 +53,15 @@
 <script>
 
 import images from '../assets/index.js'
-import * as icons from '@mdi/js'
+import { mdiCheckboxBlankCircle, mdiChevronRight, mdiChevronLeft } from '@mdi/js'
 
 export default {
   name: 'checkAndTrance',
   data: function () {
     return {
-      svgPath: icons,
+      delimiterIcon: mdiCheckboxBlankCircle,
+      nextIcon: mdiChevronRight,
+      prevIcon: mdiChevronLeft,
       desc1: [
         ' 공유한 주차장에서 발생한 주차가 종료되는 즉시 결제 금액의 일부가 포인트로 적립됩니다.',
         '거주자우선(주거지)주차면 공유를 통한 적립 비율은 지역마다 상이하므로 자세한 사항은 문의 바랍니다.'

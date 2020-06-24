@@ -1,10 +1,14 @@
 <template>
-  <div class="container">
+  <v-container class="container">
+    <v-row>
+      <v-col cols="12" xs="12">
     <div class="t__title t__blue t__bold">국내 1위 주차 앱은 '사회적 가치'를 고민한다'</div>
     <div class="footer"></div>
-    <div class="align_center">
-      <img :src='images.articles.article1'>
-    </div>
+
+      <div class="align_center">
+        <v-img :src='images.articles.article1' max-width="100%"/>
+      </div>
+
     <div>
       <p clas="t__body">302만 vs 299만</p>
       <br>
@@ -22,7 +26,9 @@
         <br>
         <p class="t__body">출처 : 이로운넷(http://www.eroun.net)</p>
     </div>
-  </div>
+        </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>

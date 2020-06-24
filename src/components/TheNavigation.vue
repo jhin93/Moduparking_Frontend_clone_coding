@@ -18,12 +18,12 @@
           retail-focus-on-click="true"
           class="px-2"
         >
-          <v-menu v-if="menu.items" open-on-hover  offset-y width="100%" left class="px-0">
+          <v-menu v-if="menu.items" open-on-hover min-width="20%" offset-y left class="px-0" style="background-color:rgba(0,0,0,0);">
             <template v-slot:activator="{ on, attrs }">
               <v-btn color="rgba(0,0,0,0)" v-on="on" v-bind="attrs"
               slot="activator" light depressed class="px-0">
                 <span class="px-0">{{ menu.title }}</span>
-                <v-icon >{{icons.mdiChevronDown}}</v-icon>
+                <v-icon >{{icons}}</v-icon>
               </v-btn>
             </template>
             <v-list>
@@ -67,9 +67,9 @@
             <v-list-item-title class="test1" v-if="!menu.items">
               <router-link class="t__black text_deco" :to="menu.link">{{ menu.title }}</router-link>
             </v-list-item-title>
-            <v-expansion-panels focusable v-else flat>
+            <v-expansion-panels focusable v-else flat >
               <v-expansion-panel>
-                <v-expansion-panel-header class="" :expand-icon="icons.mdiChevronDown">{{menu.title}}</v-expansion-panel-header>
+                <v-expansion-panel-header class="" :expand-icon="icons" justify="center">{{menu.title}}</v-expansion-panel-header>
                   <v-expansion-panel-content class="">
                     <router-link  v-for="(subject,i) in menu.items" :key="i" :to="subject.to" class="t__black text_deco">
                       <div class="bottom_1rem">{{subject.title}}</div>
@@ -86,14 +86,14 @@
 
 <script>
 
-import * as icons from '@mdi/js'
+import { mdiChevronDown } from '@mdi/js'
 import images from '../assets'
 export default {
   name: 'navigator',
   data: function () {
     return {
       drawer: null,
-      icons: icons,
+      icons: mdiChevronDown,
       images: images,
       menus: [{
         link: '/service-intro',
@@ -157,7 +157,8 @@ export default {
   padding-bottom: 2%;
 }
 .v-expansion-panel-header{
-  padding: 0% !important;
+  padding-left: 0% !important;
+  padding-right: 0% !important;
   font-size: 13.5px !important;
   min-height: 40px;
 }
@@ -174,6 +175,10 @@ export default {
   padding-bottom: 1rem;
 }
 .v-expansion-panel-header:focus::before .v-expansion-panel-header--active:focus::before{
-  opacity: none;
+  opacity: 0 !important;
+}
+
+.v-btn:not(.v-btn--text):not(.v-btn--outlined):hover:before{
+  opacity: 0 !important;
 }
 </style>

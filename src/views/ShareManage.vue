@@ -7,9 +7,9 @@
       <v-flex xs12 sm12 md6 lg6 xl6>
       <div class="fit">
          <v-carousel class="carousel" interval="3000" cycle hide-delimiter-background height
-          :delimiter-icon="svgPath.mdiCheckboxBlankCircle"
-          :next-icon="svgPath.mdiChevronRight"
-          :prev-icon="svgPath.mdiChevronLeft">
+          :delimiter-icon="delimiterIcon"
+          :next-icon="nextIcon"
+          :prev-icon="prevIcon">
           <v-carousel-item class="img-view" eager v-for="(item,i) in items1" :key="i">
             <img :src="item.src"/>
           </v-carousel-item>
@@ -22,9 +22,9 @@
       <v-flex xs12 sm12 md6 lg6 xl6>
       <div class="fit">
          <v-carousel class="carousel" interval="3000" cycle hide-delimiter-background height
-          :delimiter-icon="svgPath.mdiCheckboxBlankCircle"
-          :next-icon="svgPath.mdiChevronRight"
-          :prev-icon="svgPath.mdiChevronLeft">
+          :delimiter-icon="delimiterIcon"
+          :next-icon="nextIcon"
+          :prev-icon="prevIcon">
           <v-carousel-item class="img-view" eager v-for="(item,i) in items2" :key="i">
             <img :src="item.src"/>
           </v-carousel-item>
@@ -42,13 +42,15 @@
 <script>
 
 import images from '../assets/index.js'
-import * as icons from '@mdi/js'
+import { mdiCheckboxBlankCircle, mdiChevronRight, mdiChevronLeft } from '@mdi/js'
 
 export default {
   name: 'manageShare',
   data: function () {
     return {
-      svgPath: icons,
+      delimiterIcon: mdiCheckboxBlankCircle,
+      nextIcon: mdiChevronRight,
+      prevIcon: mdiChevronLeft,
       items1: [
         {
           src: images.manage.manage1
