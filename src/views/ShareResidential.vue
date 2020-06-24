@@ -9,9 +9,9 @@
         </v-col>
         <v-flex xs12 sm12 md6>
           <v-carousel  class="carousel" cycle interval="3000" height hide-delimiter-background
-          :delimiter-icon="svgPath.mdiCheckboxBlankCircle"
-          :next-icon="svgPath.mdiChevronRight"
-          :prev-icon="svgPath.mdiChevronLeft">
+            :delimiter-icon="delimiterIcon"
+            :next-icon="nextIcon"
+            :prev-icon="prevIcon">
             <v-carousel-item class="img-view" eager
             v-for="(item,i) in items"
             :key="i"
@@ -35,13 +35,15 @@
 <script>
 // todo 반응형으로 뷰티파이 그리드 적용
 import images from '../assets/index.js'
-import * as icons from '@mdi/js'
+import { mdiCheckboxBlankCircle, mdiChevronRight, mdiChevronLeft } from '@mdi/js'
 
 export default {
   name: 'share-residential',
   data: function () {
     return {
-      svgPath: icons,
+      delimiterIcon: mdiCheckboxBlankCircle,
+      nextIcon: mdiChevronRight,
+      prevIcon: mdiChevronLeft,
       descs: [
         '자치구(또는 공단)에 배정 신청시 등록한 생년월일(6자리), 전화번호, 차량번호와 일치해야합니다',
         '정보를 정확히 입력하였는데 공유설정이 안되는 경우엔 자치구(또는 공단)에 생연월일, 전화번호, 차량번호를 확인 하시기 바랍니다.',
@@ -88,11 +90,6 @@ export default {
       cycle: true,
       index: 0,
       interval: 3000
-    }
-  },
-  methods: {
-    test: function () {
-      console.log(icons)
     }
   }
 }

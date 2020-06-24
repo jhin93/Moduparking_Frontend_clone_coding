@@ -1,6 +1,6 @@
 <template>
   <div>
-    <naver-maps
+    <naver-maps eager
       :height="height"
       :width="width"
       :mapOptions="mapOptions"

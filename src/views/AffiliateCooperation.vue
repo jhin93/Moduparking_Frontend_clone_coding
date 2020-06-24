@@ -22,13 +22,13 @@
         <v-row>
           <v-col
           class="map-box"
-          cols="12" sm="6"
+          cols="12" md="6"
           >
             <Map />
           </v-col>
           <v-col
             class="input-box"
-            cols="12" sm="6"
+            cols="12" md="6"
           >
             <div>
               <form action="/action_page.php">
