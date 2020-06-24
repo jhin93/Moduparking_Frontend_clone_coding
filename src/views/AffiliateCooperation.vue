@@ -1,6 +1,6 @@
 <template>
   <v-container class="container">
-    <div class=" margin_1rem">
+    <v-row class=" margin_1rem">
       <v-col
         class="txt-box"
         cols="12"
@@ -49,7 +49,7 @@
           </v-col>
         </v-row>
       </v-col>
-    </div>
+    </v-row>
   </v-container>
 </template>
 

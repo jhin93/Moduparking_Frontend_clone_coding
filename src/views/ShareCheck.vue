@@ -2,9 +2,11 @@
   <v-container class="container">
     <div class="t__blue t__title t__bold px-1">공유적립금 확인하기</div>
     <div class="footer px-1"></div>
-    <div class="t__body t__bold px-1">배정받은 거주자우선(주거지) 주차면을 사용하지 않는 시간동안 유료로 이웃 운전자에게 공유할 수 있습니다.</div>
     <v-container class = "detail-container">
       <v-row class="animation">
+        <v-col class="t__body t__bold px-1">
+          배정받은 거주자우선(주거지) 주차면을 사용하지 않는 시간동안 유료로 이웃 운전자에게 공유할 수 있습니다.
+        </v-col>
         <v-flex xs12 sm6 md6 lg6 xl6>
           <div class="fit">
             <v-carousel class="carousel" cycle interval="3000" hide-delimiter-background height

@@ -1,13 +1,15 @@
 <template>
-  <div class="container">
+  <v-container class="container">
     <div class="t__blue t__title t__bold px-1 pb-8">자주 하는 질문</div>
     <div class="px-7 footer"></div>
-    <div class="px-1">
-      <div class="t__body t__bold">자세한 문의를 원하시면 고객센터로 연락바랍니다.</div>
-      <div class="t__body t__bold">모두의주차장고객센터 : 1899-8242, 운영시간(10:00~19:00)</div>
-      <div class="t__body t__bold">카카오톡 플러스친구 '모두의주차장'검색, 운영시간(09:00~18:00)</div>
-      <div class="blank"></div>
-    </div>
+    <v-row>
+      <v-col class="px-1">
+        <div class="t__body t__bold">자세한 문의를 원하시면 고객센터로 연락바랍니다.</div>
+        <div class="t__body t__bold">모두의주차장고객센터 : 1899-8242, 운영시간(10:00~19:00)</div>
+        <div class="t__body t__bold">카카오톡 플러스친구 '모두의주차장'검색, 운영시간(09:00~18:00)</div>
+        <div class="blank"></div>
+      </v-col>
+    </v-row>
     <div>
       <v-tabs class="d-none d-md-block d-print-block px-1" grow v-model="tab" color="#0099ff">
         <v-tab :ripple="false"  v-for="(rule,i) in rules"
@@ -33,29 +35,31 @@
         </v-tab-item>
       </v-tabs-items>
     </div>
-    <v-expansion-panels flat class="d-flex d-md-none no-transition">
-        <v-expansion-panel
-          v-for="(rule,i) in rules"
-          :key="i"
-        >
-          <v-expansion-panel-header class="v-tab--active t__body" :expand-icon="null">{{rule.tab}}</v-expansion-panel-header>
-            <v-expansion-panel-content class="selector-panels no-animation">
-            <div v-for="(subject,i) in rule.subjects" :key="i">
-              <div class="t__top-menu px-1">{{subject.title}}</div>
-              <div class="bottom_1rem">
-                <div class="t__body px-1" v-for="(str) in subject.desc" :key="str">{{str}}</div>
+    <v-row>
+        <v-expansion-panels flat class="d-flex d-md-none no-transition">
+          <v-expansion-panel
+            v-for="(rule,i) in rules"
+            :key="i"
+          >
+            <v-expansion-panel-header class="v-tab--active t__body" :expand-icon="null">{{rule.tab}}</v-expansion-panel-header>
+              <v-expansion-panel-content class="selector-panels no-animation">
+              <div v-for="(subject,i) in rule.subjects" :key="i">
+                <div class="t__top-menu px-1">{{subject.title}}</div>
+                <div class="bottom_1rem">
+                  <div class="t__body px-1" v-for="(str) in subject.desc" :key="str">{{str}}</div>
+                </div>
+                <div class="bottom_1rem">
+                  <div class="t__body px-1" v-for="(str) in subject.remarks" :key="str">{{str}}</div>
+                </div>
+                <div class="bottom_1rem">
+                  <div class="t__body px-1" v-for="(str) in subject.appendances" :key="str">{{str}}</div>
+                </div>
               </div>
-              <div class="bottom_1rem">
-                <div class="t__body px-1" v-for="(str) in subject.remarks" :key="str">{{str}}</div>
-              </div>
-              <div class="bottom_1rem">
-                <div class="t__body px-1" v-for="(str) in subject.appendances" :key="str">{{str}}</div>
-              </div>
-            </div>
-          </v-expansion-panel-content>
-        </v-expansion-panel>
-      </v-expansion-panels>
-  </div>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
+    </v-row>
+  </v-container>
 </template>
 
 <script>

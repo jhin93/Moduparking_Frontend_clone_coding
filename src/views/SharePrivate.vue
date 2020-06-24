@@ -2,10 +2,12 @@
   <v-container>
     <div class="t__title t__blue t__bold px-1">사유지 주차공간 공유하기</div>
     <div class="px-1 footer "></div>
-    <div class="t__body px-1">주택, 빌라, 상가 주차장 등 개인이 소유한 주차공간을 모두의 주차장 앱에서 다른 사람에게 공유 할 수 있습니다.</div>
     <v-container class = "detail-container">
-      <v-row justify="center" class="animation" xs12 sm12>
-        <v-flex cols12 xs12 sm12 md6 lg6 xl6>
+      <v-row justify="center" class="animation">
+        <v-col class="t__body px-1" cols="12">
+          주택, 빌라, 상가 주차장 등 개인이 소유한 주차공간을 모두의 주차장 앱에서 다른 사람에게 공유 할 수 있습니다.
+        </v-col>
+        <v-col cols="12"  sm="12" md="6" >
         <div class="fit">
           <v-carousel class="carousel" cycle interval="3000" hide-delimiter-background height
             :delimiter-icon="svgPath.mdiCheckboxBlankCircle"
@@ -16,8 +18,8 @@
             </v-carousel-item>
           </v-carousel>
           </div>
-        </v-flex>
-        <v-flex class="top_3rem " cols12 xs12 sm12 md6 lg6>
+        </v-col>
+        <v-col class="top_3rem " cols="12" sm="12" md="6">
           <div class="d-none d-md-block d-print-block">
             <div class = "t__title t__blue t__bold px-1"> STEP 1. 거주자우선주차면 공유 등록</div>
             <div v-for="(desc,iterator) in descs" v-bind:key="iterator">
@@ -25,14 +27,14 @@
             </div>
           </div>
           <div  class = " px-1 d-flex d-md-none align_center">
-            <v-flex max-width="100%">
+            <v-flex >
               <div class="t__title t__blue t__blue t__bold px-1">STEP 1. 사유지 공유주차장으로 등록</div>
               <div class="mobile-boxer">
                 <div class="t__body" v-for="(str,i) in descs" :key="i">{{str}}</div>
               </div>
               </v-flex>
             </div>
-        </v-flex>
+        </v-col>
       </v-row>
     </v-container>
   </v-container>
