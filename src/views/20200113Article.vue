@@ -1,14 +1,14 @@
 <template>
-<div class="container">
-  <div>
-    <div>
-      <div class="article__t2__1">A Simple Guide to Design Thinking</div>
-      <h5 class="article__t2__2">by user / January 13, 2020</h5>
-    </div>
-    <img src="../assets/article2.jpg">
-    <div>
-      <div class="article__t2__3">Introduction</div>
-      <p class="article__t2__4">Readymade godard brooklyn, kogi shoreditch hashtag hella shaman kitsch man bun pinterest flexitarian.
+<v-container class="container">
+  <v-row>
+    <v-col cols="12">
+      <div class="header">A Simple Guide to Design Thinking</div>
+      <h5 class="date">by user / January 13, 2020</h5>
+      <v-img src="../assets/article2.jpg" max-width="50%"/>
+    </v-col>
+    <v-col cols="12">
+      <div class="title1">Introduction</div>
+      <p>Readymade godard brooklyn, kogi shoreditch hashtag hella shaman kitsch man bun pinterest flexitarian.
         Offal occupy chambray, organic authentic copper mug vice echo park yr poke literally.
         Ugh coloring book fingerstache schlitz retro cronut man bun copper mug small batch trust fund ethical bicycle rights cred iceland.
         Celiac schlitz la croix 3 wolf moon butcher. Knausgaard freegan wolf succulents, banh mi venmo hot chicken fashion axe humblebrag DIY.
@@ -32,53 +32,57 @@
         Yuccie 3 wolf moon church-key, austin kitsch try-hard man bun ramps beard godard art party cray messenger bag heirloom blue bottle.
         Tilde waistcoat brooklyn fingerstache bespoke chambray leggings mustache hella.
       </p>
-    </div>
-  </div>
-  <div class="footer"></div>
-  <div>
-    <div class="comments"></div>
-    <v-form>
-      <div>
-        <h2>Leave a Reply</h2>
-        <p class="article__t2__4">Your email address will not be published. Required fields are marked *</p>
-      </div>
-      <h2 class="">Comment</h2>
-      <v-text-field v-model="comments" outlined height="200" ></v-text-field>
-        <v-container>
-          <v-row>
-          <v-col cols="12" xs="12" sm="4">
+    </v-col>
+    </v-row>
+    <div class="footer"></div>
+    <v-container>
+      <v-row class="comments">
+        <v-col cols="12">
+          <v-form>
+            <div>
+              <h2>Leave a Reply</h2>
+              <p>Your email address will not be published. Required fields are marked *</p>
+            </div>
+            <h2 class="">Comment</h2>
+            <v-text-field v-model="comments" outlined height="200" ></v-text-field>
+        <v-row justify="start">
+          <v-col cols="12" sm="12" md="4">
             <h4>Name *</h4>
-            <v-text-field
-                v-model="firstname"
-                :rules="nameRules"
-                :counter="10"
+                <v-text-field
+                    v-model="firstname"
+                    :rules="nameRules"
+                    :counter="10"
+                    outlined
+                    required >
+                </v-text-field>
+              </v-col>
+              <v-col cols="12" sm="12" md="4">
+              <h4>Email *</h4>
+              <v-text-field
+                v-model="email"
+                :rules="emailRules"
+                required
                 outlined
-                required >
-            </v-text-field>
-          </v-col>
-          <v-col cols="12" xs="12" sm="4">
-            <h4>Email *</h4>
-            <v-text-field
-              v-model="email"
-              :rules="emailRules"
-              required
-              outlined
-            >
-            </v-text-field>
-          </v-col>
-          <v-col cols="12" xs="12" sm="4">
-            <h4>Website</h4>
-            <v-text-field outlined v-model="website"></v-text-field>
-          </v-col>
-        </v-row>
-      </v-container>
-      <v-checkbox class="article__t2__4" v-model="remember" :off-icon="offIcon" :on-icon="onIcon" label="
-Save my name, email, and website in this browser for the next time I comment."></v-checkbox>
-      <v-btn class="d-none d-md-block d-print-block right" @click="submit" dark :ripple="false" >submit</v-btn>
-      <v-btn class="d-flex d-md-none " @click="submit" dark :ripple="false" >submit</v-btn>
-    </v-form>
-  </div>
-</div>
+              >
+              </v-text-field>
+              </v-col>
+              <v-col cols="12" sm="12" md="4">
+                <h4>Website</h4>
+                <v-text-field outlined v-model="website"></v-text-field>
+              </v-col>
+              <v-col cols="12" xs="12">
+                 <v-checkbox v-model="remember" :off-icon="offIcon" :on-icon="onIcon" label="
+          Save my name, email, and website in this browser for the next time I comment.">
+                </v-checkbox>
+                <v-btn class="d-none d-md-block d-print-block right" @click="submit" dark :ripple="false" >submit</v-btn>
+                <v-btn class="d-flex d-md-none " @click="submit" dark :ripple="false" >submit</v-btn>
+              </v-col>
+            </v-row>
+          </v-form>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-container>
 </template>
 
 <script>

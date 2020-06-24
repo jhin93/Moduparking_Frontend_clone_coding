@@ -1,13 +1,15 @@
 <template>
   <v-container class="container">
     <div class="">
-      <div class = "t__blue t__title t__bold px-1"> 모두의 주차 공유 서비스 안내</div>
-      <div class="footer" ></div>
-      <div class = "t__body">개인 소유의 주차 기능 공간을 주차장 소유자와 운전자가 공유할 수 있도록 연결해 주는 서비스 입니다.</div>
-      <div class="img_container">
-        <v-img :src="image.service.service"></v-img>
-      </div>
       <v-row justify="space-around">
+        <v-col cols="12">
+          <div class = "t__blue t__title t__bold px-1"> 모두의 주차 공유 서비스 안내</div>
+          <div class="footer" ></div>
+          <div class = "t__body">개인 소유의 주차 기능 공간을 주차장 소유자와 운전자가 공유할 수 있도록 연결해 주는 서비스 입니다.</div>
+          <div class="img_container">
+            <v-img :src="image.service.service"></v-img>
+          </div>
+        </v-col>
         <v-col cols="12" xs="12" sm="4" md="4" lg="4" xl="4">
           <div class=" t__blue t__body align_center">운전자</div>
         </v-col>
@@ -28,11 +30,13 @@
               <v-img class="img_half" :src="image.service.private"></v-img>
               <h6 class= "align_center relative "> 공유 - 거주자우선주차면</h6>
             </v-col>
+          <v-col cols="12">
+            <div v-for="residential in residentials" v-bind:key="residential">
+              <div>{{residential}}</div>
+            </div>
+          </v-col>
           </v-row>
         </v-container>
-      </div>
-      <div v-for="residential in residentials" v-bind:key="residential">
-        <div>{{residential}}</div>
       </div>
     </div>
      <v-btn class=" margin_1rem" rounded :ripple="false" color="#0099ff" depressed dark to="">거주자우선(주거지)주차면 공유방법</v-btn>
@@ -46,11 +50,13 @@
               <v-img class="img_half" :src ="image.service.residential"></v-img>
               <h6 class = "align_center relative "> 공유 - 일반 주차 공간</h6>
             </v-col>
+            <v-col cols="12">
+              <div v-for="privated in privates" v-bind:key="privated">
+                <div>{{privated}}</div>
+              </div>
+            </v-col>
           </v-row>
         </v-container>
-      </div>
-      <div v-for="privated in privates" v-bind:key="privated">
-        <div>{{privated}}</div>
       </div>
       <v-btn rounded :ripple="false" color="#0099ff" depressed dark to="">일반주차창 공유 방법</v-btn>
     </div>

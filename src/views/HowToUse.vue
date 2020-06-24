@@ -6,9 +6,9 @@
       <v-row justify="center" class="animation">
         <v-flex xs12 sm12 md6>
             <v-carousel  class="carousel" cycle interval="3000" height hide-delimiter-background
-            :delimiter-icon="svgPath.mdiCheckboxBlankCircle"
-            :next-icon="svgPath.mdiChevronRight"
-            :prev-icon="svgPath.mdiChevronLeft">
+            :delimiter-icon="delimiterIcon"
+            :next-icon="nextIcon"
+            :prev-icon="prevIcon">
               <v-carousel-item class="img-view" eager v-for="(item,i) in items" :key="i">
                 <img :src="item.src"/>
               </v-carousel-item>
@@ -28,13 +28,15 @@
 
 <script>
 import images from '../assets/index.js'
-import * as icons from '@mdi/js'
+import { mdiCheckboxBlankCircle, mdiChevronRight, mdiChevronLeft } from '@mdi/js'
 
 export default {
   name: 'how_to_use',
   data: function () {
     return {
-      svgPath: icons,
+      delimiterIcon: mdiCheckboxBlankCircle,
+      nextIcon: mdiChevronRight,
+      prevIcon: mdiChevronLeft,
       descs: [
         '앱 모두의주차장을 다운받아 이용하실 수 있습니다.',
         '갤제 직후 주차 시작 되며, 정확한 위치를 안내받으실 수 있습니다.',

@@ -6,7 +6,7 @@
         <!-- sm 범위 : 768px ~ 960px -->
         <!-- 아래 칼럼개수를 조정해서 각 범위 확인 가능 -->
         <!-- xs의 범위( ? ~ 768px)은 어째서인지 설정이 되지 않는다. 768px 이하로 내려가는 순간 cols = 12로 되버림. -->
-        <v-row class="container1-row">
+        <v-row class="container1-row" justify="start">
           <v-col
             cols="12"
             md="12"
@@ -79,19 +79,17 @@
         <v-col
           cols="12" sm="6"
         >
-          <img src="../assets/main-easy-use1.png" class="circle12">
+          <v-img :src="image.main.use1" class="circle12"/>
         </v-col>
         <v-col
           cols="12" sm="6"
         >
-          <img src="../assets/main-easy-use2.png" class="circle34">
+          <v-img :src="image.main.use2" class="circle34"/>
         </v-col>
       </v-row>
     </v-container>
     <v-container class="container3">
-      <v-row>
-        <div class="mobile-set3">
-          <v-row class="mobile-set3-row">
+      <v-row class="container4-row">
             <v-col
               cols="12"
               md="5"
@@ -114,17 +112,14 @@
               sm="7"
             >
               <div>
-                <img v-ScrollAnimationPics src="../assets/main-mobile-pay.png" class="mobile-set3-img">
+                <v-img v-ScrollAnimationPics :src="image.main.mobile"  class="mobile-set3-img" />
               </div>
             </v-col>
-          </v-row>
-        </div>
       </v-row>
     </v-container>
     <v-container class="container4">
-      <v-row class="container4-row">
-        <div class="mobile-set4">
-          <v-row mobile-set4-row>
+      <v-container class="container3">
+      <v-row class="container4-row " >
             <v-col
             class="mobile-set4-col"
               cols="12"
@@ -146,17 +141,14 @@
               sm="7"
             >
               <div>
-                <img v-ScrollAnimationPics src="../assets/main-search-info.png" class="mobile-set4-img">
+                <v-img v-ScrollAnimationPics :src="image.main.search" class="mobile-set4-img"/>
               </div>
             </v-col>
-          </v-row>
-        </div>
       </v-row>
+      </v-container>
     </v-container>
     <v-container class="container5">
-      <v-row>
-        <div class="mobile-set5">
-          <v-row mobile-set5-row>
+      <v-row class="container4-row mobile-set4">
             <v-col
               cols="12"
               md="5"
@@ -177,11 +169,9 @@
               sm="7"
             >
               <div>
-                <img v-ScrollAnimationPics src="../assets/main-share.png" class="mobile-set5-img">
+                <v-img v-ScrollAnimationPics eager :src="image.main.share" max-width="100%" class="mobile-set5-img"/>
               </div>
             </v-col>
-          </v-row>
-        </div>
       </v-row>
     </v-container>
     <v-container>
@@ -214,17 +204,20 @@
         md="12"
         sm="12"
       >
-        <img src="../assets/main-bottom.png" class="main-bottom-img">
+        <v-img :src="image.main.bottom" eager class="main-bottom-img" />
       </v-col>
     </div>
   </div>
 </template>
 
 <script>
-
+import images from '../assets'
 export default {
   name: 'Home',
-  components: {}
+  components: {},
+  data: () => ({
+    image: images
+  })
 }
 
 </script>
@@ -239,8 +232,9 @@ export default {
   }
 
   .container1-row {
-    padding: 6rem 0rem;
-    max-width: 80vw;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    padding-left: 10%;
   }
 
   .container1-bg {
@@ -297,6 +291,7 @@ export default {
   .container4{
     max-width: 100vw;
     background-color: #0099ff;
+    justify-content: center;
   }
 
   .container4-row{

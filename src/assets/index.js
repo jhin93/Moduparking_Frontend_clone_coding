@@ -90,7 +90,7 @@ const articles = {
   article2: require('../assets/article2.jpg')
 }
 
-const images = {
+export default {
   articles: articles,
   main: main,
   service: intro,
@@ -103,5 +103,3 @@ const images = {
   check_trans: check_trans
 
 }
-
-export default images

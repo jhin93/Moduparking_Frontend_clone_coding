@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <v-container class="container">
     <div class= "t__title t__blue t__bold px-1" >홍보자료</div>
     <div class=" footer"></div>
     <v-container >
@@ -17,7 +17,7 @@
         </v-col>
       </v-row>
     </v-container>
-  </div>
+  </v-container>
 </template>
 
 <script>
