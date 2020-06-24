@@ -55,6 +55,7 @@
 
 <script>
 import Map from '../components/Map'
+
 export default {
   name: 'AffiliateCooperation',
   components: {
@@ -87,6 +88,7 @@ export default {
 .circle12{
   width: 100%
 }
+
 input[type=text], select {
   width: 100%;
   padding: 6px 20px;
@@ -96,6 +98,7 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 input[type=submit] {
   width: 20%;
   background-color: #0099ff;
@@ -106,6 +109,7 @@ input[type=submit] {
   border-radius: 8px;
   cursor: pointer;
 }
+
 textarea {
   width: 100%;
   height: 150px;

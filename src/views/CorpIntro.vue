@@ -99,7 +99,7 @@ export default {
 .circle34{
   width: 100%
 }
-.fe{
+.cities{
   width: 100%
 }
 </style>

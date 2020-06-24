@@ -189,7 +189,7 @@
           >
           <!-- v-btn:hover -->
           <div class="back">
-              <div class="last-button t__bold">시작하기</div>
+            <button class="last-button">시작하기</button>
           </div>
          </v-col>
        </div>
@@ -382,8 +382,6 @@ export default {
     background-color: white;
     transition: all 0.2s ease 0.2s;
 }
-
-  .v-btn:hover { background-color: none; }
 
   .before-enter-text1 {
     opacity: 0;
