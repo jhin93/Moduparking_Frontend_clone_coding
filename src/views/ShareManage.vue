@@ -17,7 +17,7 @@
         </div>
       </v-flex>
       <v-flex class="top_3rem " xs12 sm12 md6 lg6>
-        <div class = "t__title t__blue t__bold px-1" > STEP 1. 공유 시간 설정하기</div>
+        <div class = "Share-title1" > STEP 1. 공유 시간 설정하기</div>
       </v-flex>
       <v-flex xs12 sm12 md6 lg6 xl6>
       <div class="fit">
@@ -32,7 +32,7 @@
         </div>
       </v-flex>
       <v-flex class="top_3rem " xs12 sm12 md6 lg6>
-        <div class = "t__title t__blue t__bold px-1" > STEP 2. 공유 시간 설정 TIP!</div>
+        <div class = "Share-title1" > STEP 2. 공유 시간 설정 TIP!</div>
       </v-flex>
       </v-row>
     </v-container>

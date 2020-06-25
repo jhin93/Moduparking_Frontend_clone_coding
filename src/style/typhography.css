@@ -205,6 +205,54 @@
   line-height: 1.6em;
 }
 
+.ServiceInfo-body1{
+  font-family: NotoSansKr-Medium;
+  font-size: 21px;
+  line-height: 2.4em;
+}
+
+.ServiceInfo-button{
+  font-family: NotoSansKr-Medium;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.ServiceInfo-picturetxt{
+  font-family: NotoSansKr-Medium;
+  font-size: 14px;
+}
+
+.Share-title1{
+  font-family: NotoSansKr-Medium;
+  color: #0099FF;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.7em;
+}
+
+.Share-body1{
+  font-family: NotoSansKR-Bold;
+  font-size: 17px;
+  line-height: 2.4em;
+}
+.qna__tab{
+  font-family: NotoSansKR-Bold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7em;
+  letter-spacing: 0.8px;
+}
+.qna__title{
+  font-size: 16px;
+  line-height: 2.6em;
+  font-weight: bold;
+}
+.qna__body1{
+  font-family: NotoSansKr-Medium;
+  font-weight: 500;
+  line-height: 2.6em;
+}
 .t__blue {
     color: #0099ff !important;
 }

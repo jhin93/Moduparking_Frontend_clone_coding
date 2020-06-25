@@ -22,7 +22,7 @@
             <template v-slot:activator="{ on, attrs }">
               <v-btn color="rgba(0,0,0,0)" v-on="on" v-bind="attrs"
               slot="activator" light depressed class="px-0">
-                <span class="px-0">{{ menu.title }}</span>
+                <span class="nav__menu">{{ menu.title }}</span>
                 <v-icon >{{icons}}</v-icon>
               </v-btn>
             </template>
