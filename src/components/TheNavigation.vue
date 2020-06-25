@@ -1,13 +1,18 @@
 <template>
-  <v-container fluid>
-    <v-toolbar flat  class="hidden-sm-and-down" >
-      <v-toolbar-title class="pr-0">
+  <v-container fluid class="px-10"  >
+    <v-row>
+      <v-col>
+    <v-toolbar flat class="hidden-sm-and-down " height="140%" width="100%">
+      <v-flex >
+      <v-toolbar-title class="pr-0 web-align" >
         <router-link to="/">
-          <v-img :src="images.navigation.company_logo"  min-width="200px" width="38%" class=" px-2"></v-img>
+          <v-img :src="images.navigation.company_logo" width="250px" class=" px-2"></v-img>
         </router-link>
       </v-toolbar-title>
+      </v-flex>
       <v-spacer></v-spacer>
       <v-toolbar-items>
+        <v-flex class="align-self-center justify-start">
         <v-btn
           depressed
           v-for="(menu,i) in menus"
@@ -16,13 +21,13 @@
           :title="menu.title"
           :text="true"
           retail-focus-on-click="true"
-          class="px-2"
+          class="px-3"
         >
           <v-menu v-if="menu.items" open-on-hover min-width="20%" offset-y left class="px-0" style="background-color:rgba(0,0,0,0);">
             <template v-slot:activator="{ on, attrs }">
               <v-btn color="rgba(0,0,0,0)" v-on="on" v-bind="attrs"
               slot="activator" light depressed class="px-0">
-                <span class="px-0">{{ menu.title }}</span>
+                <span class="nav__menu" justify="center" align="center" >{{ menu.title }}</span>
                 <v-icon >{{icons}}</v-icon>
               </v-btn>
             </template>
@@ -36,10 +41,13 @@
               </v-list-item>
             </v-list>
           </v-menu>
-          <span v-else class="nav__menu px-0">{{menu.title}}</span>
+          <span v-else class="nav__menu px-4">{{menu.title}}</span>
         </v-btn>
+        </v-flex>
       </v-toolbar-items>
     </v-toolbar>
+      </v-col>
+    </v-row>
     <v-toolbar flat class="hidden-md-and-up">
       <v-toolbar-title>
         <router-link to="/">
@@ -57,6 +65,7 @@
       v-model="drawer"
       absolute
       right
+      overflow-y:scroll
       temporary>
       <v-list dense>
         <v-list-item
@@ -146,6 +155,9 @@ export default {
 }
 </script>
 <style scoped>
+.web-align{
+  text-align: -webkit-center;
+}
 .no_padding{
   padding:0;
 }

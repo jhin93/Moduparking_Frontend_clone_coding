@@ -24,7 +24,7 @@
           class="map-box"
           cols="12" md="6"
           >
-            <Map />
+            <Map width="width"/>
           </v-col>
           <v-col
             class="input-box"
@@ -58,8 +58,19 @@ import Map from '../components/Map'
 
 export default {
   name: 'AffiliateCooperation',
+  data: () => ({
+    width: 0
+  }),
   components: {
     Map
+  },
+  methods: {
+    mounted () {
+      this.matchSize()
+    },
+    matchSize () {
+      this.width = this.$refs.infoBox.clientHeight
+    }
   }
 }
 </script>
@@ -69,9 +80,7 @@ export default {
   display: flex;
   justify-content: center
 }
-.container{
-  max-width:1140px;
-}
+
 /* div{
   border: solid;
   border-color: red

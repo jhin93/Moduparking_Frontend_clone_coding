@@ -20,9 +20,9 @@
             </v-carousel>
           </div>
         </v-flex>
-        <v-flex class="top_3rem " xs12 sm6 md6 lg6>
-          <div class = "t__title t__blue t__bold px-1" > STEP.1 적립금 확인하기</div>
-          <div class="px-1" v-for="desc in desc1" v-bind:key="desc">
+        <v-flex class="top_3rem px-1" xs12 sm6 md6 lg6>
+          <div class = "t__title t__blue t__bold" > STEP.1 적립금 확인하기</div>
+          <div class="px-2" v-for="desc in desc1" v-bind:key="desc">
             <li class="t__body">{{desc}}</li>
           </div>
         </v-flex>
@@ -39,9 +39,9 @@
             </v-carousel>
           </div>
         </v-flex>
-        <v-flex class="top_3rem " xs12 sm6 md6 lg6>
-          <div class = "t__title t__blue t__bold px-1" > STEP.2 앱 포인트로 전환하기</div>
-          <div class="px-1" v-for="desc in desc2" v-bind:key="desc">
+        <v-flex class="top_3rem px-1" xs12 sm6 md6 lg6>
+          <div class = "t__title t__blue t__bold" > STEP.2 앱 포인트로 전환하기</div>
+          <div class="px-2" v-for="desc in desc2" v-bind:key="desc">
             <li class="t__body">{{desc}}</li>
           </div>
         </v-flex>

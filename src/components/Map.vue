@@ -1,8 +1,8 @@
 <template>
   <div>
     <naver-maps eager
-      :height="height"
-      :width="width"
+      :height="heightToNumber"
+      :width="widthToNumber"
       :mapOptions="mapOptions"
       :initLayers="initLayers"
       @load="onLoad">
@@ -25,8 +25,6 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      width: 480,
-      height: 440,
       info: false,
       marker: null,
       count: 1,
@@ -46,6 +44,12 @@ export default {
   computed: {
     hello () {
       return `Hello, World! × ${this.count}`
+    },
+    widthToNumber () {
+      return Number(this.width)
+    },
+    heightToNumber () {
+      return Number(this.height)
     }
   },
   methods: {
@@ -63,13 +67,23 @@ export default {
   },
   mounted () {
     setInterval(() => this.count++, 1000)
+  },
+  props: {
+    width: {
+      type: String,
+      default: '480'
+    },
+    height: {
+      type: String,
+      default: '400'
+    }
   }
 }
 </script>
 <style scoped>
   .info-window-container {
     padding: 10px;
-    width: 300px;
+    width: 100%;
     height: 100px;
   }
 </style>

@@ -40,20 +40,20 @@
       </v-container>
     </div>
     <v-container class="store-buttones-container">
-      <v-row>
+      <v-row class="space-around">
         <v-col
           cols="12"
           md="2"
           sm="2"
         >
-          <v-btn class="play-button" depressed color="#0099ff">PLAY STORE</v-btn>
+          <v-flex><v-btn class="play-button align-self-center" depressed color="#0099ff" min-width="30%" max-width="100%">PLAY STORE</v-btn></v-flex>
         </v-col>
         <v-col
           cols="12"
           md="2"
           sm="2"
         >
-          <v-btn class="app-button" depressed color="#0099ff">APP STORE</v-btn>
+          <v-flex><v-btn class="app-button" depressed color="#0099ff" min-width="30%" max-width="100%">APP STORE</v-btn></v-flex>
         </v-col>
       </v-row>
     </v-container>
@@ -91,6 +91,7 @@
     <v-container class="container3">
       <v-row class="container4-row">
             <v-col
+            class="mobile-set4-col"
               cols="12"
               md="5"
               sm="5"
@@ -106,13 +107,12 @@
               </div>
             </v-col>
             <v-col
-              class="mobile-set3-col"
               cols="12"
               md="7"
               sm="7"
             >
               <div>
-                <v-img v-ScrollAnimationPics :src="image.main.mobile"  class="mobile-set3-img" />
+                <v-img v-ScrollAnimationPics :src="image.main.mobile" class="mobile-set4-img"/>
               </div>
             </v-col>
       </v-row>
@@ -175,7 +175,7 @@
       </v-row>
     </v-container>
     <v-container>
-       <div class="container-last">
+       <v-row class="container-last">
          <v-col
           cols="12"
           md="12"
@@ -196,7 +196,7 @@
             <button class="last-button">시작하기</button>
           </div>
          </v-col>
-       </div>
+       </v-row>
     </v-container>
     <div>
       <v-col

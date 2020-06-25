@@ -246,12 +246,20 @@
   display: flex;
   margin-bottom: 3rem;
 }
+<<<<<<< HEAD
 .t__body img{
   width:60%
 }
 .t__bold {
   font-weight: bold;
 }
+=======
+
+.t__body img{
+  width:60%
+}
+
+>>>>>>> origin
 .blank_4rem{
   height:4rem
 }
@@ -267,7 +275,6 @@
 .relative{
   position: relative;
 }
-
 
 .width_60{
   width:60%

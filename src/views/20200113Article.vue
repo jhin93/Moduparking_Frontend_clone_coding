@@ -120,9 +120,6 @@ export default {
 </script>
 
 <style scoped>
-.container{
-  max-width:1140px;
-}
 .right{
   float: right !important;
 }
