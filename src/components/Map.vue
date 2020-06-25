@@ -25,8 +25,6 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      width: 480,
-      height: 440,
       info: false,
       marker: null,
       count: 1,
@@ -63,6 +61,16 @@ export default {
   },
   mounted () {
     setInterval(() => this.count++, 1000)
+  },
+  props: {
+    width: {
+      type: String,
+      default: '480'
+    },
+    height: {
+      type: String,
+      default: '480'
+    }
   }
 }
 </script>

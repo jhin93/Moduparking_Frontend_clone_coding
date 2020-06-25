@@ -34,7 +34,7 @@
             md="12"
             sm="12"
             xl="12">
-            <v-btn v-ScrollAnimationButton class="first-button first__button" depressed x-large color="#0099ff">지금 시작하기</v-btn>
+            <v-btn href="/" target="_blank" v-ScrollAnimationButton class="first-button first__button" depressed x-large color="#0099ff">지금 시작하기</v-btn>
           </v-col>
         </v-row>
       </v-container>
@@ -46,14 +46,14 @@
           md="2"
           sm="2"
         >
-          <v-btn class="play-button" depressed color="#0099ff">PLAY STORE</v-btn>
+          <v-btn href="https://play.google.com/store/apps/details?id=com.parkingshare.mobile&hl=ko" target="_blank" class="play-button" depressed color="#0099ff">PLAY STORE</v-btn>
         </v-col>
         <v-col
           cols="12"
           md="2"
           sm="2"
         >
-          <v-btn class="app-button" depressed color="#0099ff">APP STORE</v-btn>
+          <v-btn href="https://apps.apple.com/kr/app/모두의주차장-국민주차앱/id780174422" target="_blank"  class="app-button" depressed color="#0099ff">APP STORE</v-btn>
         </v-col>
       </v-row>
     </v-container>
@@ -193,7 +193,7 @@
           >
           <!-- v-btn:hover -->
           <div class="back">
-            <button class="last-button">시작하기</button>
+            <button type="button" onclick="window.open('https://play.google.com/store/apps/details?id=com.parkingshare.mobile&hl=ko') " class="last-button">시작하기</button>
           </div>
          </v-col>
        </div>
@@ -232,8 +232,8 @@ export default {
   }
 
   .container1-row {
-    margin-top: 200px;
-    margin-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     padding-left: 10%;
   }
 
