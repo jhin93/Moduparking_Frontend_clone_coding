@@ -4,7 +4,7 @@
     <div class="footer px-1"></div>
     <v-container class = "detail-container">
       <v-row justify="center" class="animation">
-        <v-col class="t__body px-1" cols="12">
+        <v-col class="AffiliateCooperation__t1" cols="12">
           배정받은 거주자우선(주거지) 주차면을 사용하지 않는 시간동안 유료로 이웃 운전자에게 공유할 수 있습니다.
         </v-col>
         <v-flex xs12 sm12 md6>
@@ -22,9 +22,9 @@
           </v-carousel>
         </v-flex>
         <v-flex xs12 sm12 md6 >
-          <div class = "t__title t__blue t__bold px-1 " > STEP 1. 거주자우선주차면 공유 등록</div>
+          <div class = "Step1 Share-title1" > STEP 1. 거주자우선주차면 공유 등록</div>
           <div v-for="n in 3" v-bind:key="n">
-            <div class="t__body px-1">{{descs[n-1]}}</div>
+            <div class="Share-body1">{{descs[n-1]}}</div>
           </div>
         </v-flex>
       </v-row>
@@ -45,7 +45,7 @@ export default {
       nextIcon: mdiChevronRight,
       prevIcon: mdiChevronLeft,
       descs: [
-        '자치구(또는 공단)에 배정 신청시 등록한 생년월일(6자리), 전화번호, 차량번호와 일치해야합니다',
+        '자치구(또는 공단)에 배정 신청시 등록한 생년월일(6자리), 전화번호, 차량번호와 일치해야합니다.',
         '정보를 정확히 입력하였는데 공유설정이 안되는 경우엔 자치구(또는 공단)에 생연월일, 전화번호, 차량번호를 확인 하시기 바랍니다.',
         '주차장 등록을 완료하시고 반드시 공유시간을 설정해야 앱에서 주차장이 노출됩니다.'
       ],
@@ -106,5 +106,8 @@ export default {
 .img-view{
   height:100%;
   text-align:center;
+}
+.Step1{
+  padding: 0 0 3rem 0
 }
 </style>

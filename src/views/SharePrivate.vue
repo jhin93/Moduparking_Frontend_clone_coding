@@ -4,7 +4,7 @@
     <div class="px-1 footer "></div>
     <v-container class = "detail-container">
       <v-row justify="center" class="animation">
-        <v-col class="t__body px-1" cols="12">
+        <v-col class="AffiliateCooperation__t1" cols="12">
           주택, 빌라, 상가 주차장 등 개인이 소유한 주차공간을 모두의 주차장 앱에서 다른 사람에게 공유 할 수 있습니다.
         </v-col>
         <v-col cols="12"  sm="12" md="6" >
@@ -21,9 +21,9 @@
         </v-col>
         <v-col class="top_3rem " cols="12" sm="12" md="6">
           <div class="d-none d-md-block d-print-block">
-            <div class = "t__title t__blue t__bold px-1"> STEP 1. 거주자우선주차면 공유 등록</div>
+            <div class = "Step1 Share-title1"> STEP 1. 사유지 공유주차장으로 등록</div>
             <div v-for="(desc,iterator) in descs" v-bind:key="iterator">
-              <div class="t__body t__bold">{{descs[iterator]}}</div>
+              <div class="Share-body1">{{descs[iterator]}}</div>
             </div>
           </div>
           <div  class = " px-1 d-flex d-md-none align_center">
@@ -111,5 +111,8 @@ export default {
 .img-view{
   height:100%;
   text-align:center;
+}
+.Step1{
+  padding: 0 0 3rem 0
 }
 </style>

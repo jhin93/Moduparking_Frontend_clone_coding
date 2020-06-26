@@ -31,7 +31,7 @@
             cols="12" md="6"
           >
             <div>
-              <form action="/action_page.php">
+              <!-- <form action="/action_page.php">
                 <input type="text" id="fname" name="firstname" placeholder="성함">
 
                 <input type="text" id="lname" name="lastname" placeholder="연락처">
@@ -42,8 +42,18 @@
                   <textarea>문의내용을 입력해 주세요 :)</textarea>
                 </form>
                 <v-row class="row-submit">
-                <input type="submit" value="문의하기">
+                <v-btn @click.native="sendemail" class="first-button first__button" depressed x-large color="#0099ff">지금 시작하기</v-btn>
                 </v-row>
+              </form> -->
+              <form action="javascript:sendMail();" name="pmForm" id="pmForm" method="post" />
+              <input id="name" type="text" maxlength="64" placeholder="성함"/>
+              <input id="email" type="text" maxlength="64" placeholder="이메일"/>
+              <input id="cell" type="text" maxlength="64" placeholder="연락처"/>
+              <form >
+                  <textarea v-model="text" id="message" placeholder="문의내용을 입력해 주세요 :)"></textarea>
+              </form>
+              <form v-on:submit.prevent="send" class="q-button-form">
+                <button class="q-button" type="submit">문의하기</button>
               </form>
             </div>
           </v-col>
@@ -70,6 +80,10 @@ export default {
     },
     matchSize () {
       this.width = this.$refs.infoBox.clientHeight
+    },
+    send () {
+      // window.open('mailto:contact@moducompany.com')
+      window.open('mailto:contact@moducompany.com' + '?subject=' + document.getElementById('email').value + '&body=' + document.getElementById('message').value)
     }
   }
 }
@@ -78,7 +92,7 @@ export default {
 <style scoped>
 .row-submit{
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 
 /* div{
@@ -128,5 +142,17 @@ textarea {
   border-radius: 4px;
   resize: none;
   opacity: 0.5;
+}
+
+.q-button-form{
+  display: flex;
+  justify-content: center;
+}
+
+.q-button{
+  background-color: #0099FF;
+  color: #FFFFFF;
+  border-radius: 8px 8px 8px 8px;
+  padding: 8px 12px;
 }
 </style>

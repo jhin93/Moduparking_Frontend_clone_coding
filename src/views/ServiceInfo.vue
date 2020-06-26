@@ -1,64 +1,60 @@
 <template>
-  <v-container class="container">
-    <div class="">
+  <v-container class="container12">
+    <div class>
       <v-row justify="space-around">
         <v-col cols="12">
           <div class = "t__blue t__title t__bold px-1"> 모두의 주차 공유 서비스 안내</div>
           <div class="footer" ></div>
-          <div class = "t__body">개인 소유의 주차 기능 공간을 주차장 소유자와 운전자가 공유할 수 있도록 연결해 주는 서비스 입니다.</div>
+          <div class = "AffiliateCooperation__t1">개인 소유의 주차 기능 공간을 주차장 소유자와 운전자가 공유할 수 있도록 연결해 주는 서비스 입니다.</div>
           <div class="img_container">
             <v-img :src="image.service.service"></v-img>
           </div>
         </v-col>
         <v-col cols="12" xs="12" sm="4" md="4" lg="4" xl="4">
-          <div class=" t__blue t__body align_center">운전자</div>
+          <div class=" t__blue t__title t__bold px-1 align_center">운전자</div>
         </v-col>
         <v-col cols="12" xs="12" sm="4" md="4" lg="4" xl="4">
-          <div class=" t__blue t__body align_center">모두의주차장</div>
+          <div class=" t__blue t__title t__bold px-1 align_center">모두의주차장</div>
         </v-col>
         <v-col cols="12" xs="12" sm="4" md="4" lg="4" xl="4">
-          <div class=" t__blue t__body align_center">공유자</div>
+          <div class=" t__blue t__title t__bold px-1 align_center">공유자</div>
         </v-col>
       </v-row>
     </div>
-    <div class="t__body  margin_1rem">
-      <div class="t__blue t__title">유형 1. 거주자 우선(주거지) 주차면</div>
+    <div class>
       <div class="dis_flex_margin_bo_3rem inline">
-        <v-container>
+          <div class="t__blue t__title t__bold px-1">유형 1. 거주자 우선(주거지) 주차면</div>
           <v-row>
             <v-col cols="12" xs="12" md="8">
               <v-img class="img_half" :src="image.service.private"></v-img>
-              <h6 class= "align_center relative "> 공유 - 거주자우선주차면</h6>
+              <h6 class= "ServiceInfo-picturetxt align_center relative "> 공유 - 거주자우선주차면</h6>
             </v-col>
           <v-col cols="12">
             <div v-for="residential in residentials" v-bind:key="residential">
-              <div>{{residential}}</div>
+              <div class="ServiceInfo-body1">{{residential}}</div>
             </div>
           </v-col>
           </v-row>
-        </v-container>
+          <v-btn class="ServiceInfo-button" large rounded :ripple="false" color="#0099ff" depressed dark to="">거주자우선(주거지)주차면 공유방법</v-btn>
       </div>
     </div>
-     <v-btn class=" margin_1rem" rounded :ripple="false" color="#0099ff" depressed dark to="">거주자우선(주거지)주차면 공유방법</v-btn>
     <div class="blank_4rem"></div>
-    <div class="t__body  margin_1rem">
-      <div class="t__blue t__title">유형 2. 사유지 주차공간(카페, 오피스텔 등)</div>
+    <div class>
       <div class="dis_flex_margin_bo_3rem inline">
-        <v-container>
+          <div class="t__blue t__title t__bold px-1">유형 2. 사유지 주차공간(카페, 오피스텔 등)</div>
           <v-row>
             <v-col cols="12" xs="12" md="8">
               <v-img class="img_half" :src ="image.service.residential"></v-img>
-              <h6 class = "align_center relative "> 공유 - 일반 주차 공간</h6>
+              <h6 class = "ServiceInfo-picturetxt align_center relative "> 공유 - 일반 주차 공간</h6>
             </v-col>
             <v-col cols="12">
               <div v-for="privated in privates" v-bind:key="privated">
-                <div>{{privated}}</div>
+                <div class="ServiceInfo-body1">{{privated}}</div>
               </div>
             </v-col>
           </v-row>
-        </v-container>
+          <v-btn class="ServiceInfo-button" large rounded :ripple="false" color="#0099ff" depressed dark to="">일반주차창 공유 방법</v-btn>
       </div>
-      <v-btn rounded :ripple="false" color="#0099ff" depressed dark to="">일반주차창 공유 방법</v-btn>
     </div>
   </v-container>
 </template>
@@ -78,8 +74,9 @@ export default {
 </script>
 
 <style scoped>
-.container{
+.container12{
   max-width:1140px;
+  padding: 0rem 0rem 10rem 0rem;
 }
 .header{
   font-size:15pt;
