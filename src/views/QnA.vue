@@ -10,14 +10,15 @@
         <div class="blank"></div>
       </v-col>
     </v-row>
-    <div>
+    <v-row class="d-none d-md-block d-print-block">
+      <v-col>
       <v-tabs class="qna__tab px-1" grow v-model="tab" color="#0099ff">
         <v-tab :ripple="false"  v-for="(rule,i) in rules"
           :key="i"
         >{{rule.tab}}
         </v-tab>
       </v-tabs>
-       <v-tabs-items class="d-none d-md-block d-print-block px-1"  v-model="tab">
+       <v-tabs-items class="px-1"  v-model="tab">
         <v-tab-item class="selector-tabs "
           v-for="rule in rules"
           :key="rule.tab"
@@ -34,7 +35,8 @@
           </div>
         </v-tab-item>
       </v-tabs-items>
-    </div>
+      </v-col>
+    </v-row>
     <v-row>
         <v-expansion-panels flat class="d-flex d-md-none no-transition">
           <v-expansion-panel
