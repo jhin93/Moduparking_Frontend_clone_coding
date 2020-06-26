@@ -6,7 +6,7 @@ import news from '../views/News.vue'
 import article20200113 from '../views/20200113Article'
 import article20200604 from '../views/20200604Article'
 import QnA from '../views/QnA'
-import serviceinfo from '../views/serviceinfo'
+import serviceInfo from '../views/serviceinfo'
 import checkAndTrance from '../views/ShareCheck'
 import manageShare from '../views/ShareManage'
 import sharePrivate from '../views/SharePrivate'
@@ -15,6 +15,7 @@ import ServiceIntro from '../views/Home'
 import CorpIntro from '../views/CorpIntro'
 import AffiliateCooperation from '../views/AffiliateCooperation'
 // 아랫줄 import->require로 수정해서 에러 해결
+// serviceInfo serviceinfo
 const Terms = () => require(/* webpackChunkName: "terms" */ '../views/Terms.vue')
 
 Vue.use(VueRouter)
@@ -33,7 +34,7 @@ const routes = [
   {
     path: '/elementor-345',
     name: 'service-info',
-    component: serviceinfo
+    component: serviceInfo
   },
   {
     path: '/elementor-330',
