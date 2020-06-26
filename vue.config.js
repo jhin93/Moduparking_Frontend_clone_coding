@@ -1,5 +1,7 @@
+const ansiRegx = require('ansi-regex')
 module.exports = {
-  transpileDependencies: [
-    'vuetify'
-  ]
+  configureWebpack: {
+    entry: ['babel-polyfill', './src/main.js']
+  },
+  transpileDependencies: [ansiRegx, 'LazyLoad', 'vuetify']
 }
