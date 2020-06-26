@@ -15,6 +15,7 @@ import ServiceIntro from '../views/Home'
 import CorpIntro from '../views/CorpIntro'
 import AffiliateCooperation from '../views/AffiliateCooperation'
 // 아랫줄 import->require로 수정해서 에러 해결
+// serviceInfo serviceinfo
 const Terms = () => require(/* webpackChunkName: "terms" */ '../views/Terms.vue')
 
 Vue.use(VueRouter)
