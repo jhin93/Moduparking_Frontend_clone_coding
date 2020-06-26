@@ -6,7 +6,7 @@ import news from '../views/News.vue'
 import article20200113 from '../views/20200113Article'
 import article20200604 from '../views/20200604Article'
 import QnA from '../views/QnA'
-import serviceInfo from '../views/ServiceInfo'
+import serviceinfo from '../views/ServiceInfo'
 import checkAndTrance from '../views/ShareCheck'
 import manageShare from '../views/ShareManage'
 import sharePrivate from '../views/SharePrivate'
@@ -33,7 +33,7 @@ const routes = [
   {
     path: '/elementor-345',
     name: 'service-info',
-    component: serviceInfo
+    component: serviceinfo
   },
   {
     path: '/elementor-330',
