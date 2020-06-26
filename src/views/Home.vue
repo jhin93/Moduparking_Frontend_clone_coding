@@ -198,11 +198,12 @@
          </v-col>
        </v-row>
     </v-container>
-    <div>
+    <div >
       <v-col
         cols="12"
         md="12"
         sm="12"
+        class="px-0"
       >
         <v-img :src="image.main.bottom" eager class="main-bottom-img" />
       </v-col>
