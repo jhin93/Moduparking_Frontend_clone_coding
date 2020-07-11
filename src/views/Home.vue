@@ -100,7 +100,7 @@
                   <a class="blue__t0">01</a><br>
                   <a class="black__t0">모바일 주차권 결제</a><br>
                   <p class="black__t2">
-                  더이상 출구에서 힘들게 카드결제 하지 마세요!<br>
+                  더 이상 출구에서 힘들게 카드결제 하지 마세요!<br>
                   현장요금 대비 평균 60% 이상 할인된 모바일<br>
                   주차권을 구매하고 편리하게 주차장을 이용하세요.<br>
                   </p>
@@ -224,6 +224,52 @@ export default {
 </script>
 
 <style scoped>
+
+  @media (max-width: 960px) {
+    .blue__t1 {
+      font-size: 56px
+    }
+    .black__t1{
+      font-size: 23px
+    }
+    .blue__t2 {
+      font-size: 48px
+    }
+    .black__t0{
+      font-size: 38px
+    }
+    .white__t1{
+      font-size: 38px
+    }
+    .black__t15{
+      font-size: 23px
+    }
+    .blue__t3 {
+      font-size: 40px
+    }
+  }
+
+  @media (max-width: 768px) {
+    .blue__t1 {
+      font-size: 48px
+    }
+    .black__t0{
+      font-size: 50px
+    }
+    .black__t1{
+      font-size: 20px
+    }
+    .white__t1{
+      font-size: 50px
+    }
+    .blue__t2 {
+      font-size: 48px
+    }
+    .black__t15{
+      font-size: 20px
+    }
+  }
+
   .container1{
     /* 컨테이너 크기를 100vw로 맞춰서 여백을 없앴다. */
     /* https://www.it-swarm.dev/ko/vuetify.js/vuetify%EC%97%90%EC%84%9C-%EC%97%AC%EB%B0%B1-%EB%B0%8F-%ED%8C%A8%EB%94%A9-%EC%A0%9C%EA%B1%B0/838734615/ */
@@ -248,13 +294,13 @@ export default {
   .store-buttones-container{
     max-width: 92.5vw;
     justify-content: space-around;
+    padding: 3rem 6rem;
   }
 
   .container2{
     /* 컨테이너 크기를 100vw로 맞춰서 여백을 없앴다. */
     /* https://www.it-swarm.dev/ko/vuetify.js/vuetify%EC%97%90%EC%84%9C-%EC%97%AC%EB%B0%B1-%EB%B0%8F-%ED%8C%A8%EB%94%A9-%EC%A0%9C%EA%B1%B0/838734615/ */
     max-width: 92.5vw;
-    padding: 3rem 0rem;
   }
 
   .circles{
