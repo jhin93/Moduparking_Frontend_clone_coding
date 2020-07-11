@@ -1,3 +1,258 @@
+@font-face {
+  font-family: NotoSansKR-Black;
+  src: url('./Noto_Sans_KR/NotoSansKR-Black.otf');
+}
+
+@font-face {
+  font-family: NotoSansKR-Bold;
+  src: url('./Noto_Sans_KR/NotoSansKR-Bold.otf');
+}
+
+@font-face {
+  font-family: NotoSansKR-Light;
+  src: url('./Noto_Sans_KR/NotoSansKR-Light.otf');
+}
+
+@font-face {
+  font-family: NotoSansKR-Medium;
+  src: url('./Noto_Sans_KR/NotoSansKR-Medium.otf');
+}
+
+@font-face {
+  font-family: NotoSansKR-Regular;
+  src: url('./Noto_Sans_KR/NotoSansKR-Regular.otf');
+}
+
+@font-face {
+  font-family: NotoSansKR-Thin;
+  src: url('./Noto_Sans_KR/NotoSansKR-Thin.otf');
+}
+
+.white__t0{
+  color: white !important;
+  font-size: 90px;
+  font-family: NotoSansKR-Bold;
+  line-height: 1.7 !important;
+}
+
+.white__t1{
+  color: white !important;
+  font-size: 50px;
+  font-family: NotoSansKR-Bold;
+  line-height: 2.4em !important;
+}
+
+.white__t2{
+  color: white !important;
+  font-size: 20px;
+  font-family: NotoSansKR-Medium;
+  line-height: 2.2em !important;
+}
+
+.blue__t0{
+  color: #0099ff !important;
+  font-size: 90px;
+  font-family: NotoSansKR-Bold;
+  line-height: 1.7 !important;
+}
+
+.blue__t1{
+  color: #0099ff !important;
+  font-size: 67px;
+  font-family: NotoSansKR-Bold;
+  line-height: 1.7 !important;
+}
+
+.blue__t2{
+  color: #0099ff !important;
+  font-size: 55px;
+  font-family: NotoSansKR-Bold;
+  line-height: 1.8 !important;
+}
+
+.blue__t3{
+  color: #0099ff !important;
+  font-size: 50px;
+  font-family: NotoSansKR-Bold;
+  line-height: 1.7 !important;
+}
+
+.black__t0{
+  color: black !important;
+  font-size: 50px;
+  font-family: NotoSansKR-Bold;
+  line-height: 2.4em !important;
+}
+
+.black__t1{
+  color: black !important;
+  font-size: 26px;
+  font-family: NotoSansKR-Bold;
+  line-height: 2.4em !important;
+}
+
+.black__t15{
+  color: black !important;
+  font-size: 26px;
+  font-family: NotoSansKR-Medium;
+  line-height: 2.4em !important;
+}
+
+.black__t2{
+  color: black !important;
+  font-size: 20px;
+  font-family: NotoSansKR-Medium;
+  line-height: 2.2em !important;
+}
+
+.first__button{
+  font-family: NotoSansKR-Medium;
+  line-height: 1.4em;
+  letter-spacing: 1px;
+}
+
+.corpintro__t1{
+  font-family: NotoSansKR-Bold;
+  color: #0099FF;
+  font-size: 38px;
+  line-height: 2.4em;
+}
+
+.corpintro__t2{
+  font-family: NotoSansKR-Bold;
+  color: #0099FF;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 2.4em;
+}
+
+.corpintro__t3{
+  font-family: NotoSansKR-Bold;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1.9em;
+}
+
+.corpintro__t4{
+  font-family: NotoSansKR-Regular;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 2em;
+}
+
+.AffiliateCooperation__t1{
+  font-family: NotoSansKR-Bold;
+  font-size: 19px;
+  line-height: 2.4em;
+}
+
+.News__t1{
+  font-family: NotoSansKR-Medium;
+  color: #333;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.News__t2{
+  font-family: NotoSansKr-Medium;
+  color: #999;
+  font-size: 14px;
+}
+
+.News__t3{
+  font-family: NotoSansKr-Medium;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.News__t4{
+  font-family: NotoSansKr-Regular;
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.article__t1{
+  font-family: NotoSansKr-Regular;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+.article__t2__1{
+  font-family: NotoSansKr-Medium;
+  font-size: 60px;
+  line-height: 1.2;
+  padding: 0.5rem 0rem;
+}
+
+.article__t2__2{
+  font-family: NotoSansKr-Regular;
+  color: #676767;
+  font-size: .85em;
+  padding: 0.5rem 0rem 2rem 0rem;
+}
+
+.article__t2__3{
+  font-family: NotoSansKr-Medium;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+.article__t2__4{
+  font-family: NotoSansKr-Medium;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+.ServiceInfo-body1{
+  font-family: NotoSansKr-Medium;
+  font-size: 21px;
+  line-height: 2.4em;
+}
+
+.ServiceInfo-button{
+  font-family: NotoSansKr-Medium;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.ServiceInfo-picturetxt{
+  font-family: NotoSansKr-Medium;
+  font-size: 14px;
+}
+
+.Share-title1{
+  font-family: NotoSansKr-Medium;
+  color: #0099FF;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.7em;
+}
+
+.Share-body1{
+  font-family: NotoSansKR-Bold;
+  font-size: 17px;
+  line-height: 2.4em;
+}
+.qna__tab{
+  font-family: NotoSansKR-Bold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7em;
+  letter-spacing: 0.8px;
+}
+.qna__title{
+  font-size: 16px;
+  line-height: 2.6em;
+  font-weight: bold;
+}
+.qna__body1{
+  font-family: NotoSansKr-Medium;
+  font-weight: 500;
+  line-height: 2.6em;
+}
 .t__blue {
     color: #0099ff !important;
 }
@@ -6,6 +261,7 @@
     line-height: 1.7 !important;
 }
 .t__title {
+    font-family: NotoSansKR-Regular;
     font-size: 25px !important;
     line-height: 1.7 !important;
 }
@@ -42,6 +298,13 @@
 .t__body img{
   width:60%
 }
+.t__bold {
+  font-weight: bold;
+}
+
+.t__body img{
+  width:60%
+}
 
 .blank_4rem{
   height:4rem
@@ -69,3 +332,78 @@
 .t__white{
   color:white !important;
 }
+
+.font-red{
+ color: red;
+}
+
+.nav__menu{
+  color: black !important;
+  font-family: NotoSansKR-Bold;
+  font-size: 18px;
+  line-height: 1.2em;
+  letter-spacing: 1.7px;
+}
+
+.footer__text{
+  font-size: .8em;
+  line-height: 2em;
+  letter-spacing: .3px;
+  opacity: 0.7;
+}
+
+.t__black{
+  color: black !important;
+}
+
+.date{
+  color:rgba(0,0,0,0.2)
+}
+
+.footer{
+  margin-bottom: 2rem !important;
+  padding-top:2rem;
+  border-bottom:1px solid rgba(0,153,255,0.1);
+}
+.theme--dark.v-btn:hover::before{
+  opacity:0 !important;
+}
+.no-transition .expansion__panel__content {
+  transition: none !important;
+}
+.bottom_1rem{
+  margin-bottom: 1rem;
+}
+.v-carousel__controls__item{
+  transform: scale(0.7) !important;
+  color:rgba(0,153,255,1) !important;
+}
+.theme--dark.v-btn--active:hover::before, .theme--dark.v-btn--active::before{
+  opacity: 1 !important;
+
+}
+.v-tabs-slider-wrapper{
+  color: rgba(255,255,255,1) !important;
+  transition: none !important;
+}
+.theme--dark.v-btn.v-btn--icon{
+  color: #0099ff;
+  transform:scale(1.5);
+}
+.v-window__prev, .v-window__next {
+  background-color:rgba(0,0,0,0) !important;
+}
+.v-btn--icon.v-size--small{
+  width:15px !important;
+  height:15px !important;
+}
+.v-btn.v-size--small{
+  transform: scale(1.6);
+}
+.margin_1rem{
+  margin:1rem;
+}
+.v-ripple__container {
+  display:none !important;
+}
+
