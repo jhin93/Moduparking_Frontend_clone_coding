@@ -65,9 +65,10 @@
 
 .blue__t2{
   color: #0099ff !important;
-  font-size: 55px;
+  font-size: 40px;
   font-family: NotoSansKR-Bold;
   line-height: 1.8 !important;
+  text-align: center;
 }
 
 .blue__t3{
@@ -93,9 +94,10 @@
 
 .black__t15{
   color: black !important;
-  font-size: 26px;
+  font-size: 20px;
   font-family: NotoSansKR-Medium;
   line-height: 2.4em !important;
+  text-align: center;
 }
 
 .black__t2{

@@ -65,9 +65,9 @@
           sm="12"
         >
           <h1 class="blue__t2" v-ScrollAnimationText2>
-            공유가 쉽다!<br>
-            사용이 편리하다!<br>
-            주차가 즐겁다!<br>
+            공유가 쉽다!
+            사용이 편리하다!
+            주차가 즐겁다!
           </h1>
         <p class="black__t15" v-ScrollAnimationText2>
         다양한 주차 서비스로 주차고민을 덜어보세요.<br>
