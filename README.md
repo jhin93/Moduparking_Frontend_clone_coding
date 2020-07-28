@@ -1,4 +1,4 @@
-# homepage
+# Moduparking (with 모두컴퍼니)
 
 코드 스테이츠의 파이널 프로젝트로 실시한 기업 협업 프로젝트 'Moduparking'입니다.
 
@@ -6,7 +6,7 @@
 
 Express로 제작된 ‘모두의주차장’ 샘플 페이지를 Vue.js와 Vue.js와 호환되는 라이브러리, Lodash 등을 이용하여 SPA로 클로닝하였습니다.
 
-
+<br>
 
 1. 작업환경 셋팅
 
