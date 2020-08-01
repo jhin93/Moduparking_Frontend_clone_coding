@@ -31,7 +31,6 @@ Vue.js, Node.js, lodash를 기반으로 진행되었습니다.
    
    <br>
 
-
    2. 일괄 적용 기능
 
    - Vue.js를 사용하여 container와 row, col 등의 개념으로 페이지 레이아웃을 구현했습니다. 
