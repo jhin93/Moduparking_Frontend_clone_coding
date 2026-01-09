@@ -18,7 +18,7 @@
     "vue": "^3.0.0",
     "vue-naver-maps": "^0.12.1",
     "vue-router": "^3.2.0",
-    "vuetify": "^2.2.11"
+    "vuetify": "^3.11.3"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.10.3",
